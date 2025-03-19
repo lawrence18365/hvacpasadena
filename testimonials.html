@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read 500+ five-star reviews from satisfied HVAC customers in Pasadena. Real testimonials from local homeowners about our AC repair, heating, and maintenance services.">
+    <title>Customer Reviews & Testimonials | HVAC Pasadena</title>
+    <style>
+        /* Modern Variables */
+        :root {
+            --primary: #0066cc;
+            --secondary: #ff6600;
+            --accent: #ff9900;
+            --dark: #222831;
+            --medium: #393e46;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --success: #28a745;
+            --warning: #ffc107;
+            --error: #dc3545;
+            --radius: 8px;
+            --shadow: 0 4px 12px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Basics */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 70px;
+            background-color: var(--secondary);
+        }
+
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -1rem;
+        }
+
+        .col {
+            padding: 0 1rem;
+            flex: 1;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-heading {
+            margin-bottom: 3rem;
+        }
+
+        /* Emergency Header */
+        .emergency-header {
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 0.5rem 0;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .emergency-header a {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .header-contact {
+            text-align: right;
+        }
+
+        .phone-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-number:before {
+            content: '📞';
+            margin-right: 0.5rem;
+        }
+
+        .phone-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .nav-cta {
+            background-color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-cta a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            padding: 1rem 1.5rem;
+        }
+
+        /* CTA Buttons */
+        .btn {
+            display: inline-block;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: #ff8833;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 102, 0, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-lg {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Page Header */
+        .page-header {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1600/400') center/cover no-repeat;
+            padding: 4rem 0;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Rating Summary Section */
+        .rating-summary {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .rating-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .rating-item {
+            padding: 1rem;
+        }
+
+        .rating-value {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .star-rating {
+            color: #ffc107;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .rating-label {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        /* Testimonial Filters */
+        .testimonial-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0;
+            justify-content: center;
+        }
+
+        .filter-button {
+            background-color: var(--white);
+            color: var(--dark);
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .filter-button.active {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .filter-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-service {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: var(--primary);
+            color: var(--white);
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 0.3rem 1rem;
+            border-radius: 0 var(--radius) 0 var(--radius);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #eee;
+            margin-right: 1rem;
+        }
+
+        .author-info h4 {
+            margin-bottom: 0.2rem;
+            font-size: 1.1rem;
+        }
+
+        .author-location {
+            font-size: 0.9rem;
+            color: var(--medium);
+        }
+
+        .testimonial-date {
+            font-size: 0.8rem;
+            color: var(--medium);
+            margin-top: 0.5rem;
+        }
+
+        .testimonial-rating {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Video Testimonials */
+        .video-testimonials {
+            background-color: #f0f5ff;
+            padding: 4rem 0;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .video-thumbnail {
+            height: 200px;
+            background-color: #eee;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255,255,255,0.8);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .video-content {
+            padding: 1.5rem;
+        }
+
+        .video-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .video-author {
+            font-size: 0.9rem;
+            color: var(--medium);
+        }
+
+        /* Submit Testimonial Section */
+        .submit-testimonial {
+            background-color: #fff9f5;
+            padding: 4rem 0;
+        }
+
+        .testimonial-form {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: var(--radius);
+            font-size: 1rem;
+        }
+
+        .rating-input {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .star-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #ddd;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .star-btn:hover,
+        .star-btn.active {
+            color: #ffc107;
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        .page-item {
+            margin: 0 0.5rem;
+        }
+
+        .page-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--white);
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .page-link:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .page-link.active {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        /* Customer Content Showcase */
+        .customer-showcase {
+            padding: 4rem 0;
+        }
+
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .showcase-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .showcase-img {
+            height: 200px;
+            background-color: #eee;
+        }
+
+        .showcase-content {
+            padding: 1.5rem;
+        }
+
+        .showcase-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        /* Review Platforms */
+        .review-platforms {
+            background-color: var(--white);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .platforms-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .platform-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .platform-icon {
+            width: 80px;
+            height: 80px;
+            background-color: #f0f5ff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .platform-name {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .platform-rating {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), #004999);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+
+        .cta-section h2:after {
+            background-color: var(--secondary);
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 4rem 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 50px;
+            background-color: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact-icon {
+            margin-right: 1rem;
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.8rem;
+            margin-bottom: 0.8rem;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            background-color: #1a1f27;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .licenses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+        }
+
+        .license-item {
+            margin: 0 1rem;
+            color: #aaa;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        /* Media Queries */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-contact {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-container {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 3rem 0;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .rating-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background-color: #f0f5ff;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .breadcrumbs-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .breadcrumbs-item:not(:last-child):after {
+            content: '>';
+            margin: 0 0.5rem;
+            color: var(--medium);
+        }
+
+        .breadcrumbs-link {
+            color: var(--medium);
+            text-decoration: none;
+        }
+
+        .breadcrumbs-link:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .breadcrumbs-current {
+            color: var(--primary);
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Emergency Header -->
+    <div class="emergency-header">
+        <div class="container">
+            24/7 Emergency HVAC Service Available | <a href="tel:+16265551234">(626) 555-1234</a> | 60-Minute Response Time
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <div class="logo-text">HVAC<span>Pasadena</span></div>
+                </div>
+                <div class="header-contact">
+                    <a href="tel:+16265551234" class="phone-number">(626) 555-1234</a>
+                    <div class="phone-text">Free Estimates • Same-Day Service</div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ac-repair.html">AC Repair</a></li>
+                        <li><a href="furnace-installation.html">Heating</a></li>
+                        <li><a href="hvac-maintenance.html">Maintenance</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="#cta-section">Free Estimate</a>
+                    </div>
+                    <button class="mobile-menu-btn">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">Home</a></li>
+                <li class="breadcrumbs-item"><span class="breadcrumbs-current">Testimonials</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Customer Reviews & Testimonials</h1>
+            <p>Read what Pasadena homeowners are saying about our HVAC services. Over 500 five-star reviews and counting!</p>
+        </div>
+    </section>
+    
+    <!-- Rating Summary Section -->
+    <section style="padding-top: 0;">
+        <div class="container">
+            <div class="rating-summary">
+                <div class="rating-grid">
+                    <div class="rating-item">
+                        <div class="rating-value">4.9</div>
+                        <div class="star-rating">★★★★★</div>
+                        <div class="rating-label">Overall Rating</div>
+                    </div>
+                    
+                    <div class="rating-item">
+                        <div class="rating-value">500+</div>
+                        <div class="star-rating">★★★★★</div>
+                        <div class="rating-label">Total Reviews</div>
+                    </div>
+                    
+                    <div class="rating-item">
+                        <div class="rating-value">97%</div>
+                        <div class="star-rating">👍</div>
+                        <div class="rating-label">Would Recommend</div>
+                    </div>
+                    
+                    <div class="rating-item">
+                        <div class="rating-value">12+</div>
+                        <div class="star-rating">🏆</div>
+                        <div class="rating-label">Years of Service</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Review Platform Section -->
+    <section class="review-platforms">
+        <div class="container">
+            <h2 class="text-center">Find Us On These Platforms</h2>
+            
+            <div class="platforms-grid">
+                <div class="platform-item">
+                    <div class="platform-icon">G</div>
+                    <div class="platform-name">Google</div>
+                    <div class="platform-rating">★★★★★</div>
+                    <div>4.9 (287 reviews)</div>
+                </div>
+                
+                <div class="platform-item">
+                    <div class="platform-icon">Y</div>
+                    <div class="platform-name">Yelp</div>
+                    <div class="platform-rating">★★★★★</div>
+                    <div>4.8 (143 reviews)</div>
+                </div>
+                
+                <div class="platform-item">
+                    <div class="platform-icon">FB</div>
+                    <div class="platform-name">Facebook</div>
+                    <div class="platform-rating">★★★★★</div>
+                    <div>5.0 (72 reviews)</div>
+                </div>
+                
+                <div class="platform-item">
+                    <div class="platform-icon">BBB</div>
+                    <div class="platform-name">BBB</div>
+                    <div class="platform-rating">A+</div>
+                    <div>Accredited Business</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonial Filters -->
+    <section style="padding-bottom: 0;">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>What Our Customers Say</h2>
+                <p>Read testimonials from real Pasadena homeowners about our HVAC services</p>
+            </div>
+            
+            <div class="testimonial-filters">
+                <button class="filter-button active">All Reviews</button>
+                <button class="filter-button">AC Repair</button>
+                <button class="filter-button">Heating Services</button>
+                <button class="filter-button">Maintenance</button>
+                <button class="filter-button">Air Quality</button>
+                <button class="filter-button">Commercial</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section style="padding-top: 2rem;">
+        <div class="container">
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-service">AC Repair</div>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"My AC stopped working during the worst heat wave last summer. I called HVAC Pasadena and they sent a technician within the hour! James diagnosed the problem quickly, had the parts on his truck, and fixed my AC that same afternoon. Their emergency service is truly exceptional, and the price was fair, especially considering how quickly they responded. I'm now a customer for life!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Rebecca Martinez</h4>
+                            <div class="author-location">South Pasadena</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-date">July 15, 2024</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-service">Furnace Installation</div>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"After getting quotes from several companies for a new heating system, I chose HVAC Pasadena based on their stellar reviews. I couldn't be happier with my decision! Their consultant took the time to explain all my options and helped me select an energy-efficient system that fit my budget. The installation team was professional, clean, and finished the job in one day. My new furnace is whisper-quiet and my energy bills are noticeably lower. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Thomas Johnson</h4>
+                            <div class="author-location">Bungalow Heaven, Pasadena</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-date">November 3, 2024</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-service">Maintenance Plan</div>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"I've been on HVAC Pasadena's maintenance plan for three years now, and it's been worth every penny. Their technicians always arrive on time for the scheduled maintenance visits, and the comprehensive service they provide keeps my system running efficiently year-round. Since starting the plan, I haven't had a single breakdown, and my energy bills have decreased significantly. The peace of mind alone is worth the cost!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Jennifer Williams</h4>
+                            <div class="author-location">East Pasadena</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-date">March 22, 2024</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-service">Air Quality Solutions</div>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"As someone with severe allergies, I was struggling with poor indoor air quality, especially during wildfire season in Pasadena. HVAC Pasadena recommended and installed a whole-home air purification system that has made an incredible difference. My allergies have improved dramatically, and I'm no longer worried about the air quality inside my home when there are fires in the area. The technicians were knowledgeable and helped me understand how to get the most out of my new system."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <div class="author-location">Oak Knoll, Pasadena</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-date">September 10, 2024</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-service">Commercial HVAC</div>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"As the manager of a retail space in Old Pasadena, maintaining comfortable temperatures for our customers is crucial to our business. When our aging commercial HVAC system started giving us problems, HVAC Pasadena designed a custom solution that worked with our historic building's limitations. Their commercial team was professional, worked after hours to avoid disrupting our business, and delivered the project on time and on budget. Our new system is more efficient and our energy costs have dropped by 30%!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>David Rodriguez</h4>
+                            <div class="author-location">Old Pasadena Business Owner</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-date">August 5, 2024</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-service">Emergency Service</div>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Our furnace stopped working on the coldest night in January. I called HVAC Pasadena at 10 PM, expecting to leave a message, but a real person answered! They had a technician at our home by 11:15 PM who quickly identified the problem – a failed igniter. He had the part on his truck and our heat was back on before midnight. I was amazed by the fast response and impressed that there were no additional after-hours charges as we're on their maintenance plan. Exceptional service!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Lisa Thompson</h4>
+                            <div class="author-location">San Rafael, Pasadena</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-date">January 18, 2024</div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <div class="page-item">
+                    <a href="#" class="page-link active">1</a>
+                </div>
+                <div class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </div>
+                <div class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </div>
+                <div class="page-item">
+                    <a href="#" class="page-link">4</a>
+                </div>
+                <div class="page-item">
+                    <a href="#" class="page-link">5</a>
+                </div>
+                <div class="page-item">
+                    <a href="#" class="page-link">→</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Video Testimonials Section -->
+    <section class="video-testimonials">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Video Testimonials</h2>
+                <p>Watch video reviews from our satisfied customers</p>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="/api/placeholder/400/200" alt="AC Installation Testimonial">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <div class="video-content">
+                        <h3>New AC Installation Experience</h3>
+                        <p class="video-author">James & Maria Robinson, North Pasadena</p>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="/api/placeholder/400/200" alt="Furnace Repair Testimonial">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <div class="video-content">
+                        <h3>Emergency Furnace Repair</h3>
+                        <p class="video-author">The Garcia Family, Bungalow Heaven</p>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="/api/placeholder/400/200" alt="HVAC Maintenance Testimonial">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <div class="video-content">
+                        <h3>Our Maintenance Plan Experience</h3>
+                        <p class="video-author">Robert & Susan Taylor, South Pasadena</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Customer Showcase Section -->
+    <section class="customer-showcase">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Before & After Showcase</h2>
+                <p>See the difference our HVAC services make for Pasadena homeowners</p>
+            </div>
+            
+            <div class="showcase-grid">
+                <div class="showcase-card">
+                    <div class="showcase-img">
+                        <img src="/api/placeholder/400/200" alt="AC Replacement Before & After">
+                    </div>
+                    <div class="showcase-content">
+                        <h3>AC Replacement</h3>
+                        <p>Old, inefficient unit replaced with a new energy-efficient Carrier system. Energy bills reduced by 35%.</p>
+                    </div>
+                </div>
+                
+                <div class="showcase-card">
+                    <div class="showcase-img">
+                        <img src="/api/placeholder/400/200" alt="Ductwork Renovation">
+                    </div>
+                    <div class="showcase-content">
+                        <h3>Ductwork Renovation</h3>
+                        <p>Leaky, damaged ducts replaced with sealed, insulated ductwork, improving efficiency and air quality.</p>
+                    </div>
+                </div>
+                
+                <div class="showcase-card">
+                    <div class="showcase-img">
+                        <img src="/api/placeholder/400/200" alt="Historic Home HVAC Solution">
+                    </div>
+                    <div class="showcase-content">
+                        <h3>Historic Home HVAC</h3>
+                        <p>Custom ductless mini-split installation in a 1920s Craftsman home, preserving architectural integrity.</p>
+                    </div>
+                </div>
+                
+                <div class="showcase-card">
+                    <div class="showcase-img">
+                        <img src="/api/placeholder/400/200" alt="Commercial HVAC Upgrade">
+                    </div>
+                    <div class="showcase-content">
+                        <h3>Commercial Upgrade</h3>
+                        <p>Aging rooftop units replaced with high-efficiency commercial systems for a Pasadena office building.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Submit Testimonial Section -->
+    <section class="submit-testimonial">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Share Your Experience</h2>
+                <p>We value your feedback! If you've recently used our services, we'd love to hear about your experience.</p>
+            </div>
+            
+            <form class="testimonial-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="location">Neighborhood</label>
+                    <input type="text" id="location" placeholder="e.g., South Pasadena, Bungalow Heaven, etc.">
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Service Received</label>
+                    <select id="service" required>
+                        <option value="">Select a Service</option>
+                        <option value="ac-repair">AC Repair</option>
+                        <option value="ac-installation">AC Installation</option>
+                        <option value="furnace-repair">Furnace Repair</option>
+                        <option value="furnace-installation">Furnace Installation</option>
+                        <option value="maintenance">HVAC Maintenance</option>
+                        <option value="air-quality">Air Quality Solutions</option>
+                        <option value="commercial">Commercial HVAC</option>
+                        <option value="other">Other Service</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="rating">Your Rating</label>
+                    <div class="rating-input">
+                        <button type="button" class="star-btn active">★</button>
+                        <button type="button" class="star-btn active">★</button>
+                        <button type="button" class="star-btn active">★</button>
+                        <button type="button" class="star-btn active">★</button>
+                        <button type="button" class="star-btn active">★</button>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="testimonial">Your Review</label>
+                    <textarea id="testimonial" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="photo">Upload a Photo (Optional)</label>
+                    <input type="file" id="photo">
+                    <p style="font-size: 0.8rem; margin-top: 0.5rem;">Share a photo of your new HVAC system or our technicians at work.</p>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">Submit Your Review</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section id="cta-section" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join Our Satisfied Customers</h2>
+                <p>Experience the exceptional HVAC service that's earned us 500+ five-star reviews. Contact us today for your free estimate!</p>
+                <div class="btn-group" style="justify-content: center;">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Quote</a>
+                    <a href="tel:+16265551234" class="btn btn-outline btn-lg">Call (626) 555-1234</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>HVAC Pasadena has been providing top-quality heating, cooling, and air quality services to Pasadena residents and businesses since 2010. We're committed to exceptional service, fair pricing, and customer satisfaction.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">F</a>
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">I</a>
+                        <a href="#" class="social-link">Y</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="ac-repair.html">AC Repair & Installation</a></li>
+                        <li><a href="furnace-installation.html">Heating Services</a></li>
+                        <li><a href="hvac-maintenance.html">HVAC Maintenance</a></li>
+                        <li><a href="air-quality.html">Indoor Air Quality</a></li>
+                        <li><a href="commercial-hvac.html">Commercial HVAC</a></li>
+                        <li><a href="emergency-service.html">Emergency Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Service Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="pasadena-hvac.html">Pasadena</a></li>
+                        <li><a href="south-pasadena-hvac.html">South Pasadena</a></li>
+                        <li><a href="north-pasadena-hvac.html">North Pasadena</a></li>
+                        <li><a href="altadena-hvac.html">Altadena</a></li>
+                        <li><a href="san-marino-hvac.html">San Marino</a></li>
+                        <li><a href="sierra-madre-hvac.html">Sierra Madre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">📞</div>
+                        <div>
+                            <p>(626) 555-1234</p>
+                            <p>24/7 Emergency Service</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">✉️</div>
+                        <div>
+                            <p>info@hvacpasadena.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">🏢</div>
+                        <div>
+                            <p>123 E Colorado Blvd</p>
+                            <p>Pasadena, CA 91105</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">⏰</div>
+                        <div>
+                            <p>Mon-Fri: 7am-8pm</p>
+                            <p>Sat-Sun: 8am-5pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 HVAC Pasadena. All Rights Reserved.</p>
+                <div class="licenses">
+                    <div class="license-item">CA License #ABC12345</div>
+                    <div class="license-item">EPA Certified</div>
+                    <div class="license-item">NATE Certified Technicians</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
