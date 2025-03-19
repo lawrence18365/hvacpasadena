@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HVAC Pasadena is your trusted local heating and cooling contractor since 2010. Family-owned, licensed, and dedicated to exceptional service. Meet our experienced team.">
+    <title>About HVAC Pasadena | Trusted Heating & Cooling Since 2010</title>
+    <style>
+        /* Modern Variables */
+        :root {
+            --primary: #0066cc;
+            --secondary: #ff6600;
+            --accent: #ff9900;
+            --dark: #222831;
+            --medium: #393e46;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --success: #28a745;
+            --warning: #ffc107;
+            --error: #dc3545;
+            --radius: 8px;
+            --shadow: 0 4px 12px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Basics */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 70px;
+            background-color: var(--secondary);
+        }
+
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -1rem;
+        }
+
+        .col {
+            padding: 0 1rem;
+            flex: 1;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-heading {
+            margin-bottom: 3rem;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .header-contact {
+            text-align: right;
+        }
+
+        .phone-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-number:before {
+            content: '📞';
+            margin-right: 0.5rem;
+        }
+
+        .phone-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .nav-cta {
+            background-color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-cta a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            padding: 1rem 1.5rem;
+        }
+
+        /* CTA Buttons */
+        .btn {
+            display: inline-block;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: #ff8833;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 102, 0, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 102, 204, 0.2);
+        }
+
+        .btn-lg {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Hero Section */
+        .page-header {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1600/400') center/cover no-repeat;
+            padding: 4rem 0;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Team Section */
+        .team-section {
+            background-color: #f0f5ff;
+            padding: 4rem 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .team-img {
+            height: 300px;
+            background-color: #eee;
+        }
+
+        .team-content {
+            padding: 1.5rem;
+        }
+
+        .team-content h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .team-title {
+            color: var(--secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .team-bio {
+            font-size: 0.95rem;
+        }
+
+        .team-cert {
+            margin-top: 1rem;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .cert-badge {
+            background-color: #e6f0ff;
+            color: var(--primary);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        /* Values Section */
+        .values-section {
+            padding: 4rem 0;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #e6f0ff;
+            color: var(--primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+
+        .value-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            background-color: #fff9f5;
+            padding: 4rem 0;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background-color: var(--primary);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 30px;
+            position: relative;
+            margin-bottom: 3rem;
+            width: 50%;
+        }
+
+        .timeline-item:nth-child(even) {
+            align-self: flex-end;
+            justify-content: flex-start;
+            padding-right: 0;
+            padding-left: 30px;
+            left: 50%;
+        }
+
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            right: -8px;
+            width: 20px;
+            height: 20px;
+            background-color: var(--white);
+            border: 4px solid var(--secondary);
+            border-radius: 50%;
+        }
+
+        .timeline-item:nth-child(even):before {
+            right: auto;
+            left: -8px;
+        }
+
+        .timeline-content {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .timeline-date {
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .timeline:before {
+                left: 20px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-right: 0;
+                padding-left: 50px;
+                justify-content: flex-start;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+                padding-left: 50px;
+            }
+            
+            .timeline-item:before,
+            .timeline-item:nth-child(even):before {
+                left: 10px;
+                right: auto;
+            }
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 4rem 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 1.5rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Certifications Section */
+        .certifications-section {
+            padding: 4rem 0;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .cert-item {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .cert-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .cert-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Community Section */
+        .community-section {
+            background-color: #f0f5ff;
+            padding: 4rem 0;
+        }
+
+        .community-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .community-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .community-img {
+            height: 200px;
+            background-color: #eee;
+        }
+
+        .community-content {
+            padding: 1.5rem;
+        }
+
+        .community-content h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: #fff9f5;
+            position: relative;
+            overflow: hidden;
+            padding: 4rem 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #eee;
+            margin-right: 1rem;
+        }
+
+        .author-info h4 {
+            margin-bottom: 0.2rem;
+            font-size: 1.1rem;
+        }
+
+        .author-location {
+            font-size: 0.9rem;
+            color: var(--medium);
+        }
+
+        .testimonial-rating {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Content Blocks */
+        .content-block {
+            margin-bottom: 3rem;
+        }
+
+        .content-block h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .content-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        .content-image {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            height: 100%;
+            min-height: 300px;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            
+            .content-image {
+                min-height: 250px;
+            }
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), #004999);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+
+        .cta-section h2:after {
+            background-color: var(--secondary);
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 4rem 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 50px;
+            background-color: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact-icon {
+            margin-right: 1rem;
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.8rem;
+            margin-bottom: 0.8rem;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            background-color: #1a1f27;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .licenses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+        }
+
+        .license-item {
+            margin: 0 1rem;
+            color: #aaa;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        /* Media Queries */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-contact {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-container {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 3rem 0;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background-color: #f0f5ff;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .breadcrumbs-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .breadcrumbs-item:not(:last-child):after {
+            content: '>';
+            margin: 0 0.5rem;
+            color: var(--medium);
+        }
+
+        .breadcrumbs-link {
+            color: var(--medium);
+            text-decoration: none;
+        }
+
+        .breadcrumbs-link:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .breadcrumbs-current {
+            color: var(--primary);
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <div class="logo-text">HVAC<span>Pasadena</span></div>
+                </div>
+                <div class="header-contact">
+                    <a href="tel:+16265551234" class="phone-number">(626) 555-1234</a>
+                    <div class="phone-text">Free Estimates • Same-Day Service</div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ac-repair.html">AC Repair</a></li>
+                        <li><a href="furnace-installation.html">Heating</a></li>
+                        <li><a href="hvac-maintenance.html">Maintenance</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="#contact-section">Free Estimate</a>
+                    </div>
+                    <button class="mobile-menu-btn">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">Home</a></li>
+                <li class="breadcrumbs-item"><span class="breadcrumbs-current">About Us</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About HVAC Pasadena</h1>
+            <p>Pasadena's trusted HVAC provider since 2010. Family-owned, customer-focused, and committed to excellence in every service we provide.</p>
+        </div>
+    </section>
+    
+    <!-- Our Story Section -->
+    <section>
+        <div class="container">
+            <div class="two-column">
+                <div>
+                    <h2>Our Story</h2>
+                    <p>HVAC Pasadena was founded in 2010 by Michael and Sarah Rodriguez, a husband and wife team with over 30 years of combined experience in the HVAC industry. What started as a small, family-operated business with just two service trucks has grown into one of the most trusted HVAC companies in the Pasadena area.</p>
+                    
+                    <p>After working for large HVAC corporations, Michael and Sarah realized that many companies prioritized sales over service. They envisioned creating a company that put customers first, focused on quality workmanship, and provided honest recommendations without high-pressure sales tactics.</p>
+                    
+                    <p>Today, HVAC Pasadena employs a team of 15 dedicated professionals who share our founding values. We've serviced over 7,500 homes and businesses throughout Pasadena and surrounding communities, building a reputation for reliability, technical expertise, and exceptional customer service.</p>
+                    
+                    <p>As a locally owned and operated company, we take pride in serving our neighbors and contributing to the community we call home. Our commitment to excellence has earned us numerous industry certifications and a loyal customer base that continues to grow through referrals and word-of-mouth recommendations.</p>
+                </div>
+                <div class="content-image">
+                    <img src="/api/placeholder/550/400" alt="HVAC Pasadena Founders">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mission & Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our Mission & Values</h2>
+                <p>The principles that guide every decision we make and service we provide</p>
+            </div>
+            
+            <div class="content-block text-center" style="max-width: 800px; margin: 0 auto 3rem;">
+                <h3>Our Mission</h3>
+                <p style="font-size: 1.2rem; font-style: italic;">"To provide the highest quality HVAC services that enhance comfort, improve energy efficiency, and exceed customer expectations through technical excellence, honest communication, and exceptional service."</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Integrity</h3>
+                    <p>We believe in complete transparency with our customers. We'll always provide honest recommendations and never suggest unnecessary services or repairs.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">⭐</div>
+                    <h3>Excellence</h3>
+                    <p>We're committed to technical excellence in everything we do, from the quality of our installations to the thoroughness of our maintenance services.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">❤️</div>
+                    <h3>Customer Focus</h3>
+                    <p>Our customers are at the center of our business. We listen to your needs, respect your time and property, and work to build lasting relationships.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🧠</div>
+                    <h3>Continuous Learning</h3>
+                    <p>We invest in ongoing training and education to ensure our team stays current with the latest HVAC technologies, techniques, and best practices.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🌿</div>
+                    <h3>Environmental Responsibility</h3>
+                    <p>We promote energy-efficient solutions that reduce environmental impact while saving our customers money on utility bills.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🏠</div>
+                    <h3>Community Commitment</h3>
+                    <p>As a local business, we're dedicated to supporting our community through charitable initiatives, sponsorships, and volunteer work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our Journey</h2>
+                <p>Key milestones in our company's history</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2010</div>
+                        <h3 class="timeline-title">Company Founded</h3>
+                        <p>Michael and Sarah Rodriguez establish HVAC Pasadena with two service trucks and a commitment to quality service.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2012</div>
+                        <h3 class="timeline-title">First Expansion</h3>
+                        <p>Growing demand leads to hiring three additional technicians and opening our first office on Colorado Boulevard.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2014</div>
+                        <h3 class="timeline-title">NATE Certification</h3>
+                        <p>All HVAC Pasadena technicians become NATE-certified, demonstrating our commitment to technical excellence.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2016</div>
+                        <h3 class="timeline-title">Commercial Division</h3>
+                        <p>Launch of our commercial HVAC division to serve businesses throughout the Pasadena area.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018</div>
+                        <h3 class="timeline-title">Community Program</h3>
+                        <p>Introduction of our "Comfort for Community" program, providing free HVAC services to families in need.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020</div>
+                        <h3 class="timeline-title">10-Year Anniversary</h3>
+                        <p>Celebration of 10 years in business with the milestone of serving 5,000+ customers in Pasadena.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3 class="timeline-title">Green Initiative</h3>
+                        <p>Launch of our "Pasadena Green HVAC" initiative, focusing on environmentally friendly, energy-efficient solutions.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Today</div>
+                        <h3 class="timeline-title">Continued Growth</h3>
+                        <p>Now with 15 employees and over 7,500 customers served, we continue to grow while maintaining our commitment to quality and service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">7,500+</div>
+                    <div class="stat-label">Customers Served</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">4.9</div>
+                    <div class="stat-label">Star Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Meet the Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Meet Our Leadership Team</h2>
+                <p>The experienced professionals behind HVAC Pasadena's success</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="/api/placeholder/400/300" alt="Michael Rodriguez - Founder & CEO">
+                    </div>
+                    <div class="team-content">
+                        <h3>Michael Rodriguez</h3>
+                        <div class="team-title">Founder & CEO</div>
+                        <p class="team-bio">With over 20 years of HVAC experience, Michael oversees all company operations and maintains our high standards of quality and service. His technical expertise and leadership have been key to our growth and success.</p>
+                        <div class="team-cert">
+                            <span class="cert-badge">NATE Certified</span>
+                            <span class="cert-badge">EPA Certified</span>
+                            <span class="cert-badge">MBA</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="/api/placeholder/400/300" alt="Sarah Rodriguez - Co-Founder & Operations Manager">
+                    </div>
+                    <div class="team-content">
+                        <h3>Sarah Rodriguez</h3>
+                        <div class="team-title">Co-Founder & Operations Manager</div>
+                        <p class="team-bio">Sarah brings 15 years of customer service and business management experience to HVAC Pasadena. She ensures smooth daily operations, excellent customer experiences, and efficient scheduling.</p>
+                        <div class="team-cert">
+                            <span class="cert-badge">Customer Service Certified</span>
+                            <span class="cert-badge">Business Management</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="/api/placeholder/400/300" alt="David Chen - Service Manager">
+                    </div>
+                    <div class="team-content">
+                        <h3>David Chen</h3>
+                        <div class="team-title">Service Manager</div>
+                        <p class="team-bio">David leads our service department with 12 years of field experience. He trains and mentors our technicians, ensuring they deliver the highest quality service on every job.</p>
+                        <div class="team-cert">
+                            <span class="cert-badge">NATE Certified</span>
+                            <span class="cert-badge">EPA Certified</span>
+                            <span class="cert-badge">HVAC Excellence</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="/api/placeholder/400/300" alt="Jennifer Patel - Customer Relations Manager">
+                    </div>
+                    <div class="team-content">
+                        <h3>Jennifer Patel</h3>
+                        <div class="team-title">Customer Relations Manager</div>
+                        <p class="team-bio">Jennifer ensures every customer receives exceptional service from first contact through project completion. She oversees our customer support team and quality assurance processes.</p>
+                        <div class="team-cert">
+                            <span class="cert-badge">Customer Experience</span>
+                            <span class="cert-badge">Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Certifications Section -->
+    <section class="certifications-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our Certifications & Licenses</h2>
+                <p>Professional credentials that demonstrate our commitment to excellence</p>
+            </div>
+            
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <div class="cert-icon">🛡️</div>
+                    <h3>CA License #ABC12345</h3>
+                    <p>California Contractors State License Board</p>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon">🏆</div>
+                    <h3>NATE Certified</h3>
+                    <p>North American Technician Excellence</p>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon">🌿</div>
+                    <h3>EPA Certified</h3>
+                    <p>Environmental Protection Agency</p>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon">⚡</div>
+                    <h3>Energy Star Partner</h3>
+                    <p>U.S. Environmental Protection Agency</p>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon">📊</div>
+                    <h3>ACCA Member</h3>
+                    <p>Air Conditioning Contractors of America</p>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon">🏢</div>
+                    <h3>BBB A+ Rated</h3>
+                    <p>Better Business Bureau</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Community Involvement Section -->
+    <section class="community-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Community Involvement</h2>
+                <p>Our commitment to giving back to the Pasadena community</p>
+            </div>
+            
+            <div class="community-grid">
+                <div class="community-card">
+                    <div class="community-img">
+                        <img src="/api/placeholder/400/200" alt="Comfort for Community Program">
+                    </div>
+                    <div class="community-content">
+                        <h3>Comfort for Community Program</h3>
+                        <p>Our signature initiative provides free HVAC services to low-income families, seniors, and veterans in need. Each year, we select families to receive free repairs, maintenance, or system replacements.</p>
+                    </div>
+                </div>
+                
+                <div class="community-card">
+                    <div class="community-img">
+                        <img src="/api/placeholder/400/200" alt="Local School Support">
+                    </div>
+                    <div class="community-content">
+                        <h3>Local School Support</h3>
+                        <p>We partner with Pasadena schools to provide HVAC education, career guidance, and internship opportunities for students interested in the trades. We also sponsor athletic programs and educational initiatives.</p>
+                    </div>
+                </div>
+                
+                <div class="community-card">
+                    <div class="community-img">
+                        <img src="/api/placeholder/400/200" alt="Environmental Initiatives">
+                    </div>
+                    <div class="community-content">
+                        <h3>Environmental Initiatives</h3>
+                        <p>Through our "Pasadena Green HVAC" program, we participate in community clean-up events, responsible refrigerant disposal, and education about energy efficiency and sustainable HVAC practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>What Our Customers Say</h2>
+                <p>Hear from the Pasadena residents and businesses who trust us with their comfort</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"I've been using HVAC Pasadena for over 5 years now, and they never disappoint. Their technicians are always professional, knowledgeable, and take the time to explain everything. Michael and Sarah have built a company that truly puts customers first, and it shows in every interaction."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Thomas W.</h4>
+                            <div class="author-location">South Pasadena Homeowner</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"As a property manager overseeing 12 rental properties in Pasadena, I need HVAC contractors I can trust. HVAC Pasadena has been my go-to company for three years now. They're reliable, their pricing is fair, and they keep detailed records of all services. I highly recommend them to fellow property managers."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Jessica M.</h4>
+                            <div class="author-location">Pasadena Property Manager</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"When our restaurant's AC failed during the summer lunch rush, HVAC Pasadena responded within 30 minutes. Not only did they fix the issue quickly, but they worked around our busy hours to minimize disruption to our business. Their emergency service saved our weekend revenue!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Robert C.</h4>
+                            <div class="author-location">Pasadena Restaurant Owner</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Us Section -->
+    <section id="contact-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Contact Us</h2>
+                <p>Ready to experience the HVAC Pasadena difference? Get in touch with our team.</p>
+            </div>
+            
+            <div class="two-column">
+                <div>
+                    <h3>Get In Touch</h3>
+                    <p>Whether you need HVAC service, have questions about our company, or want to learn more about our maintenance plans, we're here to help. Contact us using any of the methods below.</p>
+                    
+                    <div style="margin: 2rem 0;">
+                        <p><strong>Phone:</strong> <a href="tel:+16265551234" style="color: var(--primary); text-decoration: none;">(626) 555-1234</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:info@hvacpasadena.com" style="color: var(--primary); text-decoration: none;">info@hvacpasadena.com</a></p>
+                        <p><strong>Address:</strong> 123 E Colorado Blvd, Pasadena, CA 91105</p>
+                        <p><strong>Hours:</strong> Monday-Friday: 7am-8pm, Saturday-Sunday: 8am-5pm</p>
+                    </div>
+                    
+                    <h3>Follow Us</h3>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#" style="color: var(--primary); background-color: #f0f5ff;" class="social-link">F</a>
+                        <a href="#" style="color: var(--primary); background-color: #f0f5ff;" class="social-link">T</a>
+                        <a href="#" style="color: var(--primary); background-color: #f0f5ff;" class="social-link">I</a>
+                        <a href="#" style="color: var(--primary); background-color: #f0f5ff;" class="social-link">Y</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <form style="background-color: #f0f5ff; padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow);">
+                        <h3 style="margin-bottom: 1.5rem; text-align: center; color: var(--primary);">Request a Free Estimate</h3>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Full Name*</label>
+                            <input type="text" id="name" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: var(--radius);">
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Phone Number*</label>
+                            <input type="tel" id="phone" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: var(--radius);">
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email Address*</label>
+                            <input type="email" id="email" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: var(--radius);">
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <label for="service" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Service Needed*</label>
+                            <select id="service" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: var(--radius);">
+                                <option value="">Select a Service</option>
+                                <option value="ac-repair">AC Repair</option>
+                                <option value="ac-installation">AC Installation</option>
+                                <option value="furnace-repair">Furnace Repair</option>
+                                <option value="furnace-installation">Furnace Installation</option>
+                                <option value="maintenance">HVAC Maintenance</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message</label>
+                            <textarea id="message" rows="4" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: var(--radius);"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Experience the HVAC Pasadena Difference</h2>
+                <p>Join thousands of satisfied customers who trust us with their home comfort. Contact us today for expert HVAC service with a personal touch.</p>
+                <div class="btn-group" style="justify-content: center;">
+                    <a href="tel:+16265551234" class="btn btn-primary btn-lg">Call (626) 555-1234</a>
+                    <a href="#contact-section" class="btn btn-outline btn-lg" style="color: var(--white); border-color: var(--white);">Get a Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>HVAC Pasadena has been providing top-quality heating, cooling, and air quality services to Pasadena residents and businesses since 2010. We're committed to exceptional service, fair pricing, and customer satisfaction.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">F</a>
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">I</a>
+                        <a href="#" class="social-link">Y</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="ac-repair.html">AC Repair & Installation</a></li>
+                        <li><a href="furnace-installation.html">Heating Services</a></li>
+                        <li><a href="hvac-maintenance.html">HVAC Maintenance</a></li>
+                        <li><a href="air-quality.html">Indoor Air Quality</a></li>
+                        <li><a href="commercial-hvac.html">Commercial HVAC</a></li>
+                        <li><a href="emergency-service.html">Emergency Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Service Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="pasadena-hvac.html">Pasadena</a></li>
+                        <li><a href="south-pasadena-hvac.html">South Pasadena</a></li>
+                        <li><a href="north-pasadena-hvac.html">North Pasadena</a></li>
+                        <li><a href="altadena-hvac.html">Altadena</a></li>
+                        <li><a href="san-marino-hvac.html">San Marino</a></li>
+                        <li><a href="sierra-madre-hvac.html">Sierra Madre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">📞</div>
+                        <div>
+                            <p>(626) 555-1234</p>
+                            <p>24/7 Emergency Service</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">✉️</div>
+                        <div>
+                            <p>info@hvacpasadena.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">🏢</div>
+                        <div>
+                            <p>123 E Colorado Blvd</p>
+                            <p>Pasadena, CA 91105</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">⏰</div>
+                        <div>
+                            <p>Mon-Fri: 7am-8pm</p>
+                            <p>Sat-Sun: 8am-5pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 HVAC Pasadena. All Rights Reserved.</p>
+                <div class="licenses">
+                    <div class="license-item">CA License #ABC12345</div>
+                    <div class="license-item">EPA Certified</div>
+                    <div class="license-item">NATE Certified Technicians</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
