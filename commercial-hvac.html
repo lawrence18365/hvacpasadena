@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Commercial HVAC services in Pasadena for businesses of all sizes. Installations, repairs, and maintenance plans for retail, office, restaurant, and industrial spaces. Call (626) 555-1234.">
+    <title>Commercial HVAC Services Pasadena | Business Cooling & Heating Solutions</title>
+    <style>
+        /* Modern Variables */
+        :root {
+            --primary: #0066cc;
+            --secondary: #ff6600;
+            --accent: #ff9900;
+            --dark: #222831;
+            --medium: #393e46;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --success: #28a745;
+            --warning: #ffc107;
+            --error: #dc3545;
+            --radius: 8px;
+            --shadow: 0 4px 12px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Basics */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 70px;
+            background-color: var(--secondary);
+        }
+
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -1rem;
+        }
+
+        .col {
+            padding: 0 1rem;
+            flex: 1;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-heading {
+            margin-bottom: 3rem;
+        }
+
+        /* Emergency Header */
+        .emergency-header {
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 0.5rem 0;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .emergency-header a {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .header-contact {
+            text-align: right;
+        }
+
+        .phone-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-number:before {
+            content: '📞';
+            margin-right: 0.5rem;
+        }
+
+        .phone-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .nav-cta {
+            background-color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-cta a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            padding: 1rem 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1600/800') center/cover no-repeat;
+            padding: 5rem 0;
+            color: var(--white);
+            text-align: left;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .trust-badges {
+            display: flex;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: flex;
+            align-items: center;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .badge:before {
+            content: '✓';
+            background-color: var(--secondary);
+            color: var(--white);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* CTA Buttons */
+        .btn {
+            display: inline-block;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: #ff8833;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 102, 0, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-lg {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Hero Form */
+        .hero-form-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 1rem;
+        }
+
+        .hero-form {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            width: 100%;
+        }
+
+        .hero-form h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+
+        .hero-form input,
+        .hero-form select,
+        .hero-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: var(--radius);
+            font-size: 1rem;
+        }
+
+        .hero-form .btn {
+            margin-top: 1rem;
+        }
+
+        /* Services Section */
+        .services-section {
+            background-color: #fff;
+            padding: 4rem 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-img {
+            height: 200px;
+            background-color: #eee;
+        }
+
+        .service-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-content h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-content p {
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        /* Business Types Section */
+        .business-types {
+            background-color: #f0f5ff;
+            padding: 4rem 0;
+        }
+
+        .business-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .business-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .business-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .business-img {
+            height: 180px;
+            background-color: #eee;
+        }
+
+        .business-content {
+            padding: 1.5rem;
+        }
+
+        .business-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            padding: 4rem 0;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .benefit-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+            height: 100%;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #e6f0ff;
+            color: var(--primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Maintenance Plans Section */
+        .maintenance-plans {
+            background-color: #fff9f5;
+            padding: 4rem 0;
+        }
+
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .plan-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .recommended-tag {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: var(--secondary);
+            color: var(--white);
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 0.3rem 1rem;
+            text-transform: uppercase;
+        }
+
+        .plan-header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .plan-header h3 {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .plan-price {
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 1rem 0;
+        }
+
+        .plan-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .plan-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .plan-features li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .plan-features li:last-child {
+            border-bottom: none;
+        }
+
+        .plan-features li:before {
+            content: '✓';
+            color: var(--success);
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+        }
+
+        /* Process Section */
+        .process-section {
+            padding: 4rem 0;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1.5rem;
+        }
+
+        .process-step h3 {
+            margin-bottom: 1rem;
+        }
+
+        .process-steps .process-step:not(:last-child):after {
+            content: '→';
+            position: absolute;
+            top: 30px;
+            right: -20px;
+            font-size: 2rem;
+            color: var(--primary);
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .process-steps {
+                grid-template-columns: repeat(5, 1fr);
+            }
+            .process-steps .process-step:not(:last-child):after {
+                display: block;
+            }
+        }
+
+        /* Why Choose Us Section */
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .why-us-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .why-us-icon {
+            min-width: 60px;
+            height: 60px;
+            background-color: #e6f0ff;
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .why-us-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Two Column Section */
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .content-image {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        /* Case Studies Section */
+        .case-studies {
+            background-color: #f0f5ff;
+            padding: 4rem 0;
+        }
+
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .case-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .case-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .case-img {
+            height: 200px;
+            background-color: #eee;
+        }
+
+        .case-content {
+            padding: 1.5rem;
+        }
+
+        .case-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .case-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: var(--medium);
+            margin-bottom: 1rem;
+        }
+
+        .case-results {
+            background-color: #f0f5ff;
+            padding: 1rem;
+            border-radius: var(--radius);
+            margin-top: 1rem;
+        }
+
+        .case-results h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 4rem 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #eee;
+            margin-right: 1rem;
+        }
+
+        .author-info h4 {
+            margin-bottom: 0.2rem;
+            font-size: 1.1rem;
+        }
+
+        .author-business {
+            font-size: 0.9rem;
+            color: var(--medium);
+        }
+
+        .testimonial-rating {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: #fff9f5;
+            padding: 4rem 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5rem;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .faq-question:before {
+            content: 'Q:';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+
+        .faq-answer {
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .faq-answer:before {
+            content: 'A:';
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), #004999);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+
+        .cta-section h2:after {
+            background-color: var(--secondary);
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 4rem 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 50px;
+            background-color: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact-icon {
+            margin-right: 1rem;
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.8rem;
+            margin-bottom: 0.8rem;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            background-color: #1a1f27;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .licenses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+        }
+
+        .license-item {
+            margin: 0 1rem;
+            color: #aaa;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        /* Media Queries */
+        @media (max-width: 1200px) {
+            .hero-form-container {
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin-top: 3rem;
+            }
+            
+            .hero-form {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-contact {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-container {
+                justify-content: center;
+            }
+            
+            .hero-content {
+                max-width: 100%;
+                text-align: center;
+            }
+            
+            .trust-badges {
+                justify-content: center;
+            }
+            
+            .btn-group {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 3rem 0;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background-color: #f0f5ff;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .breadcrumbs-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .breadcrumbs-item:not(:last-child):after {
+            content: '>';
+            margin: 0 0.5rem;
+            color: var(--medium);
+        }
+
+        .breadcrumbs-link {
+            color: var(--medium);
+            text-decoration: none;
+        }
+
+        .breadcrumbs-link:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .breadcrumbs-current {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Special Offer Box */
+        .special-offer {
+            background-color: #fff9f5;
+            border: 2px dashed var(--secondary);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .special-offer:before {
+            content: 'BUSINESS EXCLUSIVE';
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            background-color: var(--secondary);
+            color: var(--white);
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.2rem 2rem;
+            transform: rotate(45deg);
+        }
+
+        .special-offer h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .special-offer .offer-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Emergency Header -->
+    <div class="emergency-header">
+        <div class="container">
+            24/7 Commercial HVAC Emergency Service | <a href="tel:+16265551234">(626) 555-1234</a> | Priority Response for Business Clients
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <div class="logo-text">HVAC<span>Pasadena</span></div>
+                </div>
+                <div class="header-contact">
+                    <a href="tel:+16265551234" class="phone-number">(626) 555-1234</a>
+                    <div class="phone-text">Free Commercial Assessments • Preventative Maintenance</div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ac-repair.html">AC Repair</a></li>
+                        <li><a href="furnace-installation.html">Heating</a></li>
+                        <li><a href="hvac-maintenance.html">Maintenance</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="#estimate-form">Free Assessment</a>
+                    </div>
+                    <button class="mobile-menu-btn">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">Home</a></li>
+                <li class="breadcrumbs-item"><span class="breadcrumbs-current">Commercial HVAC</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Commercial HVAC Services in Pasadena</h1>
+                <p>Keep your business running smoothly with reliable, energy-efficient heating and cooling solutions tailored to your commercial space. From retail shops to large office buildings, we provide customized HVAC services for businesses throughout Pasadena.</p>
+                
+                <div class="trust-badges">
+                    <div class="badge">Licensed Commercial HVAC Specialists</div>
+                    <div class="badge">Energy Efficiency Consultants</div>
+                    <div class="badge">Minimal Business Disruption</div>
+                    <div class="badge">24/7 Emergency Response</div>
+                </div>
+                
+                <div class="btn-group">
+                    <a href="#estimate-form" class="btn btn-primary btn-lg">Schedule Free Assessment</a>
+                    <a href="tel:+16265551234" class="btn btn-outline btn-lg">Call (626) 555-1234</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-form-container">
+            <form class="hero-form" id="estimate-form">
+                <h3>Request a Commercial Assessment</h3>
+                <input type="text" placeholder="Business Name*" required>
+                <input type="text" placeholder="Contact Person*" required>
+                <input type="tel" placeholder="Phone Number*" required>
+                <input type="email" placeholder="Email Address*" required>
+                <select required>
+                    <option value="">Business Type*</option>
+                    <option value="retail">Retail</option>
+                    <option value="restaurant">Restaurant</option>
+                    <option value="office">Office</option>
+                    <option value="medical">Medical Facility</option>
+                    <option value="industrial">Industrial</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="text" placeholder="Approx. Square Footage">
+                <button type="submit" class="btn btn-primary btn-block">Request Assessment</button>
+                <p style="font-size: 0.8rem; margin-top: 0.5rem; text-align: center;">Free, no-obligation evaluation for Pasadena businesses</p>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Special Offer Box -->
+    <div class="container">
+        <div class="special-offer">
+            <h3>New Business Client Special</h3>
+            <p>First-time commercial clients receive:</p>
+            <div class="offer-price">25% OFF</div>
+            <p>Your first preventative maintenance service</p>
+            <a href="#estimate-form" class="btn btn-primary">Claim Business Offer</a>
+        </div>
+    </div>
+    
+    <!-- Commercial HVAC Service Types -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Commercial HVAC Services</h2>
+                <p>Comprehensive heating, cooling, and ventilation solutions for businesses of all sizes</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Commercial HVAC Installation">
+                    </div>
+                    <div class="service-content">
+                        <h3>Commercial HVAC Installation</h3>
+                        <p>Expert installation of new commercial HVAC systems, including rooftop units, split systems, VRF/VRV systems, and packaged units. We handle projects of all sizes, from small retail spaces to large office buildings.</p>
+                        <ul style="margin-bottom: 1.5rem;">
+                            <li>Customized system design</li>
+                            <li>Energy-efficient equipment selection</li>
+                            <li>Code-compliant installation</li>
+                            <li>Minimal business disruption</li>
+                        </ul>
+                        <a href="#estimate-form" class="btn btn-primary">Get Installation Quote</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Commercial HVAC Repair">
+                    </div>
+                    <div class="service-content">
+                        <h3>Commercial HVAC Repair</h3>
+                        <p>Fast, reliable repair services for all commercial heating and cooling systems. Our technicians are experienced with all major brands and models of commercial HVAC equipment.</p>
+                        <ul style="margin-bottom: 1.5rem;">
+                            <li>24/7 emergency repair service</li>
+                            <li>Comprehensive diagnostic assessments</li>
+                            <li>Transparent, upfront pricing</li>
+                            <li>Fully stocked service vehicles</li>
+                        </ul>
+                        <a href="#estimate-form" class="btn btn-primary">Schedule Service Call</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Commercial HVAC Maintenance">
+                    </div>
+                    <div class="service-content">
+                        <h3>Preventative Maintenance</h3>
+                        <p>Regular maintenance programs to keep your commercial HVAC systems running efficiently and prevent costly breakdowns. Customized maintenance plans based on your specific equipment and business needs.</p>
+                        <ul style="margin-bottom: 1.5rem;">
+                            <li>Comprehensive inspection checklists</li>
+                            <li>Scheduled service reminders</li>
+                            <li>Detailed documentation for warranty purposes</li>
+                            <li>Priority service for maintenance clients</li>
+                        </ul>
+                        <a href="#maintenance-plans" class="btn btn-primary">View Maintenance Plans</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Commercial Indoor Air Quality">
+                    </div>
+                    <div class="service-content">
+                        <h3>Indoor Air Quality Solutions</h3>
+                        <p>Create a healthier environment for employees, customers, and tenants with our commercial indoor air quality services. From advanced filtration to air purification systems.</p>
+                        <ul style="margin-bottom: 1.5rem;">
+                            <li>HVAC system sanitization</li>
+                            <li>UV light installation</li>
+                            <li>Advanced filtration systems</li>
+                            <li>Ventilation assessments and improvements</li>
+                        </ul>
+                        <a href="#estimate-form" class="btn btn-primary">Request Air Quality Assessment</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Energy Efficiency Upgrades">
+                    </div>
+                    <div class="service-content">
+                        <h3>Energy Efficiency Upgrades</h3>
+                        <p>Reduce energy costs and increase comfort with our commercial HVAC efficiency upgrade services. We identify opportunities for energy savings and recommend appropriate solutions.</p>
+                        <ul style="margin-bottom: 1.5rem;">
+                            <li>Energy usage assessments</li>
+                            <li>System retrofits and upgrades</li>
+                            <li>Smart controls and automation</li>
+                            <li>Rebate and incentive assistance</li>
+                        </ul>
+                        <a href="#estimate-form" class="btn btn-primary">Schedule Energy Assessment</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Commercial HVAC Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>HVAC System Design & Engineering</h3>
+                        <p>Expert HVAC design services for new construction, renovations, and system replacements. Our engineers create custom solutions that optimize comfort, efficiency, and cost-effectiveness.</p>
+                        <ul style="margin-bottom: 1.5rem;">
+                            <li>Load calculations and system sizing</li>
+                            <li>Ductwork design and layout</li>
+                            <li>Equipment selection and specification</li>
+                            <li>Energy modeling and analysis</li>
+                        </ul>
+                        <a href="#estimate-form" class="btn btn-primary">Discuss Your Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Business Types Section -->
+    <section class="business-types">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Solutions for Every Business Type</h2>
+                <p>Specialized HVAC solutions tailored to the unique needs of your industry</p>
+            </div>
+            
+            <div class="business-grid">
+                <div class="business-card">
+                    <div class="business-img">
+                        <img src="/api/placeholder/400/180" alt="Retail HVAC Solutions">
+                    </div>
+                    <div class="business-content">
+                        <h3>Retail Spaces</h3>
+                        <p>Create a comfortable shopping environment that enhances customer experience and protects merchandise. Our retail HVAC solutions focus on consistent temperatures, balanced humidity, and energy efficiency.</p>
+                    </div>
+                </div>
+                
+                <div class="business-card">
+                    <div class="business-img">
+                        <img src="/api/placeholder/400/180" alt="Restaurant HVAC Solutions">
+                    </div>
+                    <div class="business-content">
+                        <h3>Restaurants</h3>
+                        <p>Managing dining room comfort while addressing kitchen heat and ventilation challenges requires specialized HVAC solutions. Our restaurant systems balance comfort, air quality, and operating costs.</p>
+                    </div>
+                </div>
+                
+                <div class="business-card">
+                    <div class="business-img">
+                        <img src="/api/placeholder/400/180" alt="Office HVAC Solutions">
+                    </div>
+                    <div class="business-content">
+                        <h3>Office Buildings</h3>
+                        <p>Maximize employee productivity with comfortable, consistent temperatures and excellent air quality. Our office HVAC solutions incorporate zoning, energy management, and indoor air quality systems.</p>
+                    </div>
+                </div>
+                
+                <div class="business-card">
+                    <div class="business-img">
+                        <img src="/api/placeholder/400/180" alt="Medical Facility HVAC Solutions">
+                    </div>
+                    <div class="business-content">
+                        <h3>Medical Facilities</h3>
+                        <p>Healthcare environments require precise temperature control, enhanced filtration, and specific ventilation rates. Our medical HVAC solutions meet strict industry standards while maintaining energy efficiency.</p>
+                    </div>
+                </div>
+                
+                <div class="business-card">
+                    <div class="business-img">
+                        <img src="/api/placeholder/400/180" alt="Warehouse HVAC Solutions">
+                    </div>
+                    <div class="business-content">
+                        <h3>Warehouses & Industrial</h3>
+                        <p>Large spaces with high ceilings present unique heating and cooling challenges. Our industrial HVAC solutions deliver targeted comfort while minimizing energy costs in these demanding environments.</p>
+                    </div>
+                </div>
+                
+                <div class="business-card">
+                    <div class="business-img">
+                        <img src="/api/placeholder/400/180" alt="Multi-tenant HVAC Solutions">
+                    </div>
+                    <div class="business-content">
+                        <h3>Multi-Tenant Buildings</h3>
+                        <p>Balance the diverse needs of multiple tenants with HVAC systems that provide individual control while maintaining overall building efficiency. Our solutions include zoning, metering, and smart controls.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="two-column">
+                <div>
+                    <h2>Why Choose HVAC Pasadena for Your Business</h2>
+                    <p>HVAC Pasadena brings specialized expertise to commercial HVAC projects of all sizes. Our commercial division focuses exclusively on business clients, providing customized solutions that address the unique challenges of commercial spaces in Pasadena's climate.</p>
+                    
+                    <div class="why-us-grid">
+                        <div class="why-us-item">
+                            <div class="why-us-icon">👨‍💼</div>
+                            <div class="why-us-content">
+                                <h3>Commercial HVAC Specialists</h3>
+                                <p>Our commercial technicians have specialized training and experience with complex commercial systems, including VRF/VRV, packaged units, and building automation systems.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="why-us-item">
+                            <div class="why-us-icon">⏱️</div>
+                            <div class="why-us-content">
+                                <h3>Minimal Business Disruption</h3>
+                                <p>We understand that downtime affects your bottom line. Our team works efficiently, offering after-hours and weekend service to minimize impact on your operations.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="why-us-item">
+                            <div class="why-us-icon">💼</div>
+                            <div class="why-us-content">
+                                <h3>Dedicated Commercial Account Managers</h3>
+                                <p>Every business client is assigned a dedicated account manager who understands your facility, equipment, and specific requirements.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="why-us-item">
+                            <div class="why-us-icon">💰</div>
+                            <div class="why-us-content">
+                                <h3>Budget-Friendly Solutions</h3>
+                                <p>We work within your budget constraints to provide the most cost-effective solutions, with flexible maintenance plans and financing options for larger projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-image">
+                    <img src="/api/placeholder/550/400" alt="Commercial HVAC Technician in Pasadena">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Maintenance Plans Section -->
+    <section id="maintenance-plans" class="maintenance-plans">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Commercial Maintenance Plans</h2>
+                <p>Preventative maintenance programs designed specifically for Pasadena businesses</p>
+            </div>
+            
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Basic Plan</h3>
+                        <div class="plan-price">$399<span style="font-size: 1rem;">/year</span></div>
+                    </div>
+                    <div class="plan-content">
+                        <ul class="plan-features">
+                            <li>Annual comprehensive system inspection</li>
+                            <li>Filter replacement (standard filters)</li>
+                            <li>Belt inspection and adjustment</li>
+                            <li>Refrigerant level check</li>
+                            <li>Thermostat calibration</li>
+                            <li>15% discount on repairs</li>
+                            <li>Standard scheduling (within 72 hours)</li>
+                        </ul>
+                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Ideal for small businesses up to 2,500 sq. ft.</p>
+                        <a href="#estimate-form" class="btn btn-primary btn-block">Select Basic Plan</a>
+                    </div>
+                </div>
+                
+                <div class="plan-card">
+                    <div class="recommended-tag">Most Popular</div>
+                    <div class="plan-header" style="background-color: var(--secondary);">
+                        <h3>Premium Plan</h3>
+                        <div class="plan-price">$799<span style="font-size: 1rem;">/year</span></div>
+                    </div>
+                    <div class="plan-content">
+                        <ul class="plan-features">
+                            <li>Bi-annual comprehensive system inspection</li>
+                            <li>Premium filter replacement</li>
+                            <li>Belt inspection, adjustment, and replacement</li>
+                            <li>Refrigerant level check and adjustment</li>
+                            <li>Thermostat calibration and programming</li>
+                            <li>Condenser and evaporator coil cleaning</li>
+                            <li>25% discount on repairs</li>
+                            <li>Priority scheduling (within 24 hours)</li>
+                            <li>No overtime charges for emergency service</li>
+                        </ul>
+                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Perfect for medium businesses up to 7,500 sq. ft.</p>
+                        <a href="#estimate-form" class="btn btn-primary btn-block">Select Premium Plan</a>
+                    </div>
+                </div>
+                
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Ultimate Plan</h3>
+                        <div class="plan-price">$1,499<span style="font-size: 1rem;">/year</span></div>
+                    </div>
+                    <div class="plan-content">
+                        <ul class="plan-features">
+                            <li>Quarterly comprehensive system inspection</li>
+                            <li>Premium filter replacement on every visit</li>
+                            <li>Complete belt service (inspection, adjustment, replacement)</li>
+                            <li>Full refrigerant service</li>
+                            <li>Advanced control system optimization</li>
+                            <li>Complete system cleaning (coils, blowers, ductwork)</li>
+                            <li>Annual indoor air quality testing</li>
+                            <li>35% discount on repairs</li>
+                            <li>Emergency scheduling (same day)</li>
+                            <li>No overtime charges for emergency service</li>
+                            <li>Annual energy efficiency report</li>
+                            <li>Dedicated account manager</li>
+                        </ul>
+                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Ideal for larger businesses 7,500+ sq. ft.</p>
+                        <a href="#estimate-form" class="btn btn-primary btn-block">Select Ultimate Plan</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <p>Need a custom maintenance plan? We create tailored solutions for businesses with specific requirements.</p>
+                <a href="#estimate-form" class="btn btn-outline" style="color: var(--primary); border-color: var(--primary);">Request Custom Plan</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our Commercial HVAC Process</h2>
+                <p>A methodical approach to ensure your business receives the right HVAC solution</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Assessment</h3>
+                    <p>We conduct a thorough on-site evaluation of your commercial space, existing equipment, and specific requirements.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Solution Design</h3>
+                    <p>Our engineers develop customized solutions that balance performance, efficiency, and your budget constraints.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Detailed Proposal</h3>
+                    <p>We present a comprehensive proposal with transparent pricing, equipment options, and projected outcomes.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Implementation</h3>
+                    <p>Our commercial team executes the project with minimal disruption to your business operations.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Ongoing Support</h3>
+                    <p>We provide continued maintenance and support to protect your investment and maximize system life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Case Studies Section -->
+    <section class="case-studies">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Pasadena Business Success Stories</h2>
+                <p>Real results from our commercial HVAC solutions</p>
+            </div>
+            
+            <div class="case-grid">
+                <div class="case-card">
+                    <div class="case-img">
+                        <img src="/api/placeholder/400/200" alt="Pasadena Restaurant HVAC Case Study">
+                    </div>
+                    <div class="case-content">
+                        <div class="case-meta">
+                            <span>Restaurant | Old Pasadena</span>
+                            <span>5,000 sq. ft.</span>
+                        </div>
+                        <h3>Restaurant Kitchen Ventilation Overhaul</h3>
+                        <p>A popular restaurant in Old Pasadena was struggling with excessive heat in the kitchen, poor air circulation in the dining area, and sky-high energy bills. We designed and installed a comprehensive HVAC solution that included a specialized kitchen ventilation system and zoned comfort control for the dining areas.</p>
+                        <div class="case-results">
+                            <h4>Results:</h4>
+                            <ul>
+                                <li>32% reduction in monthly energy costs</li>
+                                <li>Kitchen temperature reduced by 15°F during peak hours</li>
+                                <li>Improved dining experience with consistent comfort</li>
+                                <li>ROI achieved in 14 months</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-card">
+                    <div class="case-img">
+                        <img src="/api/placeholder/400/200" alt="Pasadena Office Building HVAC Case Study">
+                    </div>
+                    <div class="case-content">
+                        <div class="case-meta">
+                            <span>Office Building | South Lake Ave</span>
+                            <span>25,000 sq. ft.</span>
+                        </div>
+                        <h3>Multi-Floor Office Building Upgrade</h3>
+                        <p>A three-story office building on South Lake Avenue had an aging, inefficient HVAC system that caused frequent tenant complaints and high operating costs. We implemented a phased replacement with a modern VRF system, building automation controls, and enhanced ventilation.</p>
+                        <div class="case-results">
+                            <h4>Results:</h4>
+                            <ul>
+                                <li>41% energy savings in the first year</li>
+                                <li>Tenant complaints reduced by 95%</li>
+                                <li>Extended equipment life expectancy by 10+ years</li>
+                                <li>Building achieved ENERGY STAR certification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-card">
+                    <div class="case-img">
+                        <img src="/api/placeholder/400/200" alt="Pasadena Retail Center HVAC Case Study">
+                    </div>
+                    <div class="case-content">
+                        <div class="case-meta">
+                            <span>Retail Center | East Pasadena</span>
+                            <span>12,000 sq. ft.</span>
+                        </div>
+                        <h3>Retail Center Emergency System Replacement</h3>
+                        <p>A retail center in East Pasadena experienced complete failure of multiple rooftop units during the peak summer shopping season. We mobilized quickly to install temporary cooling while expediting the procurement and installation of new, high-efficiency replacement systems.</p>
+                        <div class="case-results">
+                            <h4>Results:</h4>
+                            <ul>
+                                <li>Temporary cooling established within 4 hours</li>
+                                <li>Complete replacement completed in 72 hours</li>
+                                <li>New system reduced energy consumption by 28%</li>
+                                <li>Secured utility rebates covering 15% of project cost</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>What Pasadena Businesses Say</h2>
+                <p>Testimonials from our commercial clients throughout Pasadena</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"HVAC Pasadena has been handling all the HVAC needs for our restaurant for over five years. Their expertise with kitchen ventilation systems and dining area comfort has been invaluable. Their maintenance program has prevented countless breakdowns during our busiest seasons, and their technicians always work around our operating hours to avoid disrupting our business."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Carlos Martinez</h4>
+                            <div class="author-business">Owner, La Casa Restaurant, Old Pasadena</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"As the property manager for a multi-tenant office building, I need reliable HVAC service that keeps our tenants comfortable and our operating costs under control. HVAC Pasadena's commercial division has exceeded our expectations on both fronts. Their preventative maintenance program has reduced our emergency calls by 90%, and their energy efficiency upgrades have significantly lowered our utility bills."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Jennifer Reynolds</h4>
+                            <div class="author-business">Property Manager, Colorado Tower, Pasadena</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Our medical facility requires precise temperature and humidity control, as well as exceptional air quality. HVAC Pasadena designed a custom solution that meets our stringent requirements while remaining energy efficient. Their quarterly maintenance program ensures our systems operate at peak performance, and their response time for any issues is always exceptional."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Dr. Michael Chen</h4>
+                            <div class="author-business">Director, Pasadena Medical Center</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Commercial HVAC FAQs</h2>
+                <p>Answers to common questions from Pasadena business owners</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">How does commercial HVAC differ from residential service?</div>
+                    <div class="faq-answer">Commercial HVAC systems are typically larger, more complex, and designed for higher capacity than residential systems. They often feature specialized components like VAV (Variable Air Volume) boxes, economizers, and building automation systems. Commercial service requires specialized training, tools, and expertise to properly install, maintain, and repair these systems. At HVAC Pasadena, our commercial division is staffed by technicians with specific training and experience in commercial systems.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can you service my HVAC system without disrupting my business?</div>
+                    <div class="faq-answer">Absolutely. We understand that downtime impacts your bottom line, so we offer flexible scheduling options including evenings, early mornings, and weekends for maintenance and installations. For larger projects, we can develop phased implementation plans that minimize disruption. Many of our maintenance activities can be performed without affecting your operations, and we always work closely with your team to schedule service at the most convenient times.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What are the most common HVAC issues in Pasadena commercial buildings?</div>
+                    <div class="faq-answer">In Pasadena's climate, we frequently encounter issues with refrigerant leaks, compressor failures during summer heat waves, inadequate ventilation in older buildings, poorly balanced systems creating hot/cold spots, and inefficient operations due to outdated controls. Many commercial buildings also struggle with accommodating varying occupancy loads and managing energy costs during peak summer cooling periods. Our preventative maintenance programs are designed to address these common issues before they cause system failures.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How can I reduce HVAC operating costs for my business?</div>
+                    <div class="faq-answer">Several strategies can significantly reduce commercial HVAC costs in Pasadena: 1) Implement a regular preventative maintenance program to keep systems operating efficiently; 2) Upgrade to modern, high-efficiency equipment with smart controls; 3) Install programmable thermostats or building automation systems; 4) Consider zoning to avoid heating/cooling unoccupied areas; 5) Improve building envelope with better insulation and window treatments; 6) Schedule an energy audit to identify specific opportunities for your facility. We can help develop a customized energy-saving strategy for your business.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Are there any rebates or incentives available for commercial HVAC upgrades?</div>
+                    <div class="faq-answer">Yes, Pasadena businesses can access several rebate and incentive programs for HVAC upgrades. Pasadena Water and Power offers commercial rebates for high-efficiency equipment, and there are additional incentives through programs like Savings By Design for new construction. Federal tax incentives are also available for energy-efficient commercial building improvements. Our team stays current on available programs and can help you identify and apply for all eligible rebates and incentives to maximize your return on investment.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How often should commercial HVAC systems be serviced?</div>
+                    <div class="faq-answer">Most commercial HVAC systems should be professionally maintained at least twice per year—once before cooling season and once before heating season. However, larger or more complex systems, or those in high-demand environments like restaurants or healthcare facilities, often benefit from quarterly or even monthly maintenance. Factors like operating hours, system age, and business type all affect the ideal maintenance frequency. We can recommend an appropriate schedule based on your specific equipment and business needs.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Optimize Your Commercial HVAC?</h2>
+                <p>Contact HVAC Pasadena today to schedule your free commercial assessment and discover how our tailored solutions can improve comfort, reduce operating costs, and support your business goals.</p>
+                <div class="btn-group">
+                    <a href="#estimate-form" class="btn btn-primary btn-lg">Schedule Assessment</a>
+                    <a href="tel:+16265551234" class="btn btn-outline btn-lg">Call (626) 555-1234</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>HVAC Pasadena has been providing top-quality heating, cooling, and air quality services to Pasadena residents and businesses since 2010. We're committed to exceptional service, fair pricing, and customer satisfaction.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">F</a>
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">I</a>
+                        <a href="#" class="social-link">Y</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="ac-repair.html">AC Repair & Installation</a></li>
+                        <li><a href="furnace-installation.html">Heating Services</a></li>
+                        <li><a href="hvac-maintenance.html">HVAC Maintenance</a></li>
+                        <li><a href="air-quality.html">Indoor Air Quality</a></li>
+                        <li><a href="commercial-hvac.html">Commercial HVAC</a></li>
+                        <li><a href="emergency-service.html">Emergency Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Service Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="pasadena-hvac.html">Pasadena</a></li>
+                        <li><a href="south-pasadena-hvac.html">South Pasadena</a></li>
+                        <li><a href="north-pasadena-hvac.html">North Pasadena</a></li>
+                        <li><a href="altadena-hvac.html">Altadena</a></li>
+                        <li><a href="san-marino-hvac.html">San Marino</a></li>
+                        <li><a href="sierra-madre-hvac.html">Sierra Madre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">📞</div>
+                        <div>
+                            <p>(626) 555-1234</p>
+                            <p>24/7 Emergency Service</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">✉️</div>
+                        <div>
+                            <p>info@hvacpasadena.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">🏢</div>
+                        <div>
+                            <p>123 E Colorado Blvd</p>
+                            <p>Pasadena, CA 91105</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">⏰</div>
+                        <div>
+                            <p>Mon-Fri: 7am-8pm</p>
+                            <p>Sat-Sun: 8am-5pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 HVAC Pasadena. All Rights Reserved.</p>
+                <div class="licenses">
+                    <div class="license-item">CA License #ABC12345</div>
+                    <div class="license-item">EPA Certified</div>
+                    <div class="license-item">NATE Certified Technicians</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
