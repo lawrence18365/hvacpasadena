@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="24/7 emergency HVAC service in Pasadena with 60-minute response time. AC not working? Furnace broken? Call (626) 555-1234 for immediate help from certified technicians.">
+    <title>24/7 Emergency HVAC Service in Pasadena | 60-Minute Response</title>
+    <style>
+        /* Modern Variables */
+        :root {
+            --primary: #0066cc;
+            --secondary: #ff6600;
+            --accent: #ff9900;
+            --dark: #222831;
+            --medium: #393e46;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --success: #28a745;
+            --warning: #ffc107;
+            --error: #dc3545;
+            --radius: 8px;
+            --shadow: 0 4px 12px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Basics */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 70px;
+            background-color: var(--secondary);
+        }
+
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -1rem;
+        }
+
+        .col {
+            padding: 0 1rem;
+            flex: 1;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-heading {
+            margin-bottom: 3rem;
+        }
+
+        /* Emergency Header */
+        .emergency-header {
+            background-color: var(--error);
+            color: var(--white);
+            padding: 0.8rem 0;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .emergency-header a {
+            color: var(--white);
+            text-decoration: underline;
+            font-size: 1.2rem;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .header-contact {
+            text-align: right;
+        }
+
+        .phone-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--error);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-number:before {
+            content: '📞';
+            margin-right: 0.5rem;
+        }
+
+        .phone-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .nav-cta {
+            background-color: var(--error);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-cta a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            padding: 1rem 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1600/800') center/cover no-repeat;
+            padding: 5rem 0;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .emergency-contact {
+            background-color: rgba(220, 53, 69, 0.9);
+            padding: 2rem;
+            border-radius: var(--radius);
+            margin-top: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .emergency-contact h2 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .emergency-contact h2:after {
+            display: none;
+        }
+
+        .emergency-phone {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--white);
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .emergency-phone:hover {
+            color: #f8f9fa;
+        }
+
+        .emergency-response {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        /* CTA Buttons */
+        .btn {
+            display: inline-block;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: #ff8833;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 102, 0, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: #0055aa;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 102, 204, 0.3);
+        }
+
+        .btn-danger {
+            background-color: var(--error);
+            color: var(--white);
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(220, 53, 69, 0.3);
+        }
+
+        .btn-outline-light {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-outline-light:hover {
+            background-color: var(--white);
+            color: var(--error);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-lg {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Emergency Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-img {
+            height: 200px;
+            background-color: #eee;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .emergency-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: var(--error);
+            color: var(--white);
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .service-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-content h3 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-content p {
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        /* Emergency Process Section */
+        .process-section {
+            background-color: #f0f5ff;
+            padding: 4rem 0;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .process-step {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background-color: var(--error);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1.5rem;
+        }
+
+        .process-step h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* Emergency Scenarios Section */
+        .scenarios-section {
+            padding: 4rem 0;
+        }
+
+        .scenario-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .scenario-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .scenario-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .scenario-img {
+            height: 180px;
+            background-color: #eee;
+        }
+
+        .scenario-content {
+            padding: 1.5rem;
+        }
+
+        .scenario-content h3 {
+            color: var(--error);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Emergency Pricing Section */
+        .pricing-section {
+            background-color: #fff9f5;
+            padding: 4rem 0;
+        }
+
+        .pricing-info {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--white);
+            border-radius: var(--radius);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+
+        .pricing-table th, .pricing-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .pricing-table th {
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: left;
+        }
+
+        .pricing-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .pricing-note {
+            font-size: 0.9rem;
+            color: var(--medium);
+            font-style: italic;
+            margin-top: 1rem;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #f0f5ff;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #eee;
+            margin-right: 1rem;
+        }
+
+        .author-info h4 {
+            margin-bottom: 0.2rem;
+            font-size: 1.1rem;
+        }
+
+        .author-location {
+            font-size: 0.9rem;
+            color: var(--medium);
+        }
+
+        .testimonial-rating {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 4rem 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5rem;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .faq-question:before {
+            content: 'Q:';
+            position: absolute;
+            left: 0;
+            color: var(--error);
+        }
+
+        .faq-answer {
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .faq-answer:before {
+            content: 'A:';
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Areas Served Section */
+        .areas-section {
+            background-color: #f0f5ff;
+            padding: 4rem 0;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .area-item {
+            background-color: var(--white);
+            padding: 1rem;
+            border-radius: var(--radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            font-weight: 600;
+        }
+
+        .area-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            background-color: var(--error);
+            color: var(--white);
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(135deg, var(--error), #970d18);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+
+        .cta-section h2:after {
+            background-color: var(--white);
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 4rem 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 50px;
+            background-color: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact-icon {
+            margin-right: 1rem;
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.8rem;
+            margin-bottom: 0.8rem;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            background-color: #1a1f27;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .licenses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+        }
+
+        .license-item {
+            margin: 0 1rem;
+            color: #aaa;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        /* Media Queries */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-contact {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-container {
+                justify-content: center;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .emergency-phone {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 3rem 0;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .emergency-contact {
+                padding: 1.5rem;
+            }
+            
+            .emergency-phone {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background-color: #f0f5ff;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .breadcrumbs-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .breadcrumbs-item:not(:last-child):after {
+            content: '>';
+            margin: 0 0.5rem;
+            color: var(--medium);
+        }
+
+        .breadcrumbs-link {
+            color: var(--medium);
+            text-decoration: none;
+        }
+
+        .breadcrumbs-link:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .breadcrumbs-current {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Pulsing Effect for Emergency Button */
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(220, 53, 69, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+            }
+        }
+
+        .btn-emergency {
+            animation: pulse 2s infinite;
+        }
+
+        /* Emergency Alert Box */
+        .emergency-alert {
+            background-color: rgba(220, 53, 69, 0.1);
+            border: 2px solid var(--error);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .emergency-alert h3 {
+            color: var(--error);
+            margin-top: 0;
+        }
+
+        .emergency-alert-icon {
+            font-size: 2.5rem;
+            color: var(--error);
+            margin-bottom: 1rem;
+        }
+
+        /* Technician Spotlight */
+        .technician-spotlight {
+            display: flex;
+            align-items: center;
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin: 2rem 0;
+        }
+
+        .technician-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #eee;
+            margin-right: 2rem;
+            flex-shrink: 0;
+        }
+
+        .technician-info h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        .technician-credentials {
+            margin-bottom: 1rem;
+            color: var(--medium);
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .technician-spotlight {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .technician-photo {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Emergency Header -->
+    <div class="emergency-header">
+        <div class="container">
+            EMERGENCY HVAC SERVICE AVAILABLE NOW | <a href="tel:+16265551234">(626) 555-1234</a> | 60-MINUTE RESPONSE GUARANTEED
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <div class="logo-text">HVAC<span>Pasadena</span></div>
+                </div>
+                <div class="header-contact">
+                    <a href="tel:+16265551234" class="phone-number">(626) 555-1234</a>
+                    <div class="phone-text">24/7 Emergency Service</div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ac-repair.html">AC Repair</a></li>
+                        <li><a href="furnace-installation.html">Heating</a></li>
+                        <li><a href="hvac-maintenance.html">Maintenance</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="tel:+16265551234">CALL FOR EMERGENCY SERVICE</a>
+                    </div>
+                    <button class="mobile-menu-btn">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">Home</a></li>
+                <li class="breadcrumbs-item"><span class="breadcrumbs-current">Emergency Service</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>24/7 Emergency HVAC Service in Pasadena</h1>
+                <p>When your heating or cooling system fails, you need reliable help fast. Our emergency HVAC service team is available 24 hours a day, 7 days a week, to restore your comfort quickly.</p>
+                
+                <div class="emergency-contact">
+                    <h2>Call Now for Immediate Assistance</h2>
+                    <a href="tel:+16265551234" class="emergency-phone">(626) 555-1234</a>
+                    <div class="emergency-response">60-Minute Response Time Guaranteed</div>
+                    <a href="tel:+16265551234" class="btn btn-outline-light btn-lg btn-emergency">Call Emergency Hotline</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Emergency Services Section -->
+    <section>
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our Emergency HVAC Services</h2>
+                <p>Fast, professional solutions for all your urgent heating and cooling problems</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Emergency AC Repair">
+                        <div class="emergency-badge">24/7 Service</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Emergency AC Repair</h3>
+                        <p>When your air conditioner fails during Pasadena's intense summer heat, our emergency technicians are ready 24/7 to diagnose and fix your system. We handle all AC emergencies including complete system failures, refrigerant leaks, electrical issues, and frozen units.</p>
+                        <a href="ac-repair.html" class="btn btn-danger">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Emergency Heating Repair">
+                        <div class="emergency-badge">24/7 Service</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Emergency Heating Repair</h3>
+                        <p>Don't suffer through cold nights with a broken heating system. Our emergency technicians respond quickly to all heating emergencies, including furnace failures, gas leaks, carbon monoxide concerns, and pilot light issues. Your family's comfort and safety are our priority.</p>
+                        <a href="furnace-installation.html" class="btn btn-danger">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Commercial HVAC Emergencies">
+                        <div class="emergency-badge">24/7 Service</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Commercial HVAC Emergencies</h3>
+                        <p>HVAC failures in your business mean lost revenue and uncomfortable customers or employees. Our commercial emergency team specializes in rapid response for retail, office, restaurant, and industrial facilities throughout Pasadena. We understand business-critical systems.</p>
+                        <a href="commercial-hvac.html" class="btn btn-danger">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Emergency Alert Section -->
+    <section>
+        <div class="container">
+            <div class="emergency-alert">
+                <div class="text-center">
+                    <div class="emergency-alert-icon">⚠️</div>
+                    <h3>What Constitutes an HVAC Emergency?</h3>
+                </div>
+                <p>Not all HVAC issues require emergency service, but these situations should be addressed immediately:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                    <li><strong>Complete system failure</strong> during extreme weather (above 90°F or below at freezing temperatures)</li>
+                    <li><strong>Burning odors</strong> coming from any part of your HVAC system</li>
+                    <li><strong>Gas leaks</strong> or suspected gas leaks (leave the premises immediately and call from outside)</li>
+                    <li><strong>Carbon monoxide detector alerts</strong> or symptoms of CO poisoning</li>
+                    <li><strong>Electrical issues</strong> such as sparking, smoking, or repeatedly tripping breakers</li>
+                    <li><strong>Water leakage</strong> that threatens property damage or electrical components</li>
+                    <li><strong>Unusual loud noises</strong> like banging, grinding, or screeching</li>
+                </ul>
+                <p>If you're experiencing any of these issues, don't wait—call our emergency line immediately at <a href="tel:+16265551234" style="color: var(--error); font-weight: 700;">(626) 555-1234</a>.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Emergency Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our Emergency Response Process</h2>
+                <p>How we handle your HVAC emergency from call to resolution</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Emergency Call</h3>
+                    <p>Your call is answered 24/7 by our live emergency dispatch team, not an answering service. We'll gather essential information about your emergency.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Dispatch Technician</h3>
+                    <p>An emergency technician is dispatched immediately with a fully-stocked service vehicle to reach your location within 60 minutes.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Diagnosis & Quote</h3>
+                    <p>Our technician will assess the situation, identify the problem, and provide upfront pricing before beginning any work.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Rapid Repair</h3>
+                    <p>Upon approval, we complete the necessary repairs efficiently, with most emergency issues resolved in a single visit.</p>
+                </div>
+            </div>
+            
+            <div class="technician-spotlight">
+                <div class="technician-photo">
+                    <img src="/api/placeholder/120/120" alt="Emergency HVAC Technician">
+                </div>
+                <div class="technician-info">
+                    <h3>Meet Our Emergency Response Team</h3>
+                    <div class="technician-credentials">NATE Certified • EPA Certified • 15+ Years of Experience</div>
+                    <p>Our emergency technicians are the elite members of our team, with extensive training in rapid diagnosis and repair of all HVAC systems. They're on call 24/7, equipped with fully-stocked service vehicles, and ready to respond to any heating or cooling emergency throughout Pasadena and surrounding areas.</p>
+                    <p>Every emergency technician is background-checked, drug-tested, and trained in both technical skills and customer service to ensure you receive professional, respectful service even in stressful situations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Common Emergency Scenarios -->
+    <section class="scenarios-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Common HVAC Emergency Scenarios</h2>
+                <p>Real situations where our emergency service has saved the day for Pasadena residents</p>
+            </div>
+            
+            <div class="scenario-grid">
+                <div class="scenario-card">
+                    <div class="scenario-img">
+                        <img src="/api/placeholder/400/180" alt="Summer AC Failure">
+                    </div>
+                    <div class="scenario-content">
+                        <h3>Summer AC Failure</h3>
+                        <p>When temperatures climb above 95°F in Pasadena and your AC completely stops working, it's more than an inconvenience—it can be dangerous, especially for elderly residents, children, and pets. Our emergency team prioritizes calls during heat waves to prevent heat-related illnesses.</p>
+                    </div>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-img">
+                        <img src="/api/placeholder/400/180" alt="Winter Heating Crisis">
+                    </div>
+                    <div class="scenario-content">
+                        <h3>Winter Heating Crisis</h3>
+                        <p>When temperatures drop and your furnace fails to ignite or blows cold air, your home can quickly become uncomfortably cold. Our emergency technicians respond promptly to restore heat, preventing frozen pipes and ensuring your family's comfort and safety.</p>
+                    </div>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-img">
+                        <img src="/api/placeholder/400/180" alt="Commercial Kitchen HVAC Failure">
+                    </div>
+                    <div class="scenario-content">
+                        <h3>Restaurant HVAC Failure</h3>
+                        <p>When a restaurant's HVAC system fails during peak dining hours, it can lead to lost revenue and unhappy customers. Our commercial emergency team understands the urgency and provides priority service to get your business back to comfortable conditions quickly.</p>
+                    </div>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-img">
+                        <img src="/api/placeholder/400/180" alt="Water Leak Emergency">
+                    </div>
+                    <div class="scenario-content">
+                        <h3>Water Leak Emergency</h3>
+                        <p>When your AC's condensate line clogs or your drain pan cracks, water can leak into ceilings, walls, and floors, causing significant damage. Our emergency team responds quickly to stop the leak, prevent water damage, and repair the underlying issue.</p>
+                    </div>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-img">
+                        <img src="/api/placeholder/400/180" alt="Electrical HVAC Emergency">
+                    </div>
+                    <div class="scenario-content">
+                        <h3>Electrical HVAC Emergency</h3>
+                        <p>Burning smells, sparking, or repeatedly tripping circuit breakers indicate potentially dangerous electrical problems that require immediate attention. Our emergency technicians are trained to safely diagnose and repair electrical issues in HVAC systems.</p>
+                    </div>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-img">
+                        <img src="/api/placeholder/400/180" alt="Carbon Monoxide Concerns">
+                    </div>
+                    <div class="scenario-content">
+                        <h3>Carbon Monoxide Concerns</h3>
+                        <p>Carbon monoxide leaks from damaged furnaces or heat exchangers present a life-threatening emergency. If your CO detector sounds or you suspect a leak, leave immediately and call from outside. Our emergency team will respond with specialized equipment to detect and resolve the issue.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Emergency Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Emergency Service Pricing</h2>
+                <p>Transparent pricing with no surprise fees, even for after-hours emergency service</p>
+            </div>
+            
+            <div class="pricing-info">
+                <p>We understand that HVAC emergencies are stressful enough without worrying about unpredictable costs. That's why we maintain transparent pricing for all emergency services, regardless of when you call:</p>
+                
+                <table class="pricing-table">
+                    <tr>
+                        <th>Service</th>
+                        <th>Standard Hours Cost</th>
+                        <th>After-Hours/Weekend Cost</th>
+                    </tr>
+                    <tr>
+                        <td>Emergency Diagnostic Fee</td>
+                        <td>$99</td>
+                        <td>$149</td>
+                    </tr>
+                    <tr>
+                        <td>Common Residential Repairs</td>
+                        <td>$250-$600</td>
+                        <td>$350-$700</td>
+                    </tr>
+                    <tr>
+                        <td>Commercial Emergency Service</td>
+                        <td>$150/hour</td>
+                        <td>$200/hour</td>
+                    </tr>
+                    <tr>
+                        <td>Trip Charge (Pasadena/Immediate Area)</td>
+                        <td>$0</td>
+                        <td>$0</td>
+                    </tr>
+                </table>
+                
+                <div class="pricing-note">
+                    <p>* Diagnostic fee is waived if repairs are performed. Exact repair costs depend on the specific issue and parts required.</p>
+                    <p>* Maintenance plan members receive priority scheduling and a 15-35% discount on all emergency service charges, including after-hours rates.</p>
+                </div>
+                
+                <div style="margin-top: 2rem; text-align: center;">
+                    <a href="contact.html" class="btn btn-secondary">Learn About Maintenance Plans</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Emergency Service Testimonials</h2>
+                <p>Read what Pasadena residents say about our emergency HVAC response</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Our AC completely stopped working during the worst heat wave of the summer. I called HVAC Pasadena at 10 PM, and they had a technician at our door within 45 minutes! James diagnosed the issue quickly—a failed capacitor—and had the part on his truck. Our AC was back running by midnight. The emergency service fee was completely reasonable, especially considering how quickly they responded. My family was able to sleep comfortably that night thanks to their rapid response."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Maria Rodriguez</h4>
+                            <div class="author-location">South Pasadena</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"I woke up on a Sunday morning in January to a freezing house and a furnace that wouldn't turn on. With two small children, I needed help immediately. HVAC Pasadena answered my call right away and had a technician at my home within the hour. He identified a failed igniter, had the part on his truck, and fixed our furnace that same morning. The technician was professional and took the time to explain what happened and how to prevent similar issues. Worth every penny for the peace of mind!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Thomas Chen</h4>
+                            <div class="author-location">Bungalow Heaven, Pasadena</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"As the manager of a busy restaurant in Old Pasadena, an AC failure during Friday dinner service was a disaster. I called several HVAC companies, but HVAC Pasadena was the only one who promised immediate help. Their commercial emergency team arrived within 40 minutes and worked efficiently to get our system running again. They were mindful of our customers and worked discreetly. What impressed me most was their commitment to fixing the problem that night instead of just applying a temporary fix. They saved our busiest service of the week!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>David Williams</h4>
+                            <div class="author-location">Old Pasadena Business Owner</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Emergency HVAC Service FAQs</h2>
+                <p>Answers to common questions about our emergency services</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">What is your response time for HVAC emergencies in Pasadena?</div>
+                    <div class="faq-answer">We guarantee a 60-minute response time for all emergency calls within Pasadena and immediate surrounding areas. Our average response time is actually 42 minutes. For areas slightly farther from our central location, response times may be 60-90 minutes depending on traffic and weather conditions. We always prioritize calls based on safety concerns, with potential gas leaks and carbon monoxide issues receiving top priority.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How much extra does emergency service cost compared to regular service?</div>
+                    <div class="faq-answer">Our emergency diagnostic fee is $99 during standard hours and $149 during after-hours, weekends, and holidays. This fee is waived if you proceed with repairs. While our after-hours labor rates are approximately 30-40% higher than standard rates, we never charge "emergency premiums" beyond our published rates. Maintenance plan members receive discounts of 15-35% on all emergency service charges, making it a valuable investment for homeowners.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do your emergency technicians carry parts for common repairs?</div>
+                    <div class="faq-answer">Yes, our emergency service vehicles are stocked with over 300 of the most commonly needed HVAC repair parts, including capacitors, contactors, igniters, flame sensors, circuit boards, motors, and refrigerant. This allows us to complete approximately 85% of emergency repairs in a single visit. For specialized parts, we can often source them through our extensive supplier network, even during weekends and holidays.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I know if my HVAC issue qualifies as an emergency?</div>
+                    <div class="faq-answer">We consider an HVAC situation an emergency if: 1) You have no heating during freezing temperatures or no cooling during extreme heat (over 90°F); 2) There are safety concerns such as strange odors, gas leaks, or carbon monoxide detector alerts; 3) Your system is causing or threatening water damage; 4) Electrical issues like sparking or smoke are present. If you're unsure, call our emergency line and our team will help determine the appropriate response.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer emergency commercial HVAC service?</div>
+                    <div class="faq-answer">Yes, we provide 24/7 emergency service for commercial properties throughout Pasadena, including restaurants, retail spaces, offices, medical facilities, and industrial buildings. Our commercial emergency team is specially trained to work on larger commercial systems and understands the critical nature of business HVAC needs. We offer priority response for businesses where comfort directly impacts operations.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What should I do while waiting for the emergency technician to arrive?</div>
+                    <div class="faq-answer">While waiting for our technician: 1) For safety issues like gas smells or carbon monoxide concerns, evacuate the building immediately and call from outside; 2) For water leaks, place containers to catch dripping water and move valuable items; 3) For cooling emergencies, close blinds, use fans, and stay hydrated; 4) For heating emergencies, use safe space heaters and wear warm clothing; 5) Gather any information about recent HVAC issues or maintenance to share with the technician. Our dispatch team can provide specific guidance for your situation.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Service Areas Section -->
+    <section class="areas-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Emergency Service Areas</h2>
+                <p>We provide 24/7 emergency HVAC service throughout Pasadena and these surrounding communities</p>
+            </div>
+            
+            <div class="areas-grid">
+                <div class="area-item">Pasadena</div>
+                <div class="area-item">South Pasadena</div>
+                <div class="area-item">North Pasadena</div>
+                <div class="area-item">East Pasadena</div>
+                <div class="area-item">West Pasadena</div>
+                <div class="area-item">Altadena</div>
+                <div class="area-item">San Marino</div>
+                <div class="area-item">Sierra Madre</div>
+                <div class="area-item">La Cañada Flintridge</div>
+                <div class="area-item">Arcadia</div>
+                <div class="area-item">San Gabriel</div>
+                <div class="area-item">Alhambra</div>
+                <div class="area-item">Temple City</div>
+                <div class="area-item">Monrovia</div>
+                <div class="area-item">Highland Park</div>
+                <div class="area-item">Eagle Rock</div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <p>Not sure if we service your area? Call our emergency line at <a href="tel:+16265551234" style="color: var(--error); font-weight: 700;">(626) 555-1234</a> to confirm.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Emergency HVAC Service Now?</h2>
+                <p>Don't wait in discomfort or worry about potential damage to your home. Our emergency technicians are standing by 24/7 to restore your heating and cooling quickly.</p>
+                <div class="btn-group">
+                    <a href="tel:+16265551234" class="btn btn-primary btn-lg btn-emergency">Call (626) 555-1234 Now</a>
+                    <a href="hvac-maintenance.html" class="btn btn-outline-light btn-lg">Prevent Emergencies with Maintenance</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>HVAC Pasadena has been providing top-quality heating, cooling, and air quality services to Pasadena residents and businesses since 2010. We're committed to exceptional service, fair pricing, and customer satisfaction.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">F</a>
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">I</a>
+                        <a href="#" class="social-link">Y</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="ac-repair.html">AC Repair & Installation</a></li>
+                        <li><a href="furnace-installation.html">Heating Services</a></li>
+                        <li><a href="hvac-maintenance.html">HVAC Maintenance</a></li>
+                        <li><a href="air-quality.html">Indoor Air Quality</a></li>
+                        <li><a href="commercial-hvac.html">Commercial HVAC</a></li>
+                        <li><a href="emergency-service.html">Emergency Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Service Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="pasadena-hvac.html">Pasadena</a></li>
+                        <li><a href="south-pasadena-hvac.html">South Pasadena</a></li>
+                        <li><a href="north-pasadena-hvac.html">North Pasadena</a></li>
+                        <li><a href="altadena-hvac.html">Altadena</a></li>
+                        <li><a href="san-marino-hvac.html">San Marino</a></li>
+                        <li><a href="sierra-madre-hvac.html">Sierra Madre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Emergency Contact</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">📞</div>
+                        <div>
+                            <p>(626) 555-1234</p>
+                            <p>24/7 Emergency Service</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">✉️</div>
+                        <div>
+                            <p>info@hvacpasadena.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">🏢</div>
+                        <div>
+                            <p>123 E Colorado Blvd</p>
+                            <p>Pasadena, CA 91105</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">⏰</div>
+                        <div>
+                            <p>Office Hours:</p>
+                            <p>Mon-Fri: 7am-8pm</p>
+                            <p>Sat-Sun: 8am-5pm</p>
+                            <p><strong>Emergency Service: 24/7/365</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 HVAC Pasadena. All Rights Reserved.</p>
+                <div class="licenses">
+                    <div class="license-item">CA License #ABC12345</div>
+                    <div class="license-item">EPA Certified</div>
+                    <div class="license-item">NATE Certified Technicians</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
