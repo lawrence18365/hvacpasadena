@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact HVAC Pasadena for reliable heating and cooling services. 24/7 emergency service available at (626) 555-1234. Free estimates and same-day appointments.">
+    <title>Contact HVAC Pasadena | 24/7 Emergency Service Available</title>
+    <style>
+        /* Modern Variables */
+        :root {
+            --primary: #0066cc;
+            --secondary: #ff6600;
+            --accent: #ff9900;
+            --dark: #222831;
+            --medium: #393e46;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --success: #28a745;
+            --warning: #ffc107;
+            --error: #dc3545;
+            --radius: 8px;
+            --shadow: 0 4px 12px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Basics */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 70px;
+            background-color: var(--secondary);
+        }
+
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -1rem;
+        }
+
+        .col {
+            padding: 0 1rem;
+            flex: 1;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-heading {
+            margin-bottom: 3rem;
+        }
+
+        /* Emergency Header */
+        .emergency-header {
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 0.5rem 0;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .emergency-header a {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .header-contact {
+            text-align: right;
+        }
+
+        .phone-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-number:before {
+            content: '📞';
+            margin-right: 0.5rem;
+        }
+
+        .phone-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .nav-cta {
+            background-color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-cta a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            padding: 1rem 1.5rem;
+        }
+
+        /* Page Header */
+        .page-header {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1600/400') center/cover no-repeat;
+            padding: 4rem 0;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* CTA Buttons */
+        .btn {
+            display: inline-block;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: #ff8833;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 102, 0, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: #0055aa;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 102, 204, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 102, 204, 0.2);
+        }
+
+        .btn-lg {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Contact Info Cards */
+        .contact-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: -5rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .contact-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+            height: 100%;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .contact-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #e6f0ff;
+            color: var(--primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+
+        .contact-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .contact-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-value a {
+            color: var(--dark);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .contact-value a:hover {
+            color: var(--secondary);
+        }
+
+        .contact-note {
+            font-size: 0.9rem;
+            color: var(--medium);
+        }
+
+        /* Contact Form */
+        .contact-form-section {
+            background-color: #f0f5ff;
+            padding: 4rem 0;
+        }
+
+        .contact-form {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: var(--radius);
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        @media (max-width: 576px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .form-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-option input {
+            margin-right: 0.5rem;
+            width: auto;
+        }
+
+        /* Map Section */
+        .map-container {
+            height: 450px;
+            background-color: #eee;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        /* Service Areas */
+        .service-areas {
+            padding: 4rem 0;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .area-item {
+            background-color: var(--white);
+            padding: 1rem;
+            border-radius: var(--radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            font-weight: 600;
+        }
+
+        .area-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: #fff9f5;
+            padding: 4rem 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5rem;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .faq-question:before {
+            content: 'Q:';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+
+        .faq-answer {
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .faq-answer:before {
+            content: 'A:';
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Business Hours */
+        .hours-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .hours-table tr {
+            border-bottom: 1px solid #eee;
+        }
+
+        .hours-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .hours-table td {
+            padding: 0.8rem 0;
+        }
+
+        .hours-table td:last-child {
+            text-align: right;
+            font-weight: 600;
+        }
+
+        .today {
+            color: var(--secondary);
+            font-weight: 700;
+        }
+
+        /* Emergency Contact */
+        .emergency-section {
+            padding: 3rem 0;
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .emergency-section h2 {
+            color: var(--white);
+        }
+
+        .emergency-section h2:after {
+            background-color: var(--secondary);
+        }
+
+        .emergency-section p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .emergency-phone {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--white);
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .emergency-phone:hover {
+            color: var(--secondary);
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), #004999);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+
+        .cta-section h2:after {
+            background-color: var(--secondary);
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 4rem 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 50px;
+            background-color: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact-icon {
+            margin-right: 1rem;
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.8rem;
+            margin-bottom: 0.8rem;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            background-color: #1a1f27;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .licenses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+        }
+
+        .license-item {
+            margin: 0 1rem;
+            color: #aaa;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        /* Media Queries */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-contact {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-container {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 3rem 0;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background-color: #f0f5ff;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .breadcrumbs-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .breadcrumbs-item:not(:last-child):after {
+            content: '>';
+            margin: 0 0.5rem;
+            color: var(--medium);
+        }
+
+        .breadcrumbs-link {
+            color: var(--medium);
+            text-decoration: none;
+        }
+
+        .breadcrumbs-link:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .breadcrumbs-current {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Contact Options Section */
+        .contact-options {
+            margin-top: 4rem;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .option-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .option-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .option-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #e6f0ff;
+            color: var(--primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .option-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .option-content {
+            flex-grow: 1;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Emergency Header -->
+    <div class="emergency-header">
+        <div class="container">
+            24/7 Emergency HVAC Service Available | <a href="tel:+16265551234">(626) 555-1234</a> | 60-Minute Response Time
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <div class="logo-text">HVAC<span>Pasadena</span></div>
+                </div>
+                <div class="header-contact">
+                    <a href="tel:+16265551234" class="phone-number">(626) 555-1234</a>
+                    <div class="phone-text">Free Estimates • Same-Day Service</div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ac-repair.html">AC Repair</a></li>
+                        <li><a href="furnace-installation.html">Heating</a></li>
+                        <li><a href="hvac-maintenance.html">Maintenance</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="#contact-form">Free Estimate</a>
+                    </div>
+                    <button class="mobile-menu-btn">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">Home</a></li>
+                <li class="breadcrumbs-item"><span class="breadcrumbs-current">Contact Us</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact HVAC Pasadena</h1>
+            <p>Reach out to our team for fast, reliable HVAC service throughout Pasadena. We're ready to help with all your heating and cooling needs.</p>
+        </div>
+    </section>
+    
+    <!-- Contact Info Cards -->
+    <section>
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Call Us</h3>
+                    <div class="contact-value"><a href="tel:+16265551234">(626) 555-1234</a></div>
+                    <div class="contact-note">Available 24/7 for emergency service</div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email Us</h3>
+                    <div class="contact-value"><a href="mailto:info@hvacpasadena.com">info@hvacpasadena.com</a></div>
+                    <div class="contact-note">We'll respond within 1 business hour</div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🏢</div>
+                    <h3>Visit Us</h3>
+                    <div class="contact-value">123 E Colorado Blvd</div>
+                    <div class="contact-value">Pasadena, CA 91105</div>
+                    <div class="contact-note">Mon-Fri: 7am-8pm, Sat-Sun: 8am-5pm</div>
+                </div>
+            </div>
+            
+            <!-- Business Hours Section -->
+            <div class="row" style="margin-top: 4rem; align-items: center;">
+                <div class="col">
+                    <h2>Our Business Hours</h2>
+                    <p>Our office is open during the following hours for walk-ins and scheduled appointments. For emergency service, our technicians are available 24/7.</p>
+                    
+                    <table class="hours-table">
+                        <tr class="today">
+                            <td>Monday</td>
+                            <td>7:00 AM - 8:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>7:00 AM - 8:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>7:00 AM - 8:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>7:00 AM - 8:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>7:00 AM - 8:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>8:00 AM - 5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>8:00 AM - 5:00 PM</td>
+                        </tr>
+                    </table>
+                    
+                    <div style="margin-top: 2rem;">
+                        <h3>Stay Connected</h3>
+                        <p>Follow us on social media for tips, promotions, and updates:</p>
+                        <div class="social-links" style="margin-top: 1rem;">
+                            <a href="#" style="color: var(--primary); background-color: #e6f0ff;" class="social-link">F</a>
+                            <a href="#" style="color: var(--primary); background-color: #e6f0ff;" class="social-link">T</a>
+                            <a href="#" style="color: var(--primary); background-color: #e6f0ff;" class="social-link">I</a>
+                            <a href="#" style="color: var(--primary); background-color: #e6f0ff;" class="social-link">Y</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="map-container">
+                        <img src="/api/placeholder/600/450" alt="Map to HVAC Pasadena Office">
+                    </div>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <a href="https://maps.google.com" target="_blank" class="btn btn-outline">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="contact-form-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Request a Free Estimate</h2>
+                    <p>Fill out the form below, and one of our HVAC experts will contact you promptly to discuss your needs and schedule your free in-home estimate.</p>
+                    
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name*</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number*</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address*</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="address">Street Address</label>
+                                <input type="text" id="address">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" placeholder="Pasadena">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="zip">ZIP Code</label>
+                                <input type="text" id="zip">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Needed*</label>
+                            <select id="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="ac-repair">AC Repair</option>
+                                <option value="ac-installation">AC Installation</option>
+                                <option value="furnace-repair">Furnace Repair</option>
+                                <option value="furnace-installation">Furnace Installation</option>
+                                <option value="maintenance">HVAC Maintenance</option>
+                                <option value="air-quality">Indoor Air Quality</option>
+                                <option value="commercial">Commercial HVAC</option>
+                                <option value="other">Other Service</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Preferred Contact Method</label>
+                            <div class="form-option">
+                                <input type="radio" id="contact-phone" name="contact-method" value="phone" checked>
+                                <label for="contact-phone">Phone</label>
+                            </div>
+                            <div class="form-option">
+                                <input type="radio" id="contact-email" name="contact-method" value="email">
+                                <label for="contact-email">Email</label>
+                            </div>
+                            <div class="form-option">
+                                <input type="radio" id="contact-text" name="contact-method" value="text">
+                                <label for="contact-text">Text Message</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" rows="5" placeholder="Please share any details about your HVAC needs or questions"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+                        <p style="font-size: 0.8rem; margin-top: 0.5rem; text-align: center;">We'll contact you within 1 business hour during regular hours.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Options Section -->
+    <section class="contact-options">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Ways to Connect With Us</h2>
+                <p>Choose the contact method that works best for you</p>
+            </div>
+            
+            <div class="options-grid">
+                <div class="option-card">
+                    <div class="option-icon">☎️</div>
+                    <h3>Schedule by Phone</h3>
+                    <div class="option-content">
+                        <p>Speak directly with our friendly customer service team to schedule service or get answers to your questions.</p>
+                    </div>
+                    <a href="tel:+16265551234" class="btn btn-primary">Call (626) 555-1234</a>
+                </div>
+                
+                <div class="option-card">
+                    <div class="option-icon">📱</div>
+                    <h3>Text Message</h3>
+                    <div class="option-content">
+                        <p>Send us a text for quick responses to simple questions or to schedule a call back at your convenience.</p>
+                    </div>
+                    <a href="sms:+16265551234" class="btn btn-primary">Text (626) 555-1234</a>
+                </div>
+                
+                <div class="option-card">
+                    <div class="option-icon">💬</div>
+                    <h3>Live Chat</h3>
+                    <div class="option-content">
+                        <p>Chat with our customer service representatives in real-time on our website for immediate assistance.</p>
+                    </div>
+                    <button class="btn btn-primary">Start Live Chat</button>
+                </div>
+                
+                <div class="option-card">
+                    <div class="option-icon">📅</div>
+                    <h3>Online Scheduling</h3>
+                    <div class="option-content">
+                        <p>Use our convenient online scheduling tool to book your appointment at any time, day or night.</p>
+                    </div>
+                    <a href="#contact-form" class="btn btn-primary">Schedule Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Service Areas Section -->
+    <section class="service-areas">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Areas We Serve</h2>
+                <p>We provide fast, reliable HVAC service throughout Pasadena and surrounding communities</p>
+            </div>
+            
+            <div class="areas-grid">
+                <div class="area-item">Pasadena</div>
+                <div class="area-item">South Pasadena</div>
+                <div class="area-item">North Pasadena</div>
+                <div class="area-item">East Pasadena</div>
+                <div class="area-item">West Pasadena</div>
+                <div class="area-item">Altadena</div>
+                <div class="area-item">San Marino</div>
+                <div class="area-item">Sierra Madre</div>
+                <div class="area-item">La Cañada Flintridge</div>
+                <div class="area-item">Arcadia</div>
+                <div class="area-item">San Gabriel</div>
+                <div class="area-item">Alhambra</div>
+                <div class="area-item">Temple City</div>
+                <div class="area-item">Monrovia</div>
+                <div class="area-item">Highland Park</div>
+                <div class="area-item">Eagle Rock</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Frequently Asked Questions</h2>
+                <p>Answers to common questions about contacting and scheduling with HVAC Pasadena</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">How quickly can I schedule service?</div>
+                    <div class="faq-answer">We offer same-day service for most appointments scheduled before noon. For emergency service, we provide 24/7 availability with a 60-minute response time throughout the Pasadena area. Our scheduling team will work to accommodate your preferred date and time based on technician availability.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What information should I have ready when I contact you?</div>
+                    <div class="faq-answer">It's helpful to have your address, a description of your HVAC issue or service needs, information about your current system (brand, model, age if known), and your preferred contact method. For emergency service, please mention that it's urgent when you call so we can prioritize your request.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do I need to be home for an estimate?</div>
+                    <div class="faq-answer">For accurate estimates on new installations or complex repairs, we recommend that someone be present during the appointment. This allows our technician to assess your home's specific needs, discuss options with you, and answer any questions you may have. For simple service calls or maintenance, we can often provide general pricing over the phone.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What payment methods do you accept?</div>
+                    <div class="faq-answer">We accept all major credit cards (Visa, Mastercard, American Express, Discover), checks, cash, and financing options through our financing partners. We can discuss payment options when scheduling your service or at the time of your appointment. For larger projects, we offer flexible financing with approved credit.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer free estimates?</div>
+                    <div class="faq-answer">Yes, we provide free, no-obligation estimates for new HVAC system installations, replacements, and major upgrades. Our technician will assess your home's needs, discuss your options, and provide a detailed written estimate. For standard repairs, we charge a diagnostic fee that is credited toward the cost of repairs if you proceed with our service.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I schedule emergency HVAC service?</div>
+                    <div class="faq-answer">For emergency HVAC service, call our 24/7 emergency line at (626) 555-1234. Please clearly state that you have an emergency, and our dispatcher will prioritize your call and send the next available technician to your location. We guarantee a 60-minute response time for emergency calls within our service area.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Emergency Contact Section -->
+    <section class="emergency-section">
+        <div class="container">
+            <h2>24/7 Emergency HVAC Service</h2>
+            <p>HVAC emergencies don't wait for business hours. Our emergency response team is available 24 hours a day, 7 days a week, to handle urgent heating and cooling problems throughout Pasadena.</p>
+            <a href="tel:+16265551234" class="emergency-phone">(626) 555-1234</a>
+            <p>60-Minute Response Time Guaranteed</p>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience Superior HVAC Service?</h2>
+                <p>Contact HVAC Pasadena today for expert heating and cooling solutions tailored to your home's needs. From emergency repairs to routine maintenance, we're here to keep you comfortable year-round.</p>
+                <div class="btn-group" style="justify-content: center;">
+                    <a href="#contact-form" class="btn btn-primary btn-lg">Request a Free Estimate</a>
+                    <a href="tel:+16265551234" class="btn btn-outline btn-lg" style="color: var(--white); border-color: var(--white);">Call (626) 555-1234</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>HVAC Pasadena has been providing top-quality heating, cooling, and air quality services to Pasadena residents and businesses since 2010. We're committed to exceptional service, fair pricing, and customer satisfaction.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">F</a>
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">I</a>
+                        <a href="#" class="social-link">Y</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="ac-repair.html">AC Repair & Installation</a></li>
+                        <li><a href="furnace-installation.html">Heating Services</a></li>
+                        <li><a href="hvac-maintenance.html">HVAC Maintenance</a></li>
+                        <li><a href="air-quality.html">Indoor Air Quality</a></li>
+                        <li><a href="commercial-hvac.html">Commercial HVAC</a></li>
+                        <li><a href="emergency-service.html">Emergency Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Service Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="pasadena-hvac.html">Pasadena</a></li>
+                        <li><a href="south-pasadena-hvac.html">South Pasadena</a></li>
+                        <li><a href="north-pasadena-hvac.html">North Pasadena</a></li>
+                        <li><a href="altadena-hvac.html">Altadena</a></li>
+                        <li><a href="san-marino-hvac.html">San Marino</a></li>
+                        <li><a href="sierra-madre-hvac.html">Sierra Madre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">📞</div>
+                        <div>
+                            <p>(626) 555-1234</p>
+                            <p>24/7 Emergency Service</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">✉️</div>
+                        <div>
+                            <p>info@hvacpasadena.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">🏢</div>
+                        <div>
+                            <p>123 E Colorado Blvd</p>
+                            <p>Pasadena, CA 91105</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">⏰</div>
+                        <div>
+                            <p>Mon-Fri: 7am-8pm</p>
+                            <p>Sat-Sun: 8am-5pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 HVAC Pasadena. All Rights Reserved.</p>
+                <div class="licenses">
+                    <div class="license-item">CA License #ABC12345</div>
+                    <div class="license-item">EPA Certified</div>
+                    <div class="license-item">NATE Certified Technicians</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
