@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert HVAC tips, guides, and advice for Pasadena homeowners. Learn about energy efficiency, maintenance, seasonal preparation, and more from our local HVAC professionals.">
+    <title>HVAC Blog | Pasadena Heating & Cooling Tips</title>
+    <style>
+        /* Modern Variables */
+        :root {
+            --primary: #0066cc;
+            --secondary: #ff6600;
+            --accent: #ff9900;
+            --dark: #222831;
+            --medium: #393e46;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --success: #28a745;
+            --warning: #ffc107;
+            --error: #dc3545;
+            --radius: 8px;
+            --shadow: 0 4px 12px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Basics */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 70px;
+            background-color: var(--secondary);
+        }
+
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -1rem;
+        }
+
+        .col {
+            padding: 0 1rem;
+            flex: 1;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-heading {
+            margin-bottom: 3rem;
+        }
+
+        /* Emergency Header */
+        .emergency-header {
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 0.5rem 0;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .emergency-header a {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .header-contact {
+            text-align: right;
+        }
+
+        .phone-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-number:before {
+            content: '📞';
+            margin-right: 0.5rem;
+        }
+
+        .phone-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .nav-cta {
+            background-color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-cta a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            padding: 1rem 1.5rem;
+        }
+
+        /* Hero Section */
+        .blog-header {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1600/500') center/cover no-repeat;
+            padding: 4rem 0;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .blog-header h1 {
+            font-size: 3rem;
+            color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            margin-bottom: 1rem;
+        }
+
+        .blog-header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Blog Search & Filter */
+        .blog-controls {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-top: -2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .search-bar {
+            display: flex;
+            margin-bottom: 1.5rem;
+        }
+
+        .search-input {
+            flex-grow: 1;
+            padding: 0.8rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: var(--radius) 0 0 var(--radius);
+            font-size: 1rem;
+        }
+
+        .search-btn {
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 0 1.5rem;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        .category-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .category-btn {
+            background-color: #f0f5ff;
+            color: var(--primary);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .category-btn:hover, .category-btn.active {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        /* Featured Article */
+        .featured-article {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin-bottom: 3rem;
+        }
+
+        .featured-img {
+            height: 400px;
+            background-color: #eee;
+            position: relative;
+        }
+
+        .featured-tag {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .featured-content {
+            padding: 2rem;
+        }
+
+        .featured-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .featured-content h2:after {
+            display: none;
+        }
+
+        .featured-meta {
+            display: flex;
+            margin-bottom: 1rem;
+            gap: 2rem;
+            color: var(--medium);
+            font-size: 0.9rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .meta-icon {
+            margin-right: 0.5rem;
+        }
+
+        .featured-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .read-more {
+            display: inline-block;
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .read-more:hover {
+            color: var(--secondary);
+        }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .blog-img {
+            height: 200px;
+            background-color: #eee;
+            position: relative;
+        }
+
+        .category-tag {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-meta {
+            margin-bottom: 1rem;
+            font-size: 0.8rem;
+            color: var(--medium);
+        }
+
+        .blog-content p {
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        .page-item {
+            margin: 0 0.5rem;
+        }
+
+        .page-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--white);
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .page-link:hover, .page-link.active {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        /* CTA Buttons */
+        .btn {
+            display: inline-block;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: #ff8833;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 102, 0, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 102, 204, 0.2);
+        }
+
+        .btn-lg {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            background-color: #f0f5ff;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .newsletter-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form {
+            display: flex;
+            margin-top: 2rem;
+        }
+
+        .newsletter-input {
+            flex-grow: 1;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: var(--radius) 0 0 var(--radius);
+            font-size: 1rem;
+        }
+
+        .newsletter-btn {
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 0 2rem;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), #004999);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+
+        .cta-section h2:after {
+            background-color: var(--secondary);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .sidebar h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f5ff;
+        }
+
+        .popular-posts {
+            list-style: none;
+            padding: 0;
+        }
+
+        .popular-posts li {
+            display: flex;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #f0f5ff;
+        }
+
+        .popular-posts li:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .post-thumb {
+            width: 70px;
+            height: 70px;
+            border-radius: var(--radius);
+            margin-right: 1rem;
+            background-color: #eee;
+            flex-shrink: 0;
+        }
+
+        .post-info h4 {
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .post-info a {
+            color: var(--dark);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .post-info a:hover {
+            color: var(--primary);
+        }
+
+        .post-date {
+            font-size: 0.8rem;
+            color: var(--medium);
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background-color: #f0f5ff;
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            transition: var(--transition);
+        }
+
+        .tag:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 4rem 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 50px;
+            background-color: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact-icon {
+            margin-right: 1rem;
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.8rem;
+            margin-bottom: 0.8rem;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            background-color: #1a1f27;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .licenses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+        }
+
+        .license-item {
+            margin: 0 1rem;
+            color: #aaa;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        /* Media Queries */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-contact {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-container {
+                justify-content: center;
+            }
+            
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .newsletter-input {
+                border-radius: var(--radius);
+                margin-bottom: 1rem;
+            }
+            
+            .newsletter-btn {
+                border-radius: var(--radius);
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 3rem 0;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+            }
+            
+            .blog-header h1 {
+                font-size: 2rem;
+            }
+            
+            .featured-content {
+                padding: 1.5rem;
+            }
+            
+            .featured-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background-color: #f0f5ff;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .breadcrumbs-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .breadcrumbs-item:not(:last-child):after {
+            content: '>';
+            margin: 0 0.5rem;
+            color: var(--medium);
+        }
+
+        .breadcrumbs-link {
+            color: var(--medium);
+            text-decoration: none;
+        }
+
+        .breadcrumbs-link:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .breadcrumbs-current {
+            color: var(--primary);
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Emergency Header -->
+    <div class="emergency-header">
+        <div class="container">
+            24/7 Emergency HVAC Service Available | <a href="tel:+16265551234">(626) 555-1234</a> | 60-Minute Response Time
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <div class="logo-text">HVAC<span>Pasadena</span></div>
+                </div>
+                <div class="header-contact">
+                    <a href="tel:+16265551234" class="phone-number">(626) 555-1234</a>
+                    <div class="phone-text">Free Estimates • Same-Day Service</div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../ac-repair.html">AC Repair</a></li>
+                        <li><a href="../furnace-installation.html">Heating</a></li>
+                        <li><a href="../hvac-maintenance.html">Maintenance</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../testimonials.html">Reviews</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="../contact.html">Free Estimate</a>
+                    </div>
+                    <button class="mobile-menu-btn">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item"><a href="../index.html" class="breadcrumbs-link">Home</a></li>
+                <li class="breadcrumbs-item"><span class="breadcrumbs-current">HVAC Blog</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1>HVAC Tips, Guides & Advice</h1>
+            <p>Expert heating and cooling insights for Pasadena homeowners from your local HVAC professionals.</p>
+        </div>
+    </section>
+    
+    <!-- Blog Search & Filter -->
+    <section style="padding-top: 0; padding-bottom: 2rem;">
+        <div class="container">
+            <div class="blog-controls">
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Search articles...">
+                    <button class="search-btn">Search</button>
+                </div>
+                
+                <div class="category-filters">
+                    <button class="category-btn active">All</button>
+                    <button class="category-btn">AC Repair</button>
+                    <button class="category-btn">Heating</button>
+                    <button class="category-btn">Maintenance</button>
+                    <button class="category-btn">Energy Efficiency</button>
+                    <button class="category-btn">Air Quality</button>
+                    <button class="category-btn">Seasonal Tips</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Article -->
+    <section style="padding-top: 0;">
+        <div class="container">
+            <div class="featured-article">
+                <div class="featured-img">
+                    <img src="/api/placeholder/1200/400" alt="Preparing Your HVAC for Pasadena Summers">
+                    <div class="featured-tag">Featured</div>
+                </div>
+                <div class="featured-content">
+                    <div class="featured-meta">
+                        <div class="meta-item">
+                            <span class="meta-icon">📅</span>
+                            <span>May 10, 2025</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon">👤</span>
+                            <span>By: Michael Rodriguez</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon">🏷️</span>
+                            <span>Seasonal Tips, Maintenance</span>
+                        </div>
+                    </div>
+                    
+                    <h2>Preparing Your HVAC for Pasadena Summers</h2>
+                    <p>As Pasadena residents know all too well, our Southern California summers can be brutally hot. With temperatures regularly climbing into the 90s and occasionally reaching triple digits during heat waves, a properly functioning air conditioning system isn't just a luxury—it's essential for comfort and safety. Learn how to prepare your HVAC system for the challenging summer months with our comprehensive guide.</p>
+                    <a href="preparing-hvac-for-summer.html" class="read-more">Read Full Article →</a>
+                </div>
+            </div>
+            
+            <div class="row" style="margin-top: 3rem;">
+                <div class="col" style="flex: 3;">
+                    <h2>Latest Articles</h2>
+                    
+                    <div class="blog-grid" style="margin-top: 2rem;">
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="/api/placeholder/400/200" alt="Energy-Efficient HVAC Options">
+                                <div class="category-tag">Energy Efficiency</div>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Energy-Efficient HVAC Options for Pasadena Homes</h3>
+                                <div class="blog-meta">April 15, 2025 • 6 min read</div>
+                                <p>Discover the latest energy-saving heating and cooling technologies that are ideal for Pasadena's climate and can significantly reduce your utility bills while improving comfort.</p>
+                                <a href="energy-efficient-hvac-options.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="/api/placeholder/400/200" alt="Common AC Problems in Pasadena">
+                                <div class="category-tag">AC Repair</div>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Common AC Problems Pasadena Homeowners Face</h3>
+                                <div class="blog-meta">March 28, 2025 • 8 min read</div>
+                                <p>Learn about the most frequent air conditioning issues specific to Pasadena homes and how to identify, address, and prevent them before they become major problems.</p>
+                                <a href="common-ac-problems-pasadena.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="/api/placeholder/400/200" alt="When to Replace vs Repair">
+                                <div class="category-tag">HVAC Guide</div>
+                            </div>
+                            <div class="blog-content">
+                                <h3>When to Replace vs. Repair Your HVAC System</h3>
+                                <div class="blog-meta">March 12, 2025 • 7 min read</div>
+                                <p>Facing a major HVAC repair? This comprehensive guide helps Pasadena homeowners make the smart financial decision between repairing an existing system or investing in a replacement.</p>
+                                <a href="when-to-replace-vs-repair.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="/api/placeholder/400/200" alt="Air Quality During Wildfire Season">
+                                <div class="category-tag">Air Quality</div>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Protecting Your Indoor Air Quality During Wildfire Season</h3>
+                                <div class="blog-meta">February 25, 2025 • 5 min read</div>
+                                <p>Wildfire season in Southern California can severely impact air quality. Discover how to use your HVAC system and other solutions to keep your indoor air clean and healthy.</p>
+                                <a href="air-quality-wildfire-season.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="/api/placeholder/400/200" alt="Smart Thermostats for Pasadena Homes">
+                                <div class="category-tag">Energy Efficiency</div>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Smart Thermostat Benefits for Pasadena Homeowners</h3>
+                                <div class="blog-meta">February 10, 2025 • 6 min read</div>
+                                <p>Smart thermostats can save Pasadena homeowners up to 15% on heating and cooling costs. Learn about the best options, installation considerations, and optimization tips.</p>
+                                <a href="smart-thermostats-benefits.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="/api/placeholder/400/200" alt="Winter Heating Tips">
+                                <div class="category-tag">Seasonal Tips</div>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Winter Heating Tips for Pasadena's Cool Nights</h3>
+                                <div class="blog-meta">January 20, 2025 • 5 min read</div>
+                                <p>While Pasadena winters are mild compared to other regions, cool nights still call for efficient heating. Discover how to optimize your heating system for Southern California's unique winter conditions.</p>
+                                <a href="winter-heating-tips.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <div class="page-item">
+                            <a href="#" class="page-link active">1</a>
+                        </div>
+                        <div class="page-item">
+                            <a href="#" class="page-link">2</a>
+                        </div>
+                        <div class="page-item">
+                            <a href="#" class="page-link">3</a>
+                        </div>
+                        <div class="page-item">
+                            <a href="#" class="page-link">→</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col" style="flex: 1;">
+                    <div class="sidebar">
+                        <h3>Popular Posts</h3>
+                        <ul class="popular-posts">
+                            <li>
+                                <div class="post-thumb">
+                                    <img src="/api/placeholder/70/70" alt="Preparing Your HVAC for Summer">
+                                </div>
+                                <div class="post-info">
+                                    <h4><a href="preparing-hvac-for-summer.html">Preparing Your HVAC for Pasadena Summers</a></h4>
+                                    <div class="post-date">May 10, 2025</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-thumb">
+                                    <img src="/api/placeholder/70/70" alt="When to Replace vs Repair">
+                                </div>
+                                <div class="post-info">
+                                    <h4><a href="when-to-replace-vs-repair.html">When to Replace vs. Repair Your HVAC System</a></h4>
+                                    <div class="post-date">March 12, 2025</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-thumb">
+                                    <img src="/api/placeholder/70/70" alt="Common AC Problems">
+                                </div>
+                                <div class="post-info">
+                                    <h4><a href="common-ac-problems-pasadena.html">Common AC Problems Pasadena Homeowners Face</a></h4>
+                                    <div class="post-date">March 28, 2025</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar">
+                        <h3>Categories</h3>
+                        <div class="tag-cloud">
+                            <a href="#" class="tag">AC Repair (6)</a>
+                            <a href="#" class="tag">Heating (5)</a>
+                            <a href="#" class="tag">Maintenance (8)</a>
+                            <a href="#" class="tag">Energy Efficiency (7)</a>
+                            <a href="#" class="tag">Air Quality (4)</a>
+                            <a href="#" class="tag">Seasonal Tips (9)</a>
+                            <a href="#" class="tag">HVAC Guide (3)</a>
+                            <a href="#" class="tag">Troubleshooting (5)</a>
+                            <a href="#" class="tag">Pasadena (12)</a>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar">
+                        <h3>Need Help Now?</h3>
+                        <p>We offer 24/7 emergency HVAC service throughout Pasadena with 60-minute response times.</p>
+                        <a href="../contact.html" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container">
+                <h2>Get HVAC Tips & Special Offers</h2>
+                <p>Subscribe to our newsletter for seasonal maintenance reminders, energy-saving tips, and exclusive promotions for Pasadena homeowners.</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Expert HVAC Service in Pasadena?</h2>
+                <p>From emergency repairs to routine maintenance, our team of certified technicians is ready to keep your home comfortable year-round.</p>
+                <div class="btn-group">
+                    <a href="../contact.html" class="btn btn-primary btn-lg">Request a Free Quote</a>
+                    <a href="tel:+16265551234" class="btn btn-outline btn-lg" style="color: var(--white); border-color: var(--white);">Call (626) 555-1234</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>HVAC Pasadena has been providing top-quality heating, cooling, and air quality services to Pasadena residents and businesses since 2010. We're committed to exceptional service, fair pricing, and customer satisfaction.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">F</a>
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">I</a>
+                        <a href="#" class="social-link">Y</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="../ac-repair.html">AC Repair & Installation</a></li>
+                        <li><a href="../furnace-installation.html">Heating Services</a></li>
+                        <li><a href="../hvac-maintenance.html">HVAC Maintenance</a></li>
+                        <li><a href="../air-quality.html">Indoor Air Quality</a></li>
+                        <li><a href="../commercial-hvac.html">Commercial HVAC</a></li>
+                        <li><a href="../emergency-service.html">Emergency Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Service Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="../pasadena-hvac.html">Pasadena</a></li>
+                        <li><a href="../south-pasadena-hvac.html">South Pasadena</a></li>
+                        <li><a href="../north-pasadena-hvac.html">North Pasadena</a></li>
+                        <li><a href="../altadena-hvac.html">Altadena</a></li>
+                        <li><a href="../san-marino-hvac.html">San Marino</a></li>
+                        <li><a href="../sierra-madre-hvac.html">Sierra Madre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">📞</div>
+                        <div>
+                            <p>(626) 555-1234</p>
+                            <p>24/7 Emergency Service</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">✉️</div>
+                        <div>
+                            <p>info@hvacpasadena.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">🏢</div>
+                        <div>
+                            <p>123 E Colorado Blvd</p>
+                            <p>Pasadena, CA 91105</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">⏰</div>
+                        <div>
+                            <p>Mon-Fri: 7am-8pm</p>
+                            <p>Sat-Sun: 8am-5pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 HVAC Pasadena. All Rights Reserved.</p>
+                <div class="licenses">
+                    <div class="license-item">CA License #ABC12345</div>
+                    <div class="license-item">EPA Certified</div>
+                    <div class="license-item">NATE Certified Technicians</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
