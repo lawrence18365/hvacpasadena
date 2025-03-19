@@ -644,7 +644,7 @@
         /* Hero Section */
         .hero {
             position: relative;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1600/800') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1618522284999-3430d5f5f2da?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
             padding: 5rem 0;
             color: var(--white);
             text-align: left;
@@ -844,10 +844,15 @@
         }
 
         .service-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-        }
+                display: grid;
+                grid-auto-flow: column;
+                grid-template-rows: 1fr; /* Ensures a single row */
+                grid-auto-columns: minmax(300px, 1fr); /* Keeps columns responsive */
+                gap: 2rem;
+                overflow-x: auto;
+                white-space: nowrap;
+                width: 100%;
+            }
 
         .service-card {
             background-color: var(--white);
@@ -1606,7 +1611,7 @@
             <div class="service-grid">
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="/api/placeholder/400/200" alt="AC Repair Service in Pasadena">
+                        <img src="https://images.unsplash.com/photo-1705444509014-fed54b6191bf?q=80&w=3130&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="AC Repair Service in Pasadena">
                         <div class="service-overlay">AC Services</div>
                     </div>
                     <div class="service-content">
@@ -1624,7 +1629,7 @@
                 
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="/api/placeholder/400/200" alt="Heating Services in Pasadena">
+                        <img src="https://images.unsplash.com/photo-1600877326351-99de77343ce2?q=80&w=3319&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Heating Services in Pasadena">
                         <div class="service-overlay">Heating Services</div>
                     </div>
                     <div class="service-content">
@@ -1642,7 +1647,7 @@
                 
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="/api/placeholder/400/200" alt="HVAC Maintenance Services in Pasadena">
+                        <img src="https://images.unsplash.com/photo-1740555651875-74139364ecb8?q=80&w=2978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="HVAC Maintenance Services in Pasadena">
                         <div class="service-overlay">Maintenance Plans</div>
                     </div>
                     <div class="service-content">
@@ -1660,7 +1665,7 @@
                 
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="/api/placeholder/400/200" alt="Indoor Air Quality Services in Pasadena">
+                        <img src="https://images.unsplash.com/photo-1521111756787-d2f69136cedf?q=80&w=3852&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Indoor Air Quality Services in Pasadena">
                         <div class="service-overlay">Air Quality</div>
                     </div>
                     <div class="service-content">
