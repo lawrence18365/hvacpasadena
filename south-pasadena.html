@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trusted local HVAC services in South Pasadena, CA. AC repair, heating installation, and maintenance from technicians who understand South Pasadena's historic homes and neighborhoods. Call (626) 555-1234.">
+    <title>HVAC Services in South Pasadena, CA | Local Heating & Cooling Experts</title>
+    <style>
+        /* Modern Variables */
+        :root {
+            --primary: #0066cc;
+            --secondary: #ff6600;
+            --accent: #ff9900;
+            --dark: #222831;
+            --medium: #393e46;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --success: #28a745;
+            --warning: #ffc107;
+            --error: #dc3545;
+            --radius: 8px;
+            --shadow: 0 4px 12px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Basics */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 70px;
+            background-color: var(--secondary);
+        }
+
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -1rem;
+        }
+
+        .col {
+            padding: 0 1rem;
+            flex: 1;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-heading {
+            margin-bottom: 3rem;
+        }
+
+        /* Emergency Header */
+        .emergency-header {
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 0.5rem 0;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .emergency-header a {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .header-contact {
+            text-align: right;
+        }
+
+        .phone-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-number:before {
+            content: '📞';
+            margin-right: 0.5rem;
+        }
+
+        .phone-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .nav-cta {
+            background-color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-cta a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            padding: 1rem 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1600/800') center/cover no-repeat;
+            padding: 5rem 0;
+            color: var(--white);
+            text-align: left;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .trust-badges {
+            display: flex;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: flex;
+            align-items: center;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .badge:before {
+            content: '✓';
+            background-color: var(--secondary);
+            color: var(--white);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* CTA Buttons */
+        .btn {
+            display: inline-block;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: #ff8833;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 102, 0, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-lg {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Hero Form */
+        .hero-form-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 1rem;
+        }
+
+        .hero-form {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            width: 100%;
+        }
+
+        .hero-form h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+
+        .hero-form input,
+        .hero-form select,
+        .hero-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: var(--radius);
+            font-size: 1rem;
+        }
+
+        .hero-form .btn {
+            margin-top: 1rem;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-img {
+            height: 200px;
+            background-color: #eee;
+        }
+
+        .service-content {
+            padding: 1.5rem;
+        }
+
+        .service-content h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Neighborhoods Grid */
+        .neighborhoods-section {
+            background-color: #f0f5ff;
+            padding: 4rem 0;
+        }
+
+        .neighborhoods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .neighborhood-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .neighborhood-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .neighborhood-img {
+            height: 180px;
+            background-color: #eee;
+        }
+
+        .neighborhood-content {
+            padding: 1.5rem;
+        }
+
+        .neighborhood-content h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Why Choose Us Section */
+        .why-us-section {
+            padding: 4rem 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #e6f0ff;
+            color: var(--primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* HVAC Tips Section */
+        .tips-section {
+            background-color: #fff9f5;
+            padding: 4rem 0;
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .tip-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .tip-img {
+            height: 180px;
+            background-color: #eee;
+        }
+
+        .tip-content {
+            padding: 1.5rem;
+        }
+
+        .tip-content h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: #f0f5ff;
+            position: relative;
+            overflow: hidden;
+            padding: 4rem 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #eee;
+            margin-right: 1rem;
+        }
+
+        .author-info h4 {
+            margin-bottom: 0.2rem;
+            font-size: 1.1rem;
+        }
+
+        .author-location {
+            font-size: 0.9rem;
+            color: var(--medium);
+        }
+
+        .testimonial-rating {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5rem;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .faq-question:before {
+            content: 'Q:';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+
+        .faq-answer {
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .faq-answer:before {
+            content: 'A:';
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), #004999);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+
+        .cta-section h2:after {
+            background-color: var(--secondary);
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Content Blocks */
+        .content-block {
+            margin-bottom: 3rem;
+        }
+
+        .content-block h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .content-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        .content-image {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Map Section */
+        .map-container {
+            position: relative;
+            height: 400px;
+            background-color: #eee;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 4rem 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 50px;
+            background-color: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact-icon {
+            margin-right: 1rem;
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.8rem;
+            margin-bottom: 0.8rem;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            background-color: #1a1f27;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .licenses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+        }
+
+        .license-item {
+            margin: 0 1rem;
+            color: #aaa;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        /* Media Queries */
+        @media (max-width: 1200px) {
+            .hero-form-container {
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin-top: 3rem;
+            }
+            
+            .hero-form {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-contact {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-container {
+                justify-content: center;
+            }
+            
+            .hero-content {
+                max-width: 100%;
+                text-align: center;
+            }
+            
+            .trust-badges {
+                justify-content: center;
+            }
+            
+            .btn-group {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 3rem 0;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background-color: #f0f5ff;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .breadcrumbs-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .breadcrumbs-item:not(:last-child):after {
+            content: '>';
+            margin: 0 0.5rem;
+            color: var(--medium);
+        }
+
+        .breadcrumbs-link {
+            color: var(--medium);
+            text-decoration: none;
+        }
+
+        .breadcrumbs-link:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .breadcrumbs-current {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Special Offer Box */
+        .special-offer {
+            background-color: #fff9f5;
+            border: 2px dashed var(--secondary);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .special-offer:before {
+            content: 'SOUTH PASADENA EXCLUSIVE';
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            background-color: var(--secondary);
+            color: var(--white);
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.2rem 2rem;
+            transform: rotate(45deg);
+        }
+
+        .special-offer h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .special-offer .offer-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin: 1rem 0;
+        }
+
+        /* Weather Bar */
+        .weather-bar {
+            background-color: #e6f0ff;
+            padding: 1rem 0;
+            margin-bottom: 4rem;
+        }
+
+        .weather-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .weather-item {
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 1rem;
+        }
+
+        .weather-icon {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+            color: var(--primary);
+        }
+
+        .weather-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .weather-heading {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Service Area Bubbles */
+        .service-areas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0;
+            justify-content: center;
+        }
+
+        .area-bubble {
+            background-color: var(--white);
+            color: var(--primary);
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .area-bubble:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        /* Historical Homes Section */
+        .historical-section {
+            background-color: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .historical-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .historical-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .historical-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .historical-img {
+            height: 200px;
+            background-color: #eee;
+        }
+
+        .historical-content {
+            padding: 1.5rem;
+        }
+
+        .historical-content h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Emergency Header -->
+    <div class="emergency-header">
+        <div class="container">
+            24/7 Emergency HVAC Service in South Pasadena | <a href="tel:+16265551234">(626) 555-1234</a> | 60-Minute Response Time
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <div class="logo-text">HVAC<span>Pasadena</span></div>
+                </div>
+                <div class="header-contact">
+                    <a href="tel:+16265551234" class="phone-number">(626) 555-1234</a>
+                    <div class="phone-text">Free Estimates • Same-Day Service</div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ac-repair.html">AC Repair</a></li>
+                        <li><a href="furnace-installation.html">Heating</a></li>
+                        <li><a href="hvac-maintenance.html">Maintenance</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="#estimate-form">Free Estimate</a>
+                    </div>
+                    <button class="mobile-menu-btn">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">Home</a></li>
+                <li class="breadcrumbs-item"><a href="service-areas.html" class="breadcrumbs-link">Service Areas</a></li>
+                <li class="breadcrumbs-item"><span class="breadcrumbs-current">South Pasadena</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>HVAC Services in South Pasadena, California</h1>
+                <p>Your local HVAC experts serving South Pasadena since 2010. From historic Craftsman homes to mid-century treasures, we provide specialized heating and cooling solutions tailored to South Pasadena's unique properties.</p>
+                
+                <div class="trust-badges">
+                    <div class="badge">South Pasadena Specialists</div>
+                    <div class="badge">60-Minute Response</div>
+                    <div class="badge">Historic Home Expertise</div>
+                    <div class="badge">100% Satisfaction</div>
+                </div>
+                
+                <div class="btn-group">
+                    <a href="#estimate-form" class="btn btn-primary btn-lg">Get a Free Quote</a>
+                    <a href="tel:+16265551234" class="btn btn-outline btn-lg">Call (626) 555-1234</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-form-container">
+            <form class="hero-form" id="estimate-form">
+                <h3>Schedule Service in South Pasadena</h3>
+                <input type="text" placeholder="Full Name*" required>
+                <input type="tel" placeholder="Phone Number*" required>
+                <input type="email" placeholder="Email Address*" required>
+                <select required>
+                    <option value="">Select Service*</option>
+                    <option value="ac-repair">AC Repair</option>
+                    <option value="ac-installation">AC Installation</option>
+                    <option value="furnace-repair">Furnace Repair</option>
+                    <option value="furnace-installation">Furnace Installation</option>
+                    <option value="maintenance">HVAC Maintenance</option>
+                    <option value="other">Other Service</option>
+                </select>
+                <input type="text" placeholder="South Pasadena Neighborhood">
+                <button type="submit" class="btn btn-primary btn-block">Request Free Estimate</button>
+                <p style="font-size: 0.8rem; margin-top: 0.5rem; text-align: center;">South Pasadena residents: Same-day appointments available!</p>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Weather Context Bar -->
+    <div class="weather-bar">
+        <div class="container">
+            <div class="weather-container">
+                <div class="weather-item">
+                    <span class="weather-heading">South Pasadena Climate Considerations</span>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-icon">☀️</div>
+                    <div class="weather-text">Warm Summers (avg. 88°F)</div>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-icon">❄️</div>
+                    <div class="weather-text">Mild Winters (avg. 45°F)</div>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-icon">🌳</div>
+                    <div class="weather-text">Tree Canopy Challenges</div>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-icon">🏠</div>
+                    <div class="weather-text">Historical Home Considerations</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Special Offer Box -->
+    <div class="container">
+        <div class="special-offer">
+            <h3>South Pasadena Resident Special</h3>
+            <p>Limited time offer for South Pasadena homeowners:</p>
+            <div class="offer-price">$75 OFF</div>
+            <p>Any HVAC repair or maintenance service</p>
+            <a href="#estimate-form" class="btn btn-primary">Claim This Offer</a>
+        </div>
+    </div>
+    
+    <!-- About South Pasadena HVAC Services -->
+    <section>
+        <div class="container">
+            <div class="two-column">
+                <div>
+                    <h2>South Pasadena's Trusted HVAC Partner</h2>
+                    <p>South Pasadena is known for its tree-lined streets, historic architecture, and charming neighborhoods. These beautiful characteristics also present unique HVAC challenges that require specialized knowledge and experience.</p>
+                    
+                    <p>At HVAC Pasadena, we've been serving South Pasadena residents since 2010, developing expertise in the specific heating and cooling needs of the area's diverse housing stock. From century-old Craftsman bungalows to mid-century gems and newer construction, our technicians understand the intricacies of maintaining comfort in South Pasadena's unique homes.</p>
+                    
+                    <p>Our team includes specialists trained in working with historical properties, ensuring that modern HVAC solutions can be integrated while preserving architectural integrity. We're familiar with South Pasadena's building codes, permit requirements, and the specific challenges presented by older homes with limited space for ductwork or modern equipment.</p>
+                    
+                    <p>Whether you need emergency AC repair during a summer heat wave, energy-efficient heating solutions for winter, or regular maintenance to keep your system running smoothly year-round, our South Pasadena-based technicians are here to help with prompt, professional service tailored to your home's specific needs.</p>
+                    
+                    <div class="btn-group" style="margin-top: 2rem;">
+                        <a href="tel:+16265551234" class="btn btn-primary">Call Now for Service</a>
+                        <a href="#service-areas" class="btn btn-outline" style="color: var(--primary); border-color: var(--primary);">View South Pasadena Areas</a>
+                    </div>
+                </div>
+                <div class="content-image">
+                    <img src="/api/placeholder/500/400" alt="HVAC Technician at South Pasadena Home">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section>
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our HVAC Services in South Pasadena</h2>
+                <p>Comprehensive heating, cooling, and air quality solutions tailored to South Pasadena homes</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Historic Home HVAC Solutions">
+                    </div>
+                    <div class="service-content">
+                        <h3>Historic Home HVAC Solutions</h3>
+                        <p>Specialized heating and cooling options for South Pasadena's historic Craftsman, Victorian, and Spanish Colonial homes. Our solutions preserve architectural integrity while providing modern comfort.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Ductless mini-split systems</li>
+                            <li>High-velocity systems</li>
+                            <li>Custom ductwork design</li>
+                            <li>Energy-efficient upgrades</li>
+                        </ul>
+                        <a href="historic-home-hvac.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="AC Repair in South Pasadena">
+                    </div>
+                    <div class="service-content">
+                        <h3>AC Repair in South Pasadena</h3>
+                        <p>Fast, reliable air conditioning repair with 60-minute response times throughout South Pasadena. Our experienced technicians can diagnose and fix any AC issue, from refrigerant leaks to electrical problems.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Emergency 24/7 service</li>
+                            <li>All brands and models serviced</li>
+                            <li>Upfront pricing with no surprises</li>
+                            <li>Same-day service available</li>
+                        </ul>
+                        <a href="ac-repair.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Energy-Efficient Heating">
+                    </div>
+                    <div class="service-content">
+                        <h3>Energy-Efficient Heating</h3>
+                        <p>Stay warm during South Pasadena's cool evenings with our professional heating system installation and repair services. We offer energy-efficient options designed to reduce utility bills while providing consistent comfort.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>High-efficiency furnaces</li>
+                            <li>Heat pump systems</li>
+                            <li>Zone heating solutions</li>
+                            <li>Smart thermostat integration</li>
+                        </ul>
+                        <a href="furnace-installation.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="HVAC Maintenance in South Pasadena">
+                    </div>
+                    <div class="service-content">
+                        <h3>HVAC Maintenance Plans</h3>
+                        <p>Prevent costly breakdowns and extend your system's lifespan with our comprehensive maintenance plans tailored for South Pasadena homes. Regular tune-ups ensure optimal performance year-round.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Bi-annual system tune-ups</li>
+                            <li>21-point inspection checklist</li>
+                            <li>Filter replacement and system cleaning</li>
+                            <li>Priority service for South Pasadena residents</li>
+                        </ul>
+                        <a href="hvac-maintenance.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Historical Homes Section -->
+    <section class="historical-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>HVAC Solutions for South Pasadena's Historic Homes</h2>
+                <p>Specialized approaches for preserving character while providing modern comfort</p>
+            </div>
+            
+            <div class="historical-grid">
+                <div class="historical-card">
+                    <div class="historical-img">
+                        <img src="/api/placeholder/400/200" alt="Craftsman Home HVAC">
+                    </div>
+                    <div class="historical-content">
+                        <h3>Craftsman Bungalows</h3>
+                        <p>South Pasadena's famous Craftsman homes present unique challenges with their woodwork, built-ins, and original features. Our solutions include:</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Concealed mini-split systems</li>
+                            <li>High-velocity small-duct systems</li>
+                            <li>Energy-efficient retrofits</li>
+                            <li>Zoned solutions for even temperatures</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="historical-card">
+                    <div class="historical-img">
+                        <img src="/api/placeholder/400/200" alt="Victorian Home HVAC">
+                    </div>
+                    <div class="historical-content">
+                        <h3>Victorian Homes</h3>
+                        <p>Victorian homes in South Pasadena often have high ceilings and unique floor plans that create heating and cooling challenges. Our approach includes:</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Multi-zone systems for efficient operation</li>
+                            <li>Strategic placement of supply and return vents</li>
+                            <li>Ceiling fan integration for better air circulation</li>
+                            <li>Specialized insulation recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="historical-card">
+                    <div class="historical-img">
+                        <img src="/api/placeholder/400/200" alt="Mid-Century Home HVAC">
+                    </div>
+                    <div class="historical-content">
+                        <h3>Mid-Century Modern Homes</h3>
+                        <p>South Pasadena's mid-century homes often feature open floor plans and lots of glass, creating specific HVAC requirements. Our solutions include:</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Low-profile ductwork design</li>
+                            <li>Energy-efficient heat pumps</li>
+                            <li>Solar-friendly HVAC systems</li>
+                            <li>Smart home integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- South Pasadena Neighborhoods Section -->
+    <section id="service-areas" class="neighborhoods-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>HVAC Services Throughout South Pasadena</h2>
+                <p>We provide prompt, reliable service to all South Pasadena neighborhoods</p>
+            </div>
+            
+            <div class="service-areas">
+                <div class="area-bubble">Monterey Hills</div>
+                <div class="area-bubble">Mission District</div>
+                <div class="area-bubble">Altos de Monterey</div>
+                <div class="area-bubble">Arroyo Vista</div>
+                <div class="area-bubble">Fair Oaks</div>
+                <div class="area-bubble">Glendon Park</div>
+                <div class="area-bubble">El Centro</div>
+                <div class="area-bubble">Raymond Hill</div>
+                <div class="area-bubble">Historic District</div>
+                <div class="area-bubble">Ostrich Farm</div>
+                <div class="area-bubble">Marengo Avenue</div>
+                <div class="area-bubble">Oak Tree</div>
+            </div>
+            
+            <div class="neighborhoods-grid">
+                <div class="neighborhood-card">
+                    <div class="neighborhood-img">
+                        <img src="/api/placeholder/400/180" alt="Mission District HVAC Services">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Mission District</h3>
+                        <p>Home to some of South Pasadena's oldest properties, the Mission District requires HVAC solutions that respect historical integrity while delivering modern comfort. Our team has extensive experience with the unique cooling and heating challenges in this neighborhood.</p>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-img">
+                        <img src="/api/placeholder/400/180" alt="Monterey Hills HVAC Services">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Monterey Hills</h3>
+                        <p>The hillside location of these homes creates unique HVAC challenges with sun exposure and temperature variations. Our technicians understand the specific needs of Monterey Hills properties and provide tailored cooling and heating solutions.</p>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-img">
+                        <img src="/api/placeholder/400/180" alt="Arroyo Vista HVAC Services">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Arroyo Vista</h3>
+                        <p>Homes near the Arroyo often experience temperature fluctuations due to their proximity to the natural area. Our solutions for Arroyo Vista focus on consistent comfort while maximizing energy efficiency in these unique properties.</p>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-img">
+                        <img src="/api/placeholder/400/180" alt="Fair Oaks HVAC Services">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Fair Oaks</h3>
+                        <p>Fair Oaks features a mix of historical and newer homes, each with their own HVAC requirements. Our team provides customized solutions that address the specific needs of your Fair Oaks property, from century-old Craftsman to modern construction.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem; text-align: center;">
+                <h3>Don't see your neighborhood? We serve the entire South Pasadena area!</h3>
+                <p>Call us at <a href="tel:+16265551234" style="color: var(--primary); font-weight: 700;">(626) 555-1234</a> to confirm service in your specific location.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Map Section -->
+    <section>
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our South Pasadena Service Area</h2>
+                <p>We provide fast response times throughout South Pasadena</p>
+            </div>
+            
+            <div class="map-container">
+                <img src="/api/placeholder/1200/400" alt="South Pasadena Service Area Map">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us Section -->
+    <section class="why-us-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Why South Pasadena Residents Choose Us</h2>
+                <p>Experience the difference with South Pasadena's highest-rated HVAC service provider</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Historical Home Specialists</h3>
+                    <p>Our technicians are trained in the specific HVAC challenges of South Pasadena's iconic Craftsman bungalows, Victorian homes, and other historical properties.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <h3>60-Minute Response Time</h3>
+                    <p>We guarantee a 60-minute response time for emergency services throughout South Pasadena—because when your AC fails during a heat wave, you can't wait.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Upfront, No-Surprise Pricing</h3>
+                    <p>We provide clear, written estimates before any work begins. No hidden fees or unexpected charges—ever. South Pasadena residents appreciate our transparent approach.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🔧</div>
+                    <h3>Experienced Local Team</h3>
+                    <p>Our technicians have an average of 15+ years of experience and live in the area, providing a level of local knowledge that national chains can't match.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Energy-Efficient Solutions</h3>
+                    <p>We specialize in eco-friendly, energy-efficient HVAC options that preserve South Pasadena's environment while reducing your utility bills.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>South Pasadena's Top-Rated HVAC Company</h3>
+                    <p>With over 200 five-star reviews from South Pasadena residents, our reputation for excellence speaks for itself.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- HVAC Tips Section -->
+    <section class="tips-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>HVAC Tips for South Pasadena Homeowners</h2>
+                <p>Expert advice tailored to South Pasadena's unique homes and climate</p>
+            </div>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-img">
+                        <img src="/api/placeholder/400/180" alt="Historic Home HVAC Tips">
+                    </div>
+                    <div class="tip-content">
+                        <h3>Preserving Character While Upgrading HVAC</h3>
+                        <p>For South Pasadena's historic homes, consider ductless mini-split systems that require minimal structural changes. These systems can be installed with small wall penetrations and indoor units that can be painted to match your interior. This preserves your home's character while providing modern comfort.</p>
+                    </div>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-img">
+                        <img src="/api/placeholder/400/180" alt="Energy Efficiency Tips">
+                    </div>
+                    <div class="tip-content">
+                        <h3>Maximizing Energy Efficiency</h3>
+                        <p>South Pasadena's tree canopy can be both a blessing and a challenge for HVAC efficiency. Keep outdoor units clear of leaves and debris, and consider smart scheduling around peak sun exposure. Program your thermostat to pre-cool your home before the afternoon heat hits, taking advantage of off-peak energy rates.</p>
+                    </div>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-img">
+                        <img src="/api/placeholder/400/180" alt="South Pasadena Seasonal Maintenance">
+                    </div>
+                    <div class="tip-content">
+                        <h3>South Pasadena Seasonal Maintenance</h3>
+                        <p>Schedule AC maintenance in early spring before temperatures rise, and heating maintenance in early fall. South Pasadena's mature trees mean extra attention to keeping outdoor units clear of debris, especially after Santa Ana wind events. This preventative approach can extend your system's life by 3-5 years.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials from South Pasadena Residents -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>What South Pasadena Residents Say</h2>
+                <p>Read reviews from your neighbors throughout South Pasadena</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Our 1911 Craftsman home presented unique challenges for AC installation, but HVAC Pasadena's team developed a customized solution using a ductless mini-split system that preserved all our original woodwork. The system is whisper-quiet and keeps every room perfectly comfortable. Their knowledge of historical homes in South Pasadena made all the difference."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Elizabeth M.</h4>
+                            <div class="author-location">Mission District, South Pasadena</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"When our AC stopped working during the worst heat wave last summer, HVAC Pasadena sent a technician to our South Pasadena home within 45 minutes! They diagnosed a capacitor issue, had the part on their truck, and had us back up and running before dinner. Their emergency response is truly impressive, and the price was fair even for same-day service."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Robert W.</h4>
+                            <div class="author-location">Fair Oaks, South Pasadena</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"I've been using HVAC Pasadena's maintenance plan for my South Pasadena home for three years now. Their bi-annual tune-ups have kept my system running flawlessly, and I haven't had a single unexpected issue. Their technicians are always on time, professional, and take the time to explain exactly what they're doing. The peace of mind is worth every penny!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Maria L.</h4>
+                            <div class="author-location">Monterey Hills, South Pasadena</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section>
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>South Pasadena HVAC FAQs</h2>
+                <p>Answers to common questions from South Pasadena residents</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">What HVAC solutions work best for South Pasadena's historic homes?</div>
+                    <div class="faq-answer">For South Pasadena's historic homes, we often recommend ductless mini-split systems or high-velocity small-duct systems that minimize impact on original architecture. These solutions offer zoned comfort without requiring extensive modifications to your home's structure. For homes that already have ductwork, we can design custom solutions that improve efficiency while preserving historical features. Each home requires a personalized approach, which we determine after a thorough on-site evaluation.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do South Pasadena homes require special HVAC considerations?</div>
+                    <div class="faq-answer">Yes, many South Pasadena homes have specific HVAC considerations. The abundance of mature trees can affect outdoor units, requiring more frequent maintenance. Historical homes often have different insulation standards and architectural features that impact airflow. Additionally, South Pasadena's microclimate, with temperature variations between hillside neighborhoods and those closer to the Arroyo, can influence system design. Our experience in the area allows us to address these unique factors when recommending and installing HVAC systems.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Are there any rebates or incentives available for South Pasadena homeowners?</div>
+                    <div class="faq-answer">Yes, South Pasadena residents can access several rebate programs. The South Pasadena Public Works Department offers water and energy conservation rebates that may apply to certain HVAC upgrades. Additionally, there are SoCalGas and Southern California Edison rebates for energy-efficient heating and cooling systems. Federal tax credits are also available for qualifying equipment. Our team stays current on all available incentives and can help you navigate the application process to maximize your savings.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How quickly can you respond to HVAC emergencies in South Pasadena?</div>
+                    <div class="faq-answer">We guarantee a 60-minute response time for emergency HVAC service throughout South Pasadena. Our service center is strategically located to ensure fast response times, and we prioritize emergency calls from current customers. For non-emergency service, we typically offer same-day or next-day appointments to South Pasadena residents, depending on schedule availability.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What maintenance is recommended for South Pasadena homes?</div>
+                    <div class="faq-answer">For optimal performance in South Pasadena's climate, we recommend bi-annual maintenance—AC service in spring and heating system service in fall. South Pasadena's mature tree canopy means we pay special attention to keeping outdoor units clear of debris and checking for issues that can arise from leaf litter. For homes near the Arroyo or in heavily wooded areas, more frequent filter changes may be necessary. Our maintenance plans can be customized to your specific property's needs.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you need permits for HVAC work in South Pasadena?</div>
+                    <div class="faq-answer">Yes, South Pasadena typically requires permits for new HVAC installations, major system replacements, and some types of extensive repairs. The city is particularly attentive to work done on historically designated properties. Our team is familiar with South Pasadena's permitting process and building codes, and we handle all necessary permits as part of our service. This ensures your installation or repair is fully compliant with local regulations and will pass inspection.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>South Pasadena's Most Trusted HVAC Provider</h2>
+                <p>Join hundreds of satisfied South Pasadena residents who trust us with their home comfort. Contact us today for expert HVAC service tailored to your home's unique needs.</p>
+                <div class="btn-group">
+                    <a href="#estimate-form" class="btn btn-primary btn-lg">Get a Free Quote</a>
+                    <a href="tel:+16265551234" class="btn btn-outline btn-lg">Call (626) 555-1234</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>HVAC Pasadena has been providing top-quality heating, cooling, and air quality services to Pasadena residents and businesses since 2010. We're committed to exceptional service, fair pricing, and customer satisfaction.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">F</a>
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">I</a>
+                        <a href="#" class="social-link">Y</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="ac-repair.html">AC Repair & Installation</a></li>
+                        <li><a href="furnace-installation.html">Heating Services</a></li>
+                        <li><a href="hvac-maintenance.html">HVAC Maintenance</a></li>
+                        <li><a href="air-quality.html">Indoor Air Quality</a></li>
+                        <li><a href="commercial-hvac.html">Commercial HVAC</a></li>
+                        <li><a href="emergency-service.html">Emergency Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Service Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="pasadena-hvac.html">Pasadena</a></li>
+                        <li><a href="south-pasadena-hvac.html">South Pasadena</a></li>
+                        <li><a href="north-pasadena-hvac.html">North Pasadena</a></li>
+                        <li><a href="altadena-hvac.html">Altadena</a></li>
+                        <li><a href="san-marino-hvac.html">San Marino</a></li>
+                        <li><a href="sierra-madre-hvac.html">Sierra Madre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">📞</div>
+                        <div>
+                            <p>(626) 555-1234</p>
+                            <p>24/7 Emergency Service</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">✉️</div>
+                        <div>
+                            <p>info@hvacpasadena.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">🏢</div>
+                        <div>
+                            <p>123 E Colorado Blvd</p>
+                            <p>Pasadena, CA 91105</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">⏰</div>
+                        <div>
+                            <p>Mon-Fri: 7am-8pm</p>
+                            <p>Sat-Sun: 8am-5pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 HVAC Pasadena. All Rights Reserved.</p>
+                <div class="licenses">
+                    <div class="license-item">CA License #ABC12345</div>
+                    <div class="license-item">EPA Certified</div>
+                    <div class="license-item">NATE Certified Technicians</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
