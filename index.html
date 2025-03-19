@@ -9,18 +9,29 @@
         /* Modern Variables */
         :root {
             --primary: #0066cc;
+            --primary-dark: #005bb8;
+            --primary-light: #3385d6;
             --secondary: #ff6600;
-            --accent: #ff9900;
-            --dark: #222831;
-            --medium: #393e46;
-            --light: #f8f9fa;
+            --secondary-dark: #e55c00;
+            --secondary-light: #ff8533;
             --white: #ffffff;
-            --success: #28a745;
-            --warning: #ffc107;
-            --error: #dc3545;
-            --radius: 8px;
+            --light: #f8f9fa;
+            --gray-100: #f8f9fa;
+            --gray-200: #e9ecef;
+            --gray-300: #dee2e6;
+            --gray-400: #ced4da;
+            --gray-500: #adb5bd;
+            --gray-600: #6c757d;
+            --gray-700: #495057;
+            --gray-800: #343a40;
+            --gray-900: #212529;
+            --dark: #222831;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.075);
             --shadow: 0 4px 12px rgba(0,0,0,0.15);
-            --transition: all 0.3s ease;
+            --shadow-lg: 0 8px 24px rgba(0,0,0,0.2);
+            --transition: all 0.25s ease-in-out;
+            --radius: 8px;
+            --radius-sm: 4px;
         }
 
         /* Reset & Basics */
@@ -126,7 +137,7 @@
             text-decoration: underline;
         }
 
-        /* Header */
+        * Header */
         header {
             background-color: var(--white);
             box-shadow: var(--shadow);
@@ -142,14 +153,10 @@
             padding: 1rem 0;
         }
 
+        /* Logo */
         .logo {
             display: flex;
             align-items: center;
-        }
-
-        .logo img {
-            height: 60px;
-            margin-right: 1rem;
         }
 
         .logo-text {
@@ -158,12 +165,14 @@
             color: var(--primary);
             text-transform: uppercase;
             letter-spacing: -1px;
+            line-height: 1.2;
         }
 
         .logo-text span {
             color: var(--secondary);
         }
 
+        /* Header Contact */
         .header-contact {
             text-align: right;
         }
@@ -175,11 +184,22 @@
             text-decoration: none;
             display: flex;
             align-items: center;
+            transition: var(--transition);
         }
 
-        .phone-number:before {
-            content: '📞';
-            margin-right: 0.5rem;
+        .phone-number:hover {
+            color: var(--primary-dark);
+        }
+
+        .phone-number::before {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230066cc'%3E%3Cpath d='M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
         }
 
         .phone-text {
@@ -187,21 +207,27 @@
             font-weight: 600;
             color: var(--secondary);
             text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        /* Navigation */
+        /* Main Navigation */
         nav {
-            background-color: var(--primary);
+            background: linear-gradient(to right, var(--primary-dark), var(--primary));
         }
 
         .nav-container {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            position: relative;
         }
 
+        /* Nav Links - Desktop */
         .nav-links {
-            display: flex;
             list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
         }
 
         .nav-links li {
@@ -212,28 +238,409 @@
             color: var(--white);
             text-decoration: none;
             font-weight: 600;
-            padding: 1rem 1.5rem;
+            padding: 1.25rem 1.2rem;
             display: block;
             transition: var(--transition);
         }
 
         .nav-links a:hover {
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255,255,255,0.15);
         }
 
+        /* Dropdown - Desktop */
+        .dropdown-toggle {
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown-toggle::after {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin-left: 8px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: transform 0.2s ease;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: var(--white);
+            min-width: 220px;
+            box-shadow: var(--shadow);
+            border-radius: 0 0 var(--radius) var(--radius);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s 0.2s;
+            z-index: 100;
+            list-style: none;
+            padding: 0.5rem 0;
+        }
+
+        .dropdown:hover .dropdown-menu,
+        .dropdown:focus-within .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s 0s;
+        }
+
+        .dropdown:hover .dropdown-toggle::after,
+        .dropdown:focus-within .dropdown-toggle::after {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu li {
+            width: 100%;
+        }
+
+        .dropdown-menu a {
+            padding: 0.7rem 1.5rem;
+            color: var(--gray-800);
+            font-weight: 500;
+            border-left: 3px solid transparent;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: var(--gray-100);
+            color: var(--primary);
+            border-left: 3px solid var(--primary);
+        }
+
+        /* Call to Action Button */
         .nav-cta {
-            background-color: var(--secondary);
             display: flex;
             align-items: center;
         }
 
         .nav-cta a {
+            background: linear-gradient(to right, var(--secondary), var(--secondary-light));
             color: var(--white);
             text-decoration: none;
             font-weight: 700;
-            padding: 1rem 1.5rem;
+            padding: 0.7rem 1.5rem;
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
         }
 
+        .nav-cta a:hover {
+            background: linear-gradient(to right, var(--secondary-dark), var(--secondary));
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .nav-cta a::before {
+            content: '';
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        /* Mobile Menu Styles */
+        .mobile-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            position: relative;
+            z-index: 1001;
+            padding: 0;
+        }
+
+        .mobile-toggle span {
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 24px;
+            background: var(--white);
+            left: 12px;
+            transform: rotate(0deg);
+            transition: 0.25s ease-in-out;
+        }
+
+        .mobile-toggle span:nth-child(1) {
+            top: 16px;
+        }
+
+        .mobile-toggle span:nth-child(2),
+        .mobile-toggle span:nth-child(3) {
+            top: 24px;
+        }
+
+        .mobile-toggle span:nth-child(4) {
+            top: 32px;
+        }
+
+        .mobile-toggle.active span:nth-child(1) {
+            top: 24px;
+            width: 0%;
+            left: 50%;
+        }
+
+        .mobile-toggle.active span:nth-child(2) {
+            transform: rotate(45deg);
+        }
+
+        .mobile-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+
+        .mobile-toggle.active span:nth-child(4) {
+            top: 24px;
+            width: 0%;
+            left: 50%;
+        }
+
+        /* Mobile Menu Overlay */
+        .mobile-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 998;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .mobile-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            /* Mobile Menu Toggle */
+            .mobile-toggle {
+                display: block;
+            }
+            
+            /* Add mobile overlay */
+            .mobile-overlay {
+                display: block;
+            }
+            
+            /* Header adjustments for mobile */
+            .header-container {
+                padding: 0.75rem 0;
+            }
+            
+            .nav-container {
+                justify-content: flex-end;
+                padding: 0.8rem 1rem;
+            }
+            
+            /* Mobile Menu Slide-in */
+            .nav-links {
+                display: block;
+                position: fixed;
+                top: 0;
+                right: -300px; /* Start off-screen */
+                width: 300px;
+                height: 100vh;
+                background-color: var(--white);
+                box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+                padding: 80px 0 80px;
+                overflow-y: auto;
+                transition: right 0.3s ease;
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                right: 0; /* Slide in from right */
+            }
+            
+            .nav-links > li {
+                width: 100%;
+                border-bottom: 1px solid var(--gray-200);
+            }
+            
+            .nav-links > li:last-child {
+                border-bottom: none;
+            }
+            
+            .nav-links > li > a,
+            .dropdown-toggle {
+                padding: 1rem 1.5rem;
+                color: var(--gray-800);
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .nav-links > li > a:hover,
+            .dropdown-toggle:hover {
+                background-color: var(--gray-100);
+                color: var(--primary);
+            }
+            
+            /* Dropdown for Mobile */
+            .dropdown-toggle::after {
+                margin-left: auto;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23343a40'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+            }
+            
+            .dropdown.active .dropdown-toggle {
+                color: var(--primary);
+                background-color: var(--gray-100);
+            }
+            
+            .dropdown.active .dropdown-toggle::after {
+                transform: rotate(180deg);
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230066cc'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+            }
+            
+            .dropdown-menu {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                max-height: 0;
+                overflow: hidden;
+                padding: 0;
+                transition: max-height 0.3s ease;
+                background-color: var(--gray-100);
+            }
+            
+            .dropdown.active .dropdown-menu {
+                max-height: 1000px; /* Large enough for content */
+                padding: 0.5rem 0;
+            }
+            
+            .dropdown-menu a {
+                padding: 0.8rem 3rem 0.8rem 2.5rem;
+                position: relative;
+                border-left: none;
+            }
+            
+            .dropdown-menu a::before {
+                content: '';
+                position: absolute;
+                left: 1.5rem;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: var(--gray-400);
+            }
+            
+            .dropdown-menu a:hover {
+                border-left: none;
+            }
+            
+            .dropdown-menu a:hover::before {
+                background-color: var(--primary);
+            }
+            
+            /* Fixed CTA at bottom of mobile menu */
+            .nav-cta {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 300px;
+                padding: 1rem;
+                background-color: var(--white);
+                box-shadow: 0 -5px 15px rgba(0,0,0,0.05);
+                z-index: 1000;
+                display: none;
+                transform: translateX(300px);
+                transition: transform 0.3s ease;
+            }
+            
+            .nav-links.active ~ .nav-cta {
+                display: block;
+                transform: translateX(0);
+            }
+            
+            .nav-cta a {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+                padding: 0.5rem 0;
+            }
+            
+            .logo-text {
+                font-size: 1.6rem;
+            }
+            
+            .header-contact {
+                margin-top: 0.5rem;
+                text-align: center;
+            }
+            
+            .phone-number {
+                font-size: 1.5rem;
+                justify-content: center;
+            }
+            
+            .phone-text {
+                font-size: 0.8rem;
+            }
+            
+            .emergency-header {
+                font-size: 0.85rem;
+                line-height: 1.4;
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .nav-links,
+            .nav-links.active ~ .nav-cta {
+                width: 280px;
+            }
+            
+            .logo-text {
+                font-size: 1.4rem;
+            }
+            
+            .phone-number {
+                font-size: 1.3rem;
+            }
+            
+            .phone-text {
+                font-size: 0.75rem;
+            }
+            
+            .nav-links > li > a, 
+            .dropdown-toggle {
+                padding: 0.9rem 1.25rem;
+            }
+            
+            .dropdown-menu a {
+                padding: 0.7rem 1.25rem 0.7rem 2.25rem;
+            }
+            
+            .dropdown-menu a::before {
+                left: 1.25rem;
+            }
+        }
         /* Hero Section */
         .hero {
             position: relative;
@@ -875,6 +1282,153 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* Add these below your existing mobile styles to fix any missing styles */
+            @media (max-width: 992px) {
+                /* Ensure mobile menu starts offscreen */
+                .nav-links {
+                    right: -300px !important; /* Make sure it's off-screen initially */
+                    transition: right 0.3s ease !important;
+                }
+                
+                /* Make sure it slides in properly */
+                .nav-links.active {
+                    right: 0 !important;
+                }
+                
+                /* Fix CTA position */
+                .nav-cta {
+                    transform: translateX(100%);
+                    right: 0;
+                    left: auto;
+                }
+                
+                .nav-links.active ~ .nav-cta {
+                    transform: translateX(0);
+                }
+                
+                /* Fix dropdowns in mobile */
+                .dropdown-menu {
+                    max-height: 0 !important;
+                    padding: 0 !important;
+                    overflow: hidden !important;
+                    transition: max-height 0.3s ease !important;
+                }
+                
+                .dropdown.active .dropdown-menu {
+                    max-height: 500px !important;
+                    padding: 0.5rem 0 !important;
+                }
+                
+                /* Ensure overlay covers the screen */
+                .mobile-overlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0,0,0,0.5);
+                    z-index: 998;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: opacity 0.3s ease, visibility 0.3s ease;
+                }
+                
+                .mobile-overlay.active {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                
+                /* Ensure toggle button shows up */
+                .mobile-toggle {
+                    display: block !important;
+                    z-index: 1002;
+                }
+            }
+            /* Critical Mobile Menu Fixes */
+            @media (max-width: 992px) {
+                /* Fix container position */
+                .nav-container {
+                    position: static !important;
+                }
+                
+                /* Fix toggle button appearance */
+                .mobile-toggle {
+                    display: block !important;
+                    margin-left: auto !important;
+                    z-index: 1010 !important;
+                    position: relative !important;
+                    background-color: transparent !important;
+                }
+                
+                /* Fix mobile menu positioning and appearance */
+                .nav-links {
+                    display: block !important;
+                    position: fixed !important;
+                    top: 0 !important;
+                    right: -300px !important;
+                    width: 300px !important;
+                    height: 100vh !important;
+                    background-color: white !important;
+                    box-shadow: -5px 0 15px rgba(0,0,0,0.2) !important;
+                    padding: 80px 0 80px !important;
+                    overflow-y: auto !important;
+                    transition: right 0.3s ease !important;
+                    z-index: 1005 !important;
+                }
+                
+                /* Fix menu slide-in */
+                .nav-links.active {
+                    right: 0 !important;
+                }
+                
+                /* Fix CTA button */
+                .nav-cta {
+                    position: fixed !important;
+                    bottom: 0 !important;
+                    right: -300px !important; /* Start off-screen */
+                    width: 300px !important;
+                    padding: 1rem !important;
+                    background-color: white !important;
+                    box-shadow: 0 -5px 15px rgba(0,0,0,0.1) !important;
+                    z-index: 1006 !important;
+                    transition: right 0.3s ease !important;
+                }
+                
+                /* Slide in CTA with menu */
+                .nav-links.active ~ .nav-cta {
+                    right: 0 !important;
+                    display: block !important;
+                }
+                
+                /* Ensure overlay shows up correctly */
+                .mobile-overlay {
+                    display: block !important;
+                    position: fixed !important;
+                    top: 0 !important;
+                    left: 0 !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                    background-color: rgba(0,0,0,0.5) !important;
+                    z-index: 1000 !important;
+                    opacity: 0 !important;
+                    visibility: hidden !important;
+                    transition: opacity 0.3s ease, visibility 0.3s ease !important;
+                }
+                
+                .mobile-overlay.active {
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                }
+            }
+            
+            /* Extra small screens */
+            @media (max-width: 576px) {
+                .nav-links, 
+                .nav-cta {
+                    width: 270px !important;
+                    right: -270px !important;
+                }
+            }
     </style>
 </head>
 
@@ -886,6 +1440,7 @@
         </div>
     </div>
     
+    <!-- Header -->
     <!-- Header -->
     <header>
         <div class="container">
@@ -899,26 +1454,70 @@
                 </div>
             </div>
         </div>
+        
         <nav>
-            <div class="container">
-                <div class="nav-container">
-                    <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="ac-repair.html">AC Repair</a></li>
-                        <li><a href="furnace-installation.html">Heating</a></li>
-                        <li><a href="hvac-maintenance.html">Maintenance</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="testimonials.html">Reviews</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                    <div class="nav-cta">
-                        <a href="#estimate-form">Free Estimate</a>
-                    </div>
-                    <button class="mobile-menu-btn">☰</button>
+            <div class="container nav-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ac-repair.html">AC Repair</a></li>
+                            <li><a href="heating.html">Heating</a></li>
+                            <li><a href="hvac-maintenance.html">Maintenance</a></li>
+                            <li><a href="commercial-hvac.html">Commercial HVAC</a></li>
+                            <li><a href="air-quality.html">Air Quality</a></li>
+                            <li><a href="emergency-service.html">Emergency Service</a></li>
+                            <li><a href="furnace-installation.html">Furnace Installation</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Locations</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pasadena-hvac.html">Pasadena</a></li>
+                            <li><a href="north-pasadena-hvac.html">North Pasadena</a></li>
+                            <li><a href="south-pasadena-hvac.html">South Pasadena</a></li>
+                            <li><a href="altadena-hvac.html">Altadena</a></li>
+                            <li><a href="san-marino-hvac.html">San Marino</a></li>
+                            <li><a href="sierra-madre-hvac.html">Sierra Madre</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Blog</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog/index.html">All Posts</a></li>
+                            <li><a href="blog/common-ac-problems-pasadena.html">Common AC Problems</a></li>
+                            <li><a href="blog/energy-efficient-hvac-options.html">Energy Efficient Options</a></li>
+                            <li><a href="blog/preparing-hvac-for-summer.html">Preparing for Summer</a></li>
+                            <li><a href="blog/when-to-replace-vs-repair.html">Replace vs Repair</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="testimonials.html">Reviews</a></li>
+                    <li><a href="financing.html">Financing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <a href="contact.html">Free Estimate</a>
                 </div>
+                
+                <button class="mobile-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
     </header>
+    
+    <div class="mobile-overlay"></div>
+
     
     <!-- Hero Section -->
     <section class="hero">
@@ -1298,5 +1897,115 @@
             </div>
         </div>
     </footer>
+    <script>
+     document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded');
+    
+    // Mobile Toggle
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const mobileOverlay = document.querySelector('.mobile-overlay');
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    console.log('Mobile toggle:', mobileToggle);
+    console.log('Nav links:', navLinks);
+    console.log('Mobile overlay:', mobileOverlay);
+    
+    // Mobile menu toggle
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Mobile toggle clicked');
+            
+            // Toggle active classes
+            this.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            if (mobileOverlay) mobileOverlay.classList.toggle('active');
+            
+            console.log('Nav links active:', navLinks.classList.contains('active'));
+            
+            // Prevent body scrolling when menu is open
+            if (navLinks.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+    }
+    
+    // Mobile dropdown toggles
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        
+        if (toggle) {
+            toggle.addEventListener('click', function(e) {
+                // Only handle clicks in mobile view
+                if (window.innerWidth <= 992) {
+                    e.preventDefault();
+                    console.log('Dropdown toggle clicked');
+                    
+                    // Close all other dropdowns
+                    dropdowns.forEach(item => {
+                        if (item !== dropdown && item.classList.contains('active')) {
+                            item.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle the clicked dropdown
+                    dropdown.classList.toggle('active');
+                }
+            });
+        }
+    });
+    
+    // Close mobile menu when clicking overlay
+    if (mobileOverlay) {
+        mobileOverlay.addEventListener('click', function() {
+            console.log('Overlay clicked');
+            mobileToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            
+            // Close all open dropdowns
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        });
+    }
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 992) {
+            // Reset mobile menu state
+            mobileToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            if (mobileOverlay) mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            
+            // Reset dropdowns
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+    
+    // Handle keyboard accessibility
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            // Close mobile menu on ESC key
+            mobileToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            if (mobileOverlay) mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            
+            // Close all open dropdowns
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+});
+</script>
 </body>
 </html>
