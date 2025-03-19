@@ -1,0 +1,15 @@
+# Robots.txt file for HVACPasadena.com
+# Last updated: March 19, 2025
+
+User-agent: *
+Allow: /
+Allow: /blog/
+
+# Sitemap location
+Sitemap: https://hvacpasadena.com/sitemap.xml
+
+# Optional: Disallow any temporary or development areas if needed
+# Disallow: /dev/
+# Disallow: /temp/
+# Disallow: /admin/
+# Disallow: /backup/
