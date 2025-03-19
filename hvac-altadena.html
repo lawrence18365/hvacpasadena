@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional HVAC services in Altadena, CA. AC repair, heating installation, and maintenance from technicians who understand Altadena's unique foothill climate. Call (626) 555-1234.">
+    <title>HVAC Services in Altadena, CA | Local Heating & Cooling Experts</title>
+    <style>
+        /* Modern Variables */
+        :root {
+            --primary: #0066cc;
+            --secondary: #ff6600;
+            --accent: #ff9900;
+            --dark: #222831;
+            --medium: #393e46;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --success: #28a745;
+            --warning: #ffc107;
+            --error: #dc3545;
+            --radius: 8px;
+            --shadow: 0 4px 12px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Basics */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 70px;
+            background-color: var(--secondary);
+        }
+
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -1rem;
+        }
+
+        .col {
+            padding: 0 1rem;
+            flex: 1;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-heading {
+            margin-bottom: 3rem;
+        }
+
+        /* Emergency Header */
+        .emergency-header {
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 0.5rem 0;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .emergency-header a {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .header-contact {
+            text-align: right;
+        }
+
+        .phone-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-number:before {
+            content: '📞';
+            margin-right: 0.5rem;
+        }
+
+        .phone-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .nav-cta {
+            background-color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-cta a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            padding: 1rem 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1600/800') center/cover no-repeat;
+            padding: 5rem 0;
+            color: var(--white);
+            text-align: left;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .trust-badges {
+            display: flex;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: flex;
+            align-items: center;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .badge:before {
+            content: '✓';
+            background-color: var(--secondary);
+            color: var(--white);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* CTA Buttons */
+        .btn {
+            display: inline-block;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: #ff8833;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 102, 0, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-lg {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Hero Form */
+        .hero-form-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 1rem;
+        }
+
+        .hero-form {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            width: 100%;
+        }
+
+        .hero-form h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+
+        .hero-form input,
+        .hero-form select,
+        .hero-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: var(--radius);
+            font-size: 1rem;
+        }
+
+        .hero-form .btn {
+            margin-top: 1rem;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-img {
+            height: 200px;
+            background-color: #eee;
+        }
+
+        .service-content {
+            padding: 1.5rem;
+        }
+
+        .service-content h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Neighborhoods Grid */
+        .neighborhoods-section {
+            background-color: #f0f5ff;
+            padding: 4rem 0;
+        }
+
+        .neighborhoods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .neighborhood-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .neighborhood-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .neighborhood-img {
+            height: 180px;
+            background-color: #eee;
+        }
+
+        .neighborhood-content {
+            padding: 1.5rem;
+        }
+
+        .neighborhood-content h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Why Choose Us Section */
+        .why-us-section {
+            padding: 4rem 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #e6f0ff;
+            color: var(--primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* HVAC Tips Section */
+        .tips-section {
+            background-color: #fff9f5;
+            padding: 4rem 0;
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .tip-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .tip-img {
+            height: 180px;
+            background-color: #eee;
+        }
+
+        .tip-content {
+            padding: 1.5rem;
+        }
+
+        .tip-content h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: #f0f5ff;
+            position: relative;
+            overflow: hidden;
+            padding: 4rem 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #eee;
+            margin-right: 1rem;
+        }
+
+        .author-info h4 {
+            margin-bottom: 0.2rem;
+            font-size: 1.1rem;
+        }
+
+        .author-location {
+            font-size: 0.9rem;
+            color: var(--medium);
+        }
+
+        .testimonial-rating {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5rem;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .faq-question:before {
+            content: 'Q:';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+
+        .faq-answer {
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .faq-answer:before {
+            content: 'A:';
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), #004999);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+
+        .cta-section h2:after {
+            background-color: var(--secondary);
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Content Blocks */
+        .content-block {
+            margin-bottom: 3rem;
+        }
+
+        .content-block h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .content-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        .content-image {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Map Section */
+        .map-container {
+            position: relative;
+            height: 400px;
+            background-color: #eee;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 4rem 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 50px;
+            background-color: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact-icon {
+            margin-right: 1rem;
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.8rem;
+            margin-bottom: 0.8rem;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            background-color: #1a1f27;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .licenses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+        }
+
+        .license-item {
+            margin: 0 1rem;
+            color: #aaa;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        /* Media Queries */
+        @media (max-width: 1200px) {
+            .hero-form-container {
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin-top: 3rem;
+            }
+            
+            .hero-form {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-contact {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-container {
+                justify-content: center;
+            }
+            
+            .hero-content {
+                max-width: 100%;
+                text-align: center;
+            }
+            
+            .trust-badges {
+                justify-content: center;
+            }
+            
+            .btn-group {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 3rem 0;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background-color: #f0f5ff;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .breadcrumbs-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .breadcrumbs-item:not(:last-child):after {
+            content: '>';
+            margin: 0 0.5rem;
+            color: var(--medium);
+        }
+
+        .breadcrumbs-link {
+            color: var(--medium);
+            text-decoration: none;
+        }
+
+        .breadcrumbs-link:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .breadcrumbs-current {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Weather Bar */
+        .weather-bar {
+            background-color: #e6f0ff;
+            padding: 1rem 0;
+            margin-bottom: 4rem;
+        }
+
+        .weather-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .weather-item {
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 1rem;
+        }
+
+        .weather-icon {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+            color: var(--primary);
+        }
+
+        .weather-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .weather-heading {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Service Area Bubbles */
+        .service-areas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0;
+            justify-content: center;
+        }
+
+        .area-bubble {
+            background-color: var(--white);
+            color: var(--primary);
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .area-bubble:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        /* Special Offer Box */
+        .special-offer {
+            background-color: #fff9f5;
+            border: 2px dashed var(--secondary);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .special-offer:before {
+            content: 'ALTADENA EXCLUSIVE';
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            background-color: var(--secondary);
+            color: var(--white);
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.2rem 2rem;
+            transform: rotate(45deg);
+        }
+
+        .special-offer h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .special-offer .offer-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Emergency Header -->
+    <div class="emergency-header">
+        <div class="container">
+            24/7 Emergency HVAC Service in Altadena | <a href="tel:+16265551234">(626) 555-1234</a> | 60-Minute Response Time
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <div class="logo-text">HVAC<span>Pasadena</span></div>
+                </div>
+                <div class="header-contact">
+                    <a href="tel:+16265551234" class="phone-number">(626) 555-1234</a>
+                    <div class="phone-text">Free Estimates • Same-Day Service</div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ac-repair.html">AC Repair</a></li>
+                        <li><a href="furnace-installation.html">Heating</a></li>
+                        <li><a href="hvac-maintenance.html">Maintenance</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="#estimate-form">Free Estimate</a>
+                    </div>
+                    <button class="mobile-menu-btn">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">Home</a></li>
+                <li class="breadcrumbs-item"><a href="service-areas.html" class="breadcrumbs-link">Service Areas</a></li>
+                <li class="breadcrumbs-item"><span class="breadcrumbs-current">Altadena</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>HVAC Services in Altadena, California</h1>
+                <p>Your local heating and cooling experts serving Altadena since 2010. From the foothills to Altadena Town & Country Club, we provide reliable AC repair, heating installation, and HVAC maintenance tailored to Altadena's unique microclimate.</p>
+                
+                <div class="trust-badges">
+                    <div class="badge">Altadena-Based Technicians</div>
+                    <div class="badge">60-Minute Response</div>
+                    <div class="badge">500+ Local Customers</div>
+                    <div class="badge">100% Satisfaction</div>
+                </div>
+                
+                <div class="btn-group">
+                    <a href="#estimate-form" class="btn btn-primary btn-lg">Get a Free Quote</a>
+                    <a href="tel:+16265551234" class="btn btn-outline btn-lg">Call (626) 555-1234</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-form-container">
+            <form class="hero-form" id="estimate-form">
+                <h3>Schedule Service in Altadena</h3>
+                <input type="text" placeholder="Full Name*" required>
+                <input type="tel" placeholder="Phone Number*" required>
+                <input type="email" placeholder="Email Address*" required>
+                <select required>
+                    <option value="">Select Service*</option>
+                    <option value="ac-repair">AC Repair</option>
+                    <option value="ac-installation">AC Installation</option>
+                    <option value="furnace-repair">Furnace Repair</option>
+                    <option value="furnace-installation">Furnace Installation</option>
+                    <option value="maintenance">HVAC Maintenance</option>
+                    <option value="other">Other Service</option>
+                </select>
+                <input type="text" placeholder="Altadena Neighborhood">
+                <button type="submit" class="btn btn-primary btn-block">Request Free Estimate</button>
+                <p style="font-size: 0.8rem; margin-top: 0.5rem; text-align: center;">Altadena residents: Same-day appointments available!</p>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Weather Context Bar -->
+    <div class="weather-bar">
+        <div class="container">
+            <div class="weather-container">
+                <div class="weather-item">
+                    <span class="weather-heading">Altadena Climate Challenges</span>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-icon">☀️</div>
+                    <div class="weather-text">Hot Summers (up to 100°F)</div>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-icon">❄️</div>
+                    <div class="weather-text">Cooler Winters (down to 40°F)</div>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-icon">🏔️</div>
+                    <div class="weather-text">Foothill Elevation</div>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-icon">🔥</div>
+                    <div class="weather-text">Wildfire Risk Zone</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Special Offer Box -->
+    <div class="container">
+        <div class="special-offer">
+            <h3>Altadena Resident Special</h3>
+            <p>Limited time offer for Altadena homeowners:</p>
+            <div class="offer-price">$50 OFF</div>
+            <p>Any HVAC repair or maintenance service</p>
+            <a href="#estimate-form" class="btn btn-primary">Claim This Offer</a>
+        </div>
+    </div>
+    
+    <!-- About Altadena HVAC Services -->
+    <section>
+        <div class="container">
+            <div class="two-column">
+                <div>
+                    <h2>Altadena's Trusted HVAC Partner</h2>
+                    <p>As residents of the greater Pasadena area ourselves, we understand the unique heating and cooling challenges that come with Altadena's foothill microclimate. From scorching summer temperatures that can exceed 100°F to cooler winter nights in the higher elevations, your home's comfort system needs to be properly sized, installed, and maintained for optimal performance in Altadena's specific conditions.</p>
+                    
+                    <p>HVAC Pasadena has proudly served the Altadena community since 2010, with over 500 satisfied customers throughout the area. Our team of local, licensed HVAC professionals is familiar with Altadena's diverse housing stock—from historic homes on Mariposa Street to newer properties in the foothills—and we customize our services to meet your specific needs.</p>
+                    
+                    <p>Whether you need emergency AC repair during a summer heatwave, energy-efficient heating installation before winter, or regular maintenance to keep your system running smoothly year-round, our Altadena-based technicians are here to help with prompt, professional service.</p>
+                    
+                    <div class="btn-group" style="margin-top: 2rem;">
+                        <a href="tel:+16265551234" class="btn btn-primary">Call For Service Today</a>
+                        <a href="#service-areas" class="btn btn-outline" style="color: var(--primary); border-color: var(--primary);">View Service Areas</a>
+                    </div>
+                </div>
+                <div class="content-image">
+                    <img src="/api/placeholder/500/400" alt="HVAC Technician in Altadena">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section>
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our HVAC Services in Altadena</h2>
+                <p>Comprehensive heating, cooling, and air quality solutions for Altadena homes and businesses</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="AC Repair in Altadena">
+                    </div>
+                    <div class="service-content">
+                        <h3>AC Repair in Altadena</h3>
+                        <p>Fast, reliable air conditioning repair with 60-minute response times throughout Altadena. Our expert technicians can diagnose and fix any AC issue, from refrigerant leaks to electrical problems.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Emergency 24/7 AC repair</li>
+                            <li>All brands and models serviced</li>
+                            <li>Upfront pricing with no surprises</li>
+                            <li>Same-day service available</li>
+                        </ul>
+                        <a href="ac-repair.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Furnace Installation in Altadena">
+                    </div>
+                    <div class="service-content">
+                        <h3>Heating Installation in Altadena</h3>
+                        <p>Stay warm during Altadena's cooler foothill winters with our professional furnace and heating system installation services. We offer energy-efficient options that reduce utility bills while providing consistent comfort.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Expert furnace sizing for Altadena elevations</li>
+                            <li>Energy-efficient heating systems</li>
+                            <li>Financing options available</li>
+                            <li>Professional installation by local experts</li>
+                        </ul>
+                        <a href="furnace-installation.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="HVAC Maintenance in Altadena">
+                    </div>
+                    <div class="service-content">
+                        <h3>HVAC Maintenance in Altadena</h3>
+                        <p>Prevent costly breakdowns and extend your system's lifespan with our comprehensive maintenance plans tailored for Altadena's climate. Regular tune-ups ensure optimal performance year-round, even during extreme temperature fluctuations.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Bi-annual AC and heating tune-ups</li>
+                            <li>21-point inspection checklist</li>
+                            <li>Filter replacement and system cleaning</li>
+                            <li>Priority service for Altadena residents</li>
+                        </ul>
+                        <a href="hvac-maintenance.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Air Quality Solutions in Altadena">
+                    </div>
+                    <div class="service-content">
+                        <h3>Indoor Air Quality in Altadena</h3>
+                        <p>Breathe cleaner, healthier air with our indoor air quality solutions. Especially important during Altadena's wildfire season when outdoor air quality can deteriorate rapidly in this foothill community.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Air purification systems</li>
+                            <li>HEPA and UV filtration</li>
+                            <li>Duct cleaning services</li>
+                            <li>Wildfire smoke protection solutions</li>
+                        </ul>
+                        <a href="air-quality.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Altadena Neighborhoods Section -->
+    <section id="service-areas" class="neighborhoods-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>HVAC Services Throughout Altadena</h2>
+                <p>We provide prompt, reliable service to all Altadena neighborhoods</p>
+            </div>
+            
+            <div class="service-areas">
+                <div class="area-bubble">Altadena Town Center</div>
+                <div class="area-bubble">Altadena Foothills</div>
+                <div class="area-bubble">Altadena North</div>
+                <div class="area-bubble">East Altadena</div>
+                <div class="area-bubble">West Altadena</div>
+                <div class="area-bubble">The Meadows</div>
+                <div class="area-bubble">Country Club Area</div>
+                <div class="area-bubble">Fair Oaks</div>
+                <div class="area-bubble">Olive Heights</div>
+                <div class="area-bubble">Janes Village</div>
+                <div class="area-bubble">La Vina</div>
+                <div class="area-bubble">Rubio Canyon</div>
+            </div>
+            
+            <div class="neighborhoods-grid">
+                <div class="neighborhood-card">
+                    <div class="neighborhood-img">
+                        <img src="/api/placeholder/400/180" alt="Altadena Foothills HVAC Services">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Altadena Foothills</h3>
+                        <p>We understand the unique HVAC challenges of foothill properties in Altadena. Our technicians specialize in systems that can handle more significant temperature variations and maintain efficiency at higher elevations.</p>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-img">
+                        <img src="/api/placeholder/400/180" alt="Historic Altadena HVAC Services">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Historic Altadena</h3>
+                        <p>Serving Altadena's historic homes with specialized HVAC solutions that maintain architectural integrity while providing modern comfort and efficiency in these beautiful older properties.</p>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-img">
+                        <img src="/api/placeholder/400/180" alt="Altadena Town Center HVAC Services">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Altadena Town Center</h3>
+                        <p>Our team provides fast response times to homes and businesses in the Altadena Town Center area, with specialized knowledge of both residential and light commercial systems.</p>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-img">
+                        <img src="/api/placeholder/400/180" alt="La Vina HVAC Services">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>La Vina</h3>
+                        <p>La Vina's newer homes require properly sized HVAC systems that account for the community's specific building standards and microclimate. We design custom solutions for these modern properties.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem; text-align: center;">
+                <h3>Don't see your neighborhood? We serve the entire Altadena area!</h3>
+                <p>Call us at <a href="tel:+16265551234" style="color: var(--primary); font-weight: 700;">(626) 555-1234</a> to confirm service in your specific location.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Map Section -->
+    <section>
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our Altadena Service Area</h2>
+                <p>We provide fast response times throughout Altadena and surrounding communities</p>
+            </div>
+            
+            <div class="map-container">
+                <img src="/api/placeholder/1200/400" alt="Altadena Service Area Map">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us Section -->
+    <section class="why-us-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Why Altadena Residents Choose Us</h2>
+                <p>Experience the difference with Altadena's highest-rated HVAC service provider</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏔️</div>
+                    <h3>Foothill Expertise</h3>
+                    <p>Our technicians understand Altadena's unique foothill climate and how it affects HVAC systems, from higher elevations to temperature fluctuations and wildfire considerations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <h3>60-Minute Response Time</h3>
+                    <p>We guarantee a 60-minute response time for emergency services throughout Altadena—because when your AC fails during a heat wave, you can't wait, especially in foothill areas that heat up faster.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Upfront, No-Surprise Pricing</h3>
+                    <p>We provide clear, written estimates before any work begins. No hidden fees or unexpected charges—ever. Altadena residents appreciate our transparent approach.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🔧</div>
+                    <h3>Experienced HVAC Team</h3>
+                    <p>Our technicians have an average of 15+ years of experience and receive ongoing training specific to Altadena's elevation and climate considerations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Licensed & Insured</h3>
+                    <p>We're fully licensed, bonded, and insured in California (CA License #ABC12345), giving Altadena homeowners complete peace of mind, especially important in wildfire-prone areas.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Altadena's Highest-Rated HVAC Company</h3>
+                    <p>With hundreds of five-star reviews from Altadena residents, our reputation for excellence in this community speaks for itself.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Altadena HVAC Tips Section -->
+    <section class="tips-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>HVAC Tips for Altadena Homeowners</h2>
+                <p>Expert advice tailored to Altadena's unique foothill climate challenges</p>
+            </div>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-img">
+                        <img src="/api/placeholder/400/180" alt="Wildfire Season Preparations">
+                    </div>
+                    <div class="tip-content">
+                        <h3>Wildfire Season Preparations</h3>
+                        <p>Altadena's location near the Angeles National Forest means wildfire smoke can be a serious concern. Upgrade to MERV 13 filters during fire season, consider a whole-home air purification system, and have your ducts professionally cleaned before summer to remove accumulated particles.</p>
+                    </div>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-img">
+                        <img src="/api/placeholder/400/180" alt="Elevation Considerations">
+                    </div>
+                    <div class="tip-content">
+                        <h3>Elevation Considerations</h3>
+                        <p>Altadena's varying elevations affect heating and cooling needs. Higher elevation homes often need more heating capacity but less cooling capacity than lower areas. Ensure your HVAC professional performs proper load calculations that account for your specific elevation when sizing your system.</p>
+                    </div>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-img">
+                        <img src="/api/placeholder/400/180" alt="Historic Home HVAC Solutions">
+                    </div>
+                    <div class="tip-content">
+                        <h3>Historic Home HVAC Solutions</h3>
+                        <p>Altadena's historic homes present unique HVAC challenges. Consider mini-split systems that don't require extensive ductwork, high-velocity small-duct systems that can be installed with minimal disruption, and zoning solutions to address the temperature inconsistencies common in older homes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials from Altadena Residents -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>What Altadena Residents Say</h2>
+                <p>Read reviews from your neighbors throughout Altadena</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Living in the Altadena foothills means our home faces unique cooling challenges. After struggling with an AC system that couldn't handle our location's demands, HVAC Pasadena designed a custom solution specifically for our elevation and exposure. The difference has been remarkable—consistent temperatures throughout our home and much lower energy bills. Their understanding of Altadena's microclimate really sets them apart."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>James K.</h4>
+                            <div class="author-location">Altadena Foothills Resident</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Our 1920s Craftsman home near Altadena Town Center needed a heating solution that wouldn't compromise its historic character. HVAC Pasadena installed a high-velocity mini-duct system that preserved our home's aesthetics while providing modern comfort. The installation team was respectful of our property and its historical significance. We finally have even heating throughout the house without unsightly modifications."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Maria L.</h4>
+                            <div class="author-location">Historic Altadena Homeowner</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"During last year's wildfires, we were concerned about the smoke affecting our indoor air quality. HVAC Pasadena responded quickly, installing a whole-home air purification system and upgrading our filtration. The difference was immediate—even with smoke visible outside, the air inside remained clean and breathable. Their expertise in dealing with Altadena's specific environmental challenges is invaluable. We've since signed up for their maintenance plan for ongoing protection."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Robert T.</h4>
+                            <div class="author-location">La Vina, Altadena</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section>
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Altadena HVAC FAQs</h2>
+                <p>Answers to common questions from Altadena residents</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">How does Altadena's elevation affect my HVAC needs?</div>
+                    <div class="faq-answer">Altadena's elevation range (1,200-2,200 feet) creates unique HVAC considerations. Higher elevations typically experience more temperature fluctuation between day and night, requiring systems that can adapt quickly. Additionally, air is thinner at higher elevations, which can affect system performance. Our technicians perform detailed load calculations that factor in your specific elevation to ensure proper sizing and equipment selection for optimal efficiency and comfort.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What HVAC adaptations are recommended for Altadena's wildfire seasons?</div>
+                    <div class="faq-answer">For Altadena homes, we recommend several adaptations during wildfire season: 1) Upgrade to MERV 13-16 filters or add HEPA filtration, 2) Install whole-home air purification systems with activated carbon for smoke odor removal, 3) Consider adding a dedicated fresh air intake with advanced filtration, and 4) Have more frequent maintenance to ensure systems aren't strained by the additional filtration load. During active fires, we also recommend running your system's fan continuously to maximize filtration.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer special services for Altadena's historic homes?</div>
+                    <div class="faq-answer">Yes, we specialize in HVAC solutions for Altadena's historic properties. Our approaches include: 1) High-velocity small-duct systems that can be installed with minimal architectural impact, 2) Ductless mini-split systems that require no ductwork, 3) Zoning systems to address the temperature inconsistencies common in older homes, and 4) Custom vents and registers designed to complement historic architectural styles. We work closely with homeowners to preserve historic integrity while providing modern comfort.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How quickly can you respond to HVAC emergencies in Altadena?</div>
+                    <div class="faq-answer">We offer 60-minute emergency response times throughout Altadena, including the foothill areas. Our centrally located service center allows our technicians to quickly reach any location in Altadena, providing fast relief during air conditioning or heating emergencies. For Altadena residents on our maintenance plans, we provide priority scheduling with even faster response times.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Are there special rebates or incentives for Altadena homeowners?</div>
+                    <div class="faq-answer">Yes, Altadena residents can access several rebate programs. As an unincorporated community, Altadena customers of Southern California Edison and SoCalGas qualify for their energy efficiency rebate programs for HVAC upgrades. Additionally, LA County offers weatherization assistance programs for which some Altadena residents may qualify. Our team can help you navigate these options to maximize your savings on new installations or efficiency upgrades.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What maintenance schedule do you recommend for Altadena homes?</div>
+                    <div class="faq-answer">For optimal performance in Altadena's climate, we recommend bi-annual maintenance—an AC tune-up in spring before summer heat arrives and a heating system check in early fall before cooler foothill temperatures set in. Additionally, for homes in higher elevation areas or near the wildland interface, we recommend more frequent filter changes (every 1-2 months) and an additional mid-summer system check to ensure optimal performance during peak fire season.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Altadena's Most Trusted HVAC Provider</h2>
+                <p>Join hundreds of satisfied Altadena residents who trust us with their home comfort. Contact us today for expert HVAC service with a personal touch.</p>
+                <div class="btn-group">
+                    <a href="#estimate-form" class="btn btn-primary btn-lg">Get a Free Quote</a>
+                    <a href="tel:+16265551234" class="btn btn-outline btn-lg">Call (626) 555-1234</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>HVAC Pasadena has been providing top-quality heating, cooling, and air quality services to Altadena residents and businesses since 2010. We're committed to exceptional service, fair pricing, and customer satisfaction.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">F</a>
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">I</a>
+                        <a href="#" class="social-link">Y</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="ac-repair.html">AC Repair & Installation</a></li>
+                        <li><a href="furnace-installation.html">Heating Services</a></li>
+                        <li><a href="hvac-maintenance.html">HVAC Maintenance</a></li>
+                        <li><a href="air-quality.html">Indoor Air Quality</a></li>
+                        <li><a href="commercial-hvac.html">Commercial HVAC</a></li>
+                        <li><a href="emergency-service.html">Emergency Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Service Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="pasadena-hvac.html">Pasadena</a></li>
+                        <li><a href="south-pasadena-hvac.html">South Pasadena</a></li>
+                        <li><a href="north-pasadena-hvac.html">North Pasadena</a></li>
+                        <li><a href="altadena-hvac.html">Altadena</a></li>
+                        <li><a href="san-marino-hvac.html">San Marino</a></li>
+                        <li><a href="sierra-madre-hvac.html">Sierra Madre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">📞</div>
+                        <div>
+                            <p>(626) 555-1234</p>
+                            <p>24/7 Emergency Service</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">✉️</div>
+                        <div>
+                            <p>info@hvacpasadena.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">🏢</div>
+                        <div>
+                            <p>123 E Colorado Blvd</p>
+                            <p>Pasadena, CA 91105</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">⏰</div>
+                        <div>
+                            <p>Mon-Fri: 7am-8pm</p>
+                            <p>Sat-Sun: 8am-5pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 HVAC Pasadena. All Rights Reserved.</p>
+                <div class="licenses">
+                    <div class="license-item">CA License #ABC12345</div>
+                    <div class="license-item">EPA Certified</div>
+                    <div class="license-item">NATE Certified Technicians</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
