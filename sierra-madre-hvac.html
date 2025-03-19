@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional HVAC services in Sierra Madre. AC repair, heating installation, and maintenance from technicians familiar with Sierra Madre's foothill climate and unique homes. Call (626) 555-1234.">
+    <title>HVAC Services in Sierra Madre, CA | Expert Heating & Cooling</title>
+    <style>
+        /* Modern Variables */
+        :root {
+            --primary: #0066cc;
+            --secondary: #ff6600;
+            --accent: #ff9900;
+            --dark: #222831;
+            --medium: #393e46;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --success: #28a745;
+            --warning: #ffc107;
+            --error: #dc3545;
+            --radius: 8px;
+            --shadow: 0 4px 12px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Basics */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 70px;
+            background-color: var(--secondary);
+        }
+
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -1rem;
+        }
+
+        .col {
+            padding: 0 1rem;
+            flex: 1;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-heading {
+            margin-bottom: 3rem;
+        }
+
+        /* Emergency Header */
+        .emergency-header {
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 0.5rem 0;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .emergency-header a {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .header-contact {
+            text-align: right;
+        }
+
+        .phone-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-number:before {
+            content: '📞';
+            margin-right: 0.5rem;
+        }
+
+        .phone-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .nav-cta {
+            background-color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-cta a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            padding: 1rem 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1600/800') center/cover no-repeat;
+            padding: 5rem 0;
+            color: var(--white);
+            text-align: left;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .trust-badges {
+            display: flex;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: flex;
+            align-items: center;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .badge:before {
+            content: '✓';
+            background-color: var(--secondary);
+            color: var(--white);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* CTA Buttons */
+        .btn {
+            display: inline-block;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: #ff8833;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 102, 0, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-lg {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Hero Form */
+        .hero-form-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 1rem;
+        }
+
+        .hero-form {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            width: 100%;
+        }
+
+        .hero-form h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+
+        .hero-form input,
+        .hero-form select,
+        .hero-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: var(--radius);
+            font-size: 1rem;
+        }
+
+        .hero-form .btn {
+            margin-top: 1rem;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-img {
+            height: 200px;
+            background-color: #eee;
+        }
+
+        .service-content {
+            padding: 1.5rem;
+        }
+
+        .service-content h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Neighborhoods Grid */
+        .neighborhoods-section {
+            background-color: #f0f5ff;
+            padding: 4rem 0;
+        }
+
+        .neighborhoods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .neighborhood-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .neighborhood-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .neighborhood-img {
+            height: 180px;
+            background-color: #eee;
+        }
+
+        .neighborhood-content {
+            padding: 1.5rem;
+        }
+
+        .neighborhood-content h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Why Choose Us Section */
+        .why-us-section {
+            padding: 4rem 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #e6f0ff;
+            color: var(--primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* HVAC Tips Section */
+        .tips-section {
+            background-color: #fff9f5;
+            padding: 4rem 0;
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .tip-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .tip-img {
+            height: 180px;
+            background-color: #eee;
+        }
+
+        .tip-content {
+            padding: 1.5rem;
+        }
+
+        .tip-content h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: #f0f5ff;
+            position: relative;
+            overflow: hidden;
+            padding: 4rem 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #eee;
+            margin-right: 1rem;
+        }
+
+        .author-info h4 {
+            margin-bottom: 0.2rem;
+            font-size: 1.1rem;
+        }
+
+        .author-location {
+            font-size: 0.9rem;
+            color: var(--medium);
+        }
+
+        .testimonial-rating {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5rem;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .faq-question:before {
+            content: 'Q:';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+
+        .faq-answer {
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .faq-answer:before {
+            content: 'A:';
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), #004999);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+
+        .cta-section h2:after {
+            background-color: var(--secondary);
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Content Blocks */
+        .content-block {
+            margin-bottom: 3rem;
+        }
+
+        .content-block h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .content-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        .content-image {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Map Section */
+        .map-container {
+            position: relative;
+            height: 400px;
+            background-color: #eee;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 4rem 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 50px;
+            background-color: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact-icon {
+            margin-right: 1rem;
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.8rem;
+            margin-bottom: 0.8rem;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            background-color: #1a1f27;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .licenses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+        }
+
+        .license-item {
+            margin: 0 1rem;
+            color: #aaa;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        /* Media Queries */
+        @media (max-width: 1200px) {
+            .hero-form-container {
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin-top: 3rem;
+            }
+            
+            .hero-form {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-contact {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-container {
+                justify-content: center;
+            }
+            
+            .hero-content {
+                max-width: 100%;
+                text-align: center;
+            }
+            
+            .trust-badges {
+                justify-content: center;
+            }
+            
+            .btn-group {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 3rem 0;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background-color: #f0f5ff;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .breadcrumbs-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .breadcrumbs-item:not(:last-child):after {
+            content: '>';
+            margin: 0 0.5rem;
+            color: var(--medium);
+        }
+
+        .breadcrumbs-link {
+            color: var(--medium);
+            text-decoration: none;
+        }
+
+        .breadcrumbs-link:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .breadcrumbs-current {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Weather Bar */
+        .weather-bar {
+            background-color: #e6f0ff;
+            padding: 1rem 0;
+            margin-bottom: 4rem;
+        }
+
+        .weather-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .weather-item {
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 1rem;
+        }
+
+        .weather-icon {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+            color: var(--primary);
+        }
+
+        .weather-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .weather-heading {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Service Area Bubbles */
+        .service-areas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0;
+            justify-content: center;
+        }
+
+        .area-bubble {
+            background-color: var(--white);
+            color: var(--primary);
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .area-bubble:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        /* Special Offer Box */
+        .special-offer {
+            background-color: #fff9f5;
+            border: 2px dashed var(--secondary);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .special-offer:before {
+            content: 'SIERRA MADRE EXCLUSIVE';
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            background-color: var(--secondary);
+            color: var(--white);
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.2rem 2rem;
+            transform: rotate(45deg);
+        }
+
+        .special-offer h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .special-offer .offer-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Emergency Header -->
+    <div class="emergency-header">
+        <div class="container">
+            24/7 Emergency HVAC Service in Sierra Madre | <a href="tel:+16265551234">(626) 555-1234</a> | 60-Minute Response Time
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <div class="logo-text">HVAC<span>Pasadena</span></div>
+                </div>
+                <div class="header-contact">
+                    <a href="tel:+16265551234" class="phone-number">(626) 555-1234</a>
+                    <div class="phone-text">Free Estimates • Same-Day Service</div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ac-repair.html">AC Repair</a></li>
+                        <li><a href="furnace-installation.html">Heating</a></li>
+                        <li><a href="hvac-maintenance.html">Maintenance</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="#estimate-form">Free Estimate</a>
+                    </div>
+                    <button class="mobile-menu-btn">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">Home</a></li>
+                <li class="breadcrumbs-item"><a href="service-areas.html" class="breadcrumbs-link">Service Areas</a></li>
+                <li class="breadcrumbs-item"><span class="breadcrumbs-current">Sierra Madre</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>HVAC Services in Sierra Madre, California</h1>
+                <p>Your local heating and cooling experts serving Sierra Madre's foothill neighborhoods since 2010. We provide specialized HVAC services tailored to Sierra Madre's unique climate challenges and distinctive homes.</p>
+                
+                <div class="trust-badges">
+                    <div class="badge">Sierra Madre-Based Technicians</div>
+                    <div class="badge">60-Minute Response</div>
+                    <div class="badge">Historical Home Specialists</div>
+                    <div class="badge">100% Satisfaction</div>
+                </div>
+                
+                <div class="btn-group">
+                    <a href="#estimate-form" class="btn btn-primary btn-lg">Get a Free Quote</a>
+                    <a href="tel:+16265551234" class="btn btn-outline btn-lg">Call (626) 555-1234</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-form-container">
+            <form class="hero-form" id="estimate-form">
+                <h3>Schedule Service in Sierra Madre</h3>
+                <input type="text" placeholder="Full Name*" required>
+                <input type="tel" placeholder="Phone Number*" required>
+                <input type="email" placeholder="Email Address*" required>
+                <select required>
+                    <option value="">Select Service*</option>
+                    <option value="ac-repair">AC Repair</option>
+                    <option value="ac-installation">AC Installation</option>
+                    <option value="furnace-repair">Furnace Repair</option>
+                    <option value="furnace-installation">Furnace Installation</option>
+                    <option value="maintenance">HVAC Maintenance</option>
+                    <option value="other">Other Service</option>
+                </select>
+                <input type="text" placeholder="Sierra Madre Neighborhood">
+                <button type="submit" class="btn btn-primary btn-block">Request Free Estimate</button>
+                <p style="font-size: 0.8rem; margin-top: 0.5rem; text-align: center;">Sierra Madre residents: Same-day appointments available!</p>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Weather Context Bar -->
+    <div class="weather-bar">
+        <div class="container">
+            <div class="weather-container">
+                <div class="weather-item">
+                    <span class="weather-heading">Sierra Madre Climate Challenges</span>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-icon">☀️</div>
+                    <div class="weather-text">Hot Summers (up to 100°F)</div>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-icon">❄️</div>
+                    <div class="weather-text">Cooler Winters (down to 40°F)</div>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-icon">🌫️</div>
+                    <div class="weather-text">Foothill Microclimates</div>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-icon">🔥</div>
+                    <div class="weather-text">Fire Season Air Quality</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Special Offer Box -->
+    <div class="container">
+        <div class="special-offer">
+            <h3>Sierra Madre Resident Special</h3>
+            <p>Limited time offer for Sierra Madre homeowners:</p>
+            <div class="offer-price">$50 OFF</div>
+            <p>Any HVAC repair or maintenance service</p>
+            <a href="#estimate-form" class="btn btn-primary">Claim This Offer</a>
+        </div>
+    </div>
+    
+    <!-- About Sierra Madre HVAC Services -->
+    <section>
+        <div class="container">
+            <div class="two-column">
+                <div>
+                    <h2>Sierra Madre's Trusted HVAC Partner</h2>
+                    <p>As Sierra Madre residents ourselves, we understand the unique heating and cooling challenges that come with living in this beautiful foothill community. From the scorching summer heat that can reach triple digits to the cooler winters and frequent Santa Ana winds, your home's comfort system needs to be properly sized, installed, and maintained for optimal performance.</p>
+                    
+                    <p>HVAC Pasadena has proudly served the Sierra Madre community since 2010, with special expertise in the area's historic homes, Craftsman bungalows, and midcentury properties. Our team of local, licensed HVAC professionals is familiar with Sierra Madre's diverse housing stock—from century-old Victorians in the downtown district to custom homes in the foothill neighborhoods—and we customize our services to meet your specific needs.</p>
+                    
+                    <p>We understand Sierra Madre's unique position as a foothill community means residents face specific HVAC challenges, including canyon winds, higher foothill temperatures in summer, and cooler winter temperatures than surrounding areas. Our services account for these local climate factors, ensuring your home remains comfortable year-round.</p>
+                    
+                    <div class="btn-group" style="margin-top: 2rem;">
+                        <a href="tel:+16265551234" class="btn btn-primary">Call Our Sierra Madre Office</a>
+                        <a href="#sierra-madre-areas" class="btn btn-outline" style="color: var(--primary); border-color: var(--primary);">View Service Areas</a>
+                    </div>
+                </div>
+                <div class="content-image">
+                    <img src="/api/placeholder/500/400" alt="HVAC Technician in Sierra Madre">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section>
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our HVAC Services in Sierra Madre</h2>
+                <p>Comprehensive heating, cooling, and air quality solutions for Sierra Madre homes</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="AC Repair in Sierra Madre">
+                    </div>
+                    <div class="service-content">
+                        <h3>AC Repair in Sierra Madre</h3>
+                        <p>Fast, reliable air conditioning repair with 60-minute response times throughout Sierra Madre. Our expert technicians can diagnose and fix any AC issue, from refrigerant leaks to electrical problems.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Emergency 24/7 AC repair</li>
+                            <li>All brands and models serviced</li>
+                            <li>Upfront pricing with no surprises</li>
+                            <li>Same-day service available</li>
+                        </ul>
+                        <a href="ac-repair.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Heating Installation in Sierra Madre">
+                    </div>
+                    <div class="service-content">
+                        <h3>Heating Installation in Sierra Madre</h3>
+                        <p>Stay warm during Sierra Madre's cooler winters with our professional furnace and heating system installation services. We offer energy-efficient options that reduce utility bills while providing consistent comfort.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Expert furnace sizing for foothill homes</li>
+                            <li>Energy-efficient heating systems</li>
+                            <li>Financing options available</li>
+                            <li>Professional installation by local experts</li>
+                        </ul>
+                        <a href="furnace-installation.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="HVAC Maintenance in Sierra Madre">
+                    </div>
+                    <div class="service-content">
+                        <h3>HVAC Maintenance in Sierra Madre</h3>
+                        <p>Prevent costly breakdowns and extend your system's lifespan with our comprehensive maintenance plans tailored for Sierra Madre's climate. Regular tune-ups ensure optimal performance year-round.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Bi-annual AC and heating tune-ups</li>
+                            <li>21-point inspection checklist</li>
+                            <li>Filter replacement and system cleaning</li>
+                            <li>Priority service for Sierra Madre residents</li>
+                        </ul>
+                        <a href="hvac-maintenance.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="/api/placeholder/400/200" alt="Historical Home HVAC Solutions in Sierra Madre">
+                    </div>
+                    <div class="service-content">
+                        <h3>Historical Home HVAC Solutions</h3>
+                        <p>Specialized heating and cooling solutions for Sierra Madre's many historic and architectural homes. We provide modern comfort while preserving your home's character and architectural integrity.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Ductless mini-split systems</li>
+                            <li>High-velocity small-duct systems</li>
+                            <li>Radiant heating options</li>
+                            <li>Custom solutions for historic properties</li>
+                        </ul>
+                        <a href="historical-home-hvac.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sierra Madre Neighborhoods Section -->
+    <section id="sierra-madre-areas" class="neighborhoods-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>HVAC Services Throughout Sierra Madre</h2>
+                <p>We provide prompt, reliable service to all Sierra Madre neighborhoods</p>
+            </div>
+            
+            <div class="service-areas">
+                <div class="area-bubble">Downtown Sierra Madre</div>
+                <div class="area-bubble">Upper Sierra Madre</div>
+                <div class="area-bubble">Lower Sierra Madre</div>
+                <div class="area-bubble">Sierra Madre Canyon</div>
+                <div class="area-bubble">East Sierra Madre</div>
+                <div class="area-bubble">West Sierra Madre</div>
+                <div class="area-bubble">North Sierra Madre</div>
+                <div class="area-bubble">Sierra Vista</div>
+                <div class="area-bubble">Rancho Sierra Madre</div>
+                <div class="area-bubble">Highland Oaks</div>
+                <div class="area-bubble">Mountain Trail</div>
+                <div class="area-bubble">Sierra Madre Blvd</div>
+            </div>
+            
+            <div class="neighborhoods-grid">
+                <div class="neighborhood-card">
+                    <div class="neighborhood-img">
+                        <img src="/api/placeholder/400/180" alt="Downtown Sierra Madre HVAC Services">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Downtown Sierra Madre</h3>
+                        <p>We understand the unique HVAC challenges of historic buildings and older homes in Downtown Sierra Madre. Our technicians specialize in retrofitting modern systems while preserving architectural integrity.</p>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-img">
+                        <img src="/api/placeholder/400/180" alt="Sierra Madre Canyon HVAC Services">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Sierra Madre Canyon</h3>
+                        <p>The Canyon area presents unique challenges with its narrow roads, rustic homes, and microclimate. We offer specialized solutions for these unique properties, including wildfire smoke filtration systems.</p>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-img">
+                        <img src="/api/placeholder/400/180" alt="Upper Sierra Madre HVAC Services">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Upper Sierra Madre</h3>
+                        <p>Homes in the upper foothill areas experience more temperature extremes. Our team provides custom HVAC solutions designed specifically for these elevation and exposure challenges.</p>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-img">
+                        <img src="/api/placeholder/400/180" alt="East Sierra Madre HVAC Services">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>East Sierra Madre</h3>
+                        <p>Our technicians are familiar with the more modern homes in this area and provide fast response times for all HVAC repair, maintenance, and installation needs.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem; text-align: center;">
+                <h3>Don't see your neighborhood? We serve the entire Sierra Madre area!</h3>
+                <p>Call us at <a href="tel:+16265551234" style="color: var(--primary); font-weight: 700;">(626) 555-1234</a> to confirm service in your specific location.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Map Section -->
+    <section>
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our Sierra Madre Service Area</h2>
+                <p>We provide fast response times throughout Sierra Madre and surrounding areas</p>
+            </div>
+            
+            <div class="map-container">
+                <img src="/api/placeholder/1200/400" alt="Sierra Madre Service Area Map">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us Section -->
+    <section class="why-us-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Why Sierra Madre Residents Choose Us</h2>
+                <p>Experience the difference with Sierra Madre's highest-rated HVAC service provider</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Sierra Madre Specialists</h3>
+                    <p>Our technicians are very familiar with Sierra Madre's unique housing stock, from historic downtown bungalows to foothill custom homes, providing solutions that perfectly match your home's specific needs.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <h3>60-Minute Response Time</h3>
+                    <p>We guarantee a 60-minute response time for emergency services throughout Sierra Madre—because when your AC fails during a heat wave or your heater quits in winter, you can't wait.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Upfront, No-Surprise Pricing</h3>
+                    <p>We provide clear, written estimates before any work begins. No hidden fees or unexpected charges—ever. Sierra Madre residents appreciate our transparent approach.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🔧</div>
+                    <h3>Historical Home Expertise</h3>
+                    <p>Sierra Madre's charming historic homes require special consideration. Our technicians are trained in preserving architectural integrity while installing modern comfort systems.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Foothill Climate Knowledge</h3>
+                    <p>We understand the unique microclimates of Sierra Madre's foothill neighborhoods and design HVAC solutions specifically for these conditions.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Sierra Madre's Highest-Rated HVAC Company</h3>
+                    <p>With dozens of five-star reviews from Sierra Madre residents, our reputation for excellence in this community speaks for itself.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sierra Madre HVAC Tips Section -->
+    <section class="tips-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>HVAC Tips for Sierra Madre Homeowners</h2>
+                <p>Expert advice tailored to Sierra Madre's unique climate challenges</p>
+            </div>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-img">
+                        <img src="/api/placeholder/400/180" alt="Wildfire Season Air Quality Tips">
+                    </div>
+                    <div class="tip-content">
+                        <h3>Managing Wildfire Season Air Quality</h3>
+                        <p>Sierra Madre's proximity to the San Gabriel Mountains means wildfire smoke can be a serious issue. We recommend upgrading to MERV 13 filters during fire season, considering whole-home air purification systems, and scheduling more frequent filter changes when air quality is compromised.</p>
+                    </div>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-img">
+                        <img src="/api/placeholder/400/180" alt="Historic Home HVAC Solutions">
+                    </div>
+                    <div class="tip-content">
+                        <h3>Historic Home HVAC Solutions</h3>
+                        <p>For Sierra Madre's many historic homes, consider ductless mini-split systems to avoid architectural modifications, use zoning systems to address temperature variations in older homes, and add proper insulation where possible without compromising the home's character.</p>
+                    </div>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-img">
+                        <img src="/api/placeholder/400/180" alt="Foothill Microclimate Considerations">
+                    </div>
+                    <div class="tip-content">
+                        <h3>Foothill Microclimate Considerations</h3>
+                        <p>Sierra Madre's foothill homes often experience more extreme temperatures than lower elevations. Consider variable-speed HVAC systems that can adjust to changing conditions, ensure proper sizing for foothill temperature swings, and implement sun-blocking strategies for west-facing windows to reduce cooling loads.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials from Sierra Madre Residents -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>What Sierra Madre Residents Say</h2>
+                <p>Read reviews from your neighbors throughout Sierra Madre</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Our 1920s Sierra Madre bungalow has always been a challenge to keep comfortable—hot in summer and chilly in winter. HVAC Pasadena installed a ductless mini-split system that preserved all our original woodwork while providing perfect temperature control in every room. Their knowledge of historic homes was impressive, and the installation was completed with minimal disruption."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Robert & Susan Williams</h4>
+                            <div class="author-location">Downtown Sierra Madre</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Living in the Sierra Madre foothills means we get extreme heat in summer. When our AC died during last July's heat wave, HVAC Pasadena had a technician at our house within 45 minutes! Not only did they repair our system quickly, but they also recommended and installed a whole-house fan that has dramatically reduced our cooling costs. The technician clearly understood the unique challenges of foothill homes."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Jennifer Martinez</h4>
+                            <div class="author-location">Upper Sierra Madre</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"As a Canyon resident, finding contractors who are willing to navigate our narrow roads can be challenging. HVAC Pasadena never hesitates to service our area, and they've maintained our HVAC system flawlessly for years. During the 2023 fire season, they even helped us upgrade our filtration system to deal with smoke, which made a huge difference in our indoor air quality."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>David Thompson</h4>
+                            <div class="author-location">Sierra Madre Canyon</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section>
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Sierra Madre HVAC FAQs</h2>
+                <p>Answers to common questions from Sierra Madre residents</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">What HVAC solutions work best for Sierra Madre's historic homes?</div>
+                    <div class="faq-answer">For Sierra Madre's many historic homes, we recommend several specialized approaches. Ductless mini-split systems are ideal for homes where installing traditional ductwork would compromise architectural integrity. High-velocity small-duct systems can also work well, as their smaller ducts can be routed through existing walls with minimal modification. For homes with existing radiators, we can install modern hydronic systems that maintain the vintage aesthetic while improving efficiency. Our technicians perform detailed assessments of each historic property to recommend the best solution for your specific home.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How does Sierra Madre's foothill location affect HVAC needs?</div>
+                    <div class="faq-answer">Sierra Madre's foothill position creates several HVAC considerations. First, homes at higher elevations often experience more temperature fluctuations than lower areas, requiring systems with greater capacity and variable-speed technology. Second, canyon winds can affect system performance, so proper unit placement and wind barriers are important. Third, foothill homes are more exposed to wildfire smoke, making advanced air filtration systems highly valuable. Finally, Sierra Madre's day-to-night temperature swings are more pronounced than in lower-lying areas, making programmable thermostats particularly beneficial for foothill residents.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you provide emergency HVAC service in all Sierra Madre neighborhoods, including the Canyon?</div>
+                    <div class="faq-answer">Yes, we provide 24/7 emergency HVAC service throughout all Sierra Madre neighborhoods, including the Canyon area, with our 60-minute response time guarantee. Our technicians are familiar with navigating Sierra Madre's narrow canyon roads and hillside properties. We maintain several service vehicles specifically equipped for difficult-to-access areas, ensuring we can reach your home even in challenging conditions.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What rebates or incentives are available for Sierra Madre residents upgrading their HVAC systems?</div>
+                    <div class="faq-answer">Sierra Madre residents can access several rebate programs. Southern California Edison offers rebates for energy-efficient AC and heat pump installations. There are also federal tax credits for qualifying energy-efficient HVAC systems (up to 30% of costs for certain high-efficiency systems). Additionally, Sierra Madre residents may qualify for special financing options through local programs like PACE (Property Assessed Clean Energy). Our team can help you navigate available incentives to maximize your savings on new installations.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How can I prepare my HVAC system for Sierra Madre's wildfire season?</div>
+                    <div class="faq-answer">To prepare for wildfire season, we recommend: 1) Upgrading to MERV 13 filters or higher (checking first that your system can handle them), 2) Scheduling a pre-season maintenance appointment to ensure optimal system performance, 3) Considering a whole-home air purification system with HEPA filtration, 4) Creating a clean air room in your home with additional portable air purifiers, and 5) Stocking up on replacement filters, as they'll need changing more frequently during fire season. We offer specialized "Fire Season Prep" maintenance services for Sierra Madre residents each spring.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What maintenance schedule do you recommend for Sierra Madre homes?</div>
+                    <div class="faq-answer">For optimal performance in Sierra Madre's climate, we recommend bi-annual maintenance—an AC tune-up in spring before summer heat arrives and a heating system check in fall before cooler winter temperatures. For homes in higher elevation areas or near canyons where systems work harder, quarterly maintenance may be beneficial. During wildfire season, we also recommend more frequent filter changes and system inspections to ensure optimal air quality and efficiency when your system is working hardest.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Sierra Madre's Most Trusted HVAC Provider</h2>
+                <p>Join hundreds of satisfied Sierra Madre residents who trust us with their home comfort. Contact us today for expert HVAC service with a personal touch.</p>
+                <div class="btn-group">
+                    <a href="#estimate-form" class="btn btn-primary btn-lg">Get a Free Quote</a>
+                    <a href="tel:+16265551234" class="btn btn-outline btn-lg">Call (626) 555-1234</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>HVAC Pasadena has been providing top-quality heating, cooling, and air quality services to Sierra Madre residents and businesses since 2010. We're committed to exceptional service, fair pricing, and customer satisfaction.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">F</a>
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">I</a>
+                        <a href="#" class="social-link">Y</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="ac-repair.html">AC Repair & Installation</a></li>
+                        <li><a href="furnace-installation.html">Heating Services</a></li>
+                        <li><a href="hvac-maintenance.html">HVAC Maintenance</a></li>
+                        <li><a href="air-quality.html">Indoor Air Quality</a></li>
+                        <li><a href="commercial-hvac.html">Commercial HVAC</a></li>
+                        <li><a href="emergency-service.html">Emergency Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Service Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="pasadena-hvac.html">Pasadena</a></li>
+                        <li><a href="south-pasadena-hvac.html">South Pasadena</a></li>
+                        <li><a href="north-pasadena-hvac.html">North Pasadena</a></li>
+                        <li><a href="altadena-hvac.html">Altadena</a></li>
+                        <li><a href="san-marino-hvac.html">San Marino</a></li>
+                        <li><a href="sierra-madre-hvac.html">Sierra Madre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">📞</div>
+                        <div>
+                            <p>(626) 555-1234</p>
+                            <p>24/7 Emergency Service</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">✉️</div>
+                        <div>
+                            <p>info@hvacpasadena.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">🏢</div>
+                        <div>
+                            <p>123 E Colorado Blvd</p>
+                            <p>Pasadena, CA 91105</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">⏰</div>
+                        <div>
+                            <p>Mon-Fri: 7am-8pm</p>
+                            <p>Sat-Sun: 8am-5pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 HVAC Pasadena. All Rights Reserved.</p>
+                <div class="licenses">
+                    <div class="license-item">CA License #ABC12345</div>
+                    <div class="license-item">EPA Certified</div>
+                    <div class="license-item">NATE Certified Technicians</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
