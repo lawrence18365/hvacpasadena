@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Improve your Pasadena home's indoor air quality with professional air purification, filtration, and ventilation solutions. Breathe cleaner, healthier air year-round. Call (626) 555-1234 for a free consultation.">
+    <title>Indoor Air Quality Solutions Pasadena | Air Purification & Filtration | (626) 555-1234</title>
+    <style>
+        /* Modern Variables */
+        :root {
+            --primary: #0066cc;
+            --secondary: #ff6600;
+            --accent: #ff9900;
+            --dark: #222831;
+            --medium: #393e46;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --success: #28a745;
+            --warning: #ffc107;
+            --error: #dc3545;
+            --radius: 8px;
+            --shadow: 0 4px 12px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Basics */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 70px;
+            background-color: var(--secondary);
+        }
+
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -1rem;
+        }
+
+        .col {
+            padding: 0 1rem;
+            flex: 1;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-heading {
+            margin-bottom: 3rem;
+        }
+
+        /* Emergency Header */
+        .emergency-header {
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 0.5rem 0;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .emergency-header a {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .header-contact {
+            text-align: right;
+        }
+
+        .phone-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-number:before {
+            content: '📞';
+            margin-right: 0.5rem;
+        }
+
+        .phone-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .nav-cta {
+            background-color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-cta a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            padding: 1rem 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1600/800') center/cover no-repeat;
+            padding: 5rem 0;
+            color: var(--white);
+            text-align: left;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .trust-badges {
+            display: flex;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: flex;
+            align-items: center;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .badge:before {
+            content: '✓';
+            background-color: var(--secondary);
+            color: var(--white);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* CTA Buttons */
+        .btn {
+            display: inline-block;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: #ff8833;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 102, 0, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-lg {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Hero Form */
+        .hero-form-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 1rem;
+        }
+
+        .hero-form {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            width: 100%;
+        }
+
+        .hero-form h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+
+        .hero-form input,
+        .hero-form select,
+        .hero-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: var(--radius);
+            font-size: 1rem;
+        }
+
+        .hero-form .btn {
+            margin-top: 1rem;
+        }
+
+        /* Air Quality Concerns Section */
+        .concern-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .concern-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+        }
+
+        .concern-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .concern-img {
+            height: 180px;
+            background-color: #eee;
+        }
+
+        .concern-content {
+            padding: 1.5rem;
+        }
+
+        .concern-content h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Solutions Section */
+        .solutions-section {
+            background-color: #f0f5ff;
+            padding: 4rem 0;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .solution-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .solution-img {
+            height: 200px;
+            background-color: #eee;
+        }
+
+        .solution-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .solution-content h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .solution-content p {
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .solution-cta {
+            margin-top: auto;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            padding: 4rem 0;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .benefit-card {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #e6f0ff;
+            color: var(--primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 4rem 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 1.5rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: #fff9f5;
+            padding: 4rem 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5rem;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .faq-question:before {
+            content: 'Q:';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+
+        .faq-answer {
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .faq-answer:before {
+            content: 'A:';
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: #f0f5ff;
+            position: relative;
+            overflow: hidden;
+            padding: 4rem 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #eee;
+            margin-right: 1rem;
+        }
+
+        .author-info h4 {
+            margin-bottom: 0.2rem;
+            font-size: 1.1rem;
+        }
+
+        .author-location {
+            font-size: 0.9rem;
+            color: var(--medium);
+        }
+
+        .testimonial-rating {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), #004999);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+
+        .cta-section h2:after {
+            background-color: var(--secondary);
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Service Packages */
+        .packages-section {
+            padding: 4rem 0;
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .package-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .package-header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .package-header h3 {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .package-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 1rem 0;
+        }
+
+        .package-price .period {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        .popular-tag {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: var(--secondary);
+            color: var(--white);
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 0.3rem 1rem;
+            text-transform: uppercase;
+        }
+
+        .package-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .package-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .package-features li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .package-features li:last-child {
+            border-bottom: none;
+        }
+
+        .package-features li:before {
+            content: '✓';
+            color: var(--success);
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+        }
+
+        /* Special Offer Box */
+        .special-offer {
+            background-color: #fff9f5;
+            border: 2px dashed var(--secondary);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .special-offer:before {
+            content: 'LIMITED TIME';
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            background-color: var(--secondary);
+            color: var(--white);
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.2rem 2rem;
+            transform: rotate(45deg);
+        }
+
+        .special-offer h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .special-offer .offer-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin: 1rem 0;
+        }
+
+        /* Content Blocks */
+        .content-block {
+            margin-bottom: 3rem;
+        }
+
+        .content-block h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .content-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        .content-image {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Feature List */
+        .feature-list {
+            margin-bottom: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-icon {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .feature-text h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 4rem 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 50px;
+            background-color: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact-icon {
+            margin-right: 1rem;
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.8rem;
+            margin-bottom: 0.8rem;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            background-color: #1a1f27;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .licenses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+        }
+
+        .license-item {
+            margin: 0 1rem;
+            color: #aaa;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        /* Media Queries */
+        @media (max-width: 1200px) {
+            .hero-form-container {
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin-top: 3rem;
+            }
+            
+            .hero-form {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-contact {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-container {
+                justify-content: center;
+            }
+            
+            .hero-content {
+                max-width: 100%;
+                text-align: center;
+            }
+            
+            .trust-badges {
+                justify-content: center;
+            }
+            
+            .btn-group {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 3rem 0;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background-color: #f0f5ff;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .breadcrumbs-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .breadcrumbs-item:not(:last-child):after {
+            content: '>';
+            margin: 0 0.5rem;
+            color: var(--medium);
+        }
+
+        .breadcrumbs-link {
+            color: var(--medium);
+            text-decoration: none;
+        }
+
+        .breadcrumbs-link:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .breadcrumbs-current {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Air Quality Animation */
+        .air-animation {
+            background-color: #e6f0ff;
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin: 2rem 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .air-comparison {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .air-comparison h4 {
+            margin-bottom: 1rem;
+        }
+
+        .air-visual {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .poor-air {
+            background-color: #ccc;
+        }
+
+        .good-air {
+            background-color: #a8d5ff;
+        }
+
+        /* Air Quality Test CTA */
+        .test-cta {
+            background-color: #fff9f5;
+            border-radius: var(--radius);
+            padding: 2rem;
+            text-align: center;
+            margin: 2rem 0;
+            box-shadow: var(--shadow);
+        }
+
+        .test-cta h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .test-cta p {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Emergency Header -->
+    <div class="emergency-header">
+        <div class="container">
+            24/7 Emergency HVAC Service Available | <a href="tel:+16265551234">(626) 555-1234</a> | 60-Minute Response Time
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <div class="logo-text">HVAC<span>Pasadena</span></div>
+                </div>
+                <div class="header-contact">
+                    <a href="tel:+16265551234" class="phone-number">(626) 555-1234</a>
+                    <div class="phone-text">Free Estimates • Same-Day Service</div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ac-repair.html">AC Repair</a></li>
+                        <li><a href="furnace-installation.html">Heating</a></li>
+                        <li><a href="hvac-maintenance.html">Maintenance</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="#estimate-form">Free Estimate</a>
+                    </div>
+                    <button class="mobile-menu-btn">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">Home</a></li>
+                <li class="breadcrumbs-item"><span class="breadcrumbs-current">Indoor Air Quality</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Breathe Cleaner, Healthier Air in Your Pasadena Home</h1>
+                <p>Professional indoor air quality solutions to remove allergens, pollutants, and contaminants. Improve your home's air quality for better health, comfort, and peace of mind.</p>
+                
+                <div class="trust-badges">
+                    <div class="badge">Removes 99.97% of Pollutants</div>
+                    <div class="badge">Advanced Filtration</div>
+                    <div class="badge">Reduced Allergens</div>
+                    <div class="badge">Wildfire Protection</div>
+                </div>
+                
+                <div class="btn-group">
+                    <a href="#estimate-form" class="btn btn-primary btn-lg">Free Air Quality Consultation</a>
+                    <a href="tel:+16265551234" class="btn btn-outline btn-lg">Call (626) 555-1234</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-form-container">
+            <form class="hero-form" id="estimate-form">
+                <h3>Request Your Free Air Quality Assessment</h3>
+                <input type="text" placeholder="Full Name*" required>
+                <input type="tel" placeholder="Phone Number*" required>
+                <input type="email" placeholder="Email Address*" required>
+                <select>
+                    <option value="">What Air Quality Concerns Do You Have?</option>
+                    <option value="allergies">Allergies & Asthma</option>
+                    <option value="dust">Excessive Dust</option>
+                    <option value="odors">Odors & Stuffiness</option>
+                    <option value="wildfire">Wildfire Smoke Protection</option>
+                    <option value="mold">Mold & Mildew</option>
+                    <option value="other">Other Concerns</option>
+                </select>
+                <button type="submit" class="btn btn-primary btn-block">Request Free Assessment</button>
+                <p style="font-size: 0.8rem; margin-top: 0.5rem; text-align: center;">No obligation • Professional recommendations</p>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Special Offer Box -->
+    <div class="container">
+        <div class="special-offer">
+            <h3>Limited-Time Air Quality Special</h3>
+            <p>Complete home air quality assessment plus 20% off any air purification system</p>
+            <div class="offer-price">FREE</div>
+            <p>Regular price: $99 - Offer expires May 31, 2025</p>
+            <a href="#estimate-form" class="btn btn-primary">Claim Free Assessment</a>
+        </div>
+    </div>
+    
+    <!-- Air Quality Concerns Section -->
+    <section>
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Common Indoor Air Quality Concerns in Pasadena</h2>
+                <p>Is your home's air making you sick? These are the most common air quality issues we address for Pasadena residents</p>
+            </div>
+            
+            <div class="concern-cards">
+                <div class="concern-card">
+                    <div class="concern-img">
+                        <img src="/api/placeholder/400/180" alt="Allergies and Asthma">
+                    </div>
+                    <div class="concern-content">
+                        <h3>Allergies & Asthma</h3>
+                        <p>Pasadena's unique vegetation creates high pollen levels that can trigger allergies and asthma when they enter your home. Indoor allergens like dust mites, pet dander, and mold compound these issues.</p>
+                        <p>Our air quality solutions can remove up to 99.97% of these allergens, providing relief for allergy and asthma sufferers.</p>
+                    </div>
+                </div>
+                
+                <div class="concern-card">
+                    <div class="concern-img">
+                        <img src="/api/placeholder/400/180" alt="Wildfire Smoke and Air Quality">
+                    </div>
+                    <div class="concern-content">
+                        <h3>Wildfire Smoke</h3>
+                        <p>During Southern California's wildfire season, Pasadena homes are vulnerable to hazardous smoke particles that can penetrate even closed windows and doors. These microscopic particles pose serious health risks.</p>
+                        <p>Our specialized filtration systems can protect your family from wildfire smoke by capturing these harmful particles.</p>
+                    </div>
+                </div>
+                
+                <div class="concern-card">
+                    <div class="concern-img">
+                        <img src="/api/placeholder/400/180" alt="Dust and Particulates">
+                    </div>
+                    <div class="concern-content">
+                        <h3>Dust & Particulates</h3>
+                        <p>Pasadena's dry climate and Santa Ana winds contribute to high dust levels. Combined with household dust and particulates, this creates a constant cleaning challenge and potential respiratory irritation.</p>
+                        <p>Our whole-home filtration systems significantly reduce dust accumulation and the need for frequent cleaning.</p>
+                    </div>
+                </div>
+                
+                <div class="concern-card">
+                    <div class="concern-img">
+                        <img src="/api/placeholder/400/180" alt="Mold and Mildew">
+                    </div>
+                    <div class="concern-content">
+                        <h3>Mold & Mildew</h3>
+                        <p>Despite Pasadena's dry climate, many older homes have moisture issues that can lead to mold growth in bathrooms, basements, and other areas. Mold spores circulate through your HVAC system and compromise air quality.</p>
+                        <p>Our dehumidification and UV purification solutions help eliminate mold and prevent its recurrence.</p>
+                    </div>
+                </div>
+                
+                <div class="concern-card">
+                    <div class="concern-img">
+                        <img src="/api/placeholder/400/180" alt="Volatile Organic Compounds">
+                    </div>
+                    <div class="concern-content">
+                        <h3>Harmful Chemicals (VOCs)</h3>
+                        <p>Modern homes contain numerous sources of volatile organic compounds (VOCs) from paint, furniture, cleaning products, and building materials. These chemicals can cause headaches, respiratory issues, and long-term health problems.</p>
+                        <p>Our advanced carbon filtration systems effectively remove VOCs and chemical odors from your home's air.</p>
+                    </div>
+                </div>
+                
+                <div class="concern-card">
+                    <div class="concern-img">
+                        <img src="/api/placeholder/400/180" alt="Stale Air and Poor Ventilation">
+                    </div>
+                    <div class="concern-content">
+                        <h3>Stale Air & Poor Ventilation</h3>
+                        <p>Many Pasadena homes, especially older properties and those with newer energy-efficient construction, suffer from inadequate air exchange. This leads to stuffy, stale air and a buildup of indoor pollutants.</p>
+                        <p>Our ventilation solutions introduce fresh air while maintaining energy efficiency and comfort.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="air-animation">
+                <div class="air-comparison">
+                    <h4>Without Air Purification</h4>
+                    <div class="air-visual poor-air"></div>
+                    <p>Pollutants, allergens, and particulates remain in your air</p>
+                </div>
+                
+                <div class="air-comparison">
+                    <h4>With Air Purification</h4>
+                    <div class="air-visual good-air"></div>
+                    <p>99.97% of harmful contaminants removed</p>
+                </div>
+            </div>
+            
+            <div class="test-cta">
+                <h3>Not Sure About Your Home's Air Quality?</h3>
+                <p>Our comprehensive air quality assessment identifies exactly what's in your air and recommends targeted solutions for your specific concerns.</p>
+                <a href="#estimate-form" class="btn btn-primary">Schedule Your Free Assessment</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">90%</div>
+                    <div class="stat-label">of Our Time is Spent Indoors</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">5×</div>
+                    <div class="stat-label">More Polluted Than Outdoor Air</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">50%</div>
+                    <div class="stat-label">Reduction in Allergy Symptoms</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">99.97%</div>
+                    <div class="stat-label">of Airborne Particles Removed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Solutions Section -->
+    <section class="solutions-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our Professional Air Quality Solutions</h2>
+                <p>Comprehensive solutions tailored to Pasadena homes and your specific air quality concerns</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-img">
+                        <img src="/api/placeholder/400/200" alt="Whole-Home Air Purification Systems">
+                    </div>
+                    <div class="solution-content">
+                        <h3>Whole-Home Air Purification</h3>
+                        <p>Our whole-home air purification systems integrate with your existing HVAC system to clean all the air in your home. Unlike portable units that only clean one room, these systems provide comprehensive protection throughout your entire house.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>HEPA filtration removes 99.97% of particles</li>
+                            <li>UV light technology kills bacteria and viruses</li>
+                            <li>Activated carbon removes odors and chemicals</li>
+                            <li>Compatible with all HVAC systems</li>
+                            <li>Quiet, efficient operation</li>
+                        </ul>
+                        <div class="solution-cta">
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-img">
+                        <img src="/api/placeholder/400/200" alt="Advanced Filtration Systems">
+                    </div>
+                    <div class="solution-content">
+                        <h3>Advanced Filtration Systems</h3>
+                        <p>Upgrade your HVAC system's filtration capabilities with our professional-grade filters. We offer a range of MERV-rated filters tailored to your specific needs, from basic dust and pollen filtration to hospital-grade protection against microscopic pollutants.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Filters from MERV 8 to MERV 16 available</li>
+                            <li>Media filter cabinets for enhanced filtration</li>
+                            <li>Filter subscription services available</li>
+                            <li>Professional installation ensures proper fit</li>
+                            <li>Wildfire protection options</li>
+                        </ul>
+                        <div class="solution-cta">
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-img">
+                        <img src="/api/placeholder/400/200" alt="UV Germicidal Lights">
+                    </div>
+                    <div class="solution-content">
+                        <h3>UV Germicidal Lights</h3>
+                        <p>UV germicidal lights installed in your HVAC system kill airborne bacteria, viruses, and mold spores as they pass through. This technology is especially beneficial for homes with occupants who have compromised immune systems or respiratory conditions.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Kills up to 99.9% of microorganisms</li>
+                            <li>Prevents mold growth on coils</li>
+                            <li>Reduces odors caused by bacteria</li>
+                            <li>Low maintenance requirements</li>
+                            <li>Energy-efficient operation</li>
+                        </ul>
+                        <div class="solution-cta">
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-img">
+                        <img src="/api/placeholder/400/200" alt="Whole-Home Dehumidifiers">
+                    </div>
+                    <div class="solution-content">
+                        <h3>Humidity Control Systems</h3>
+                        <p>Maintain optimal humidity levels in your Pasadena home with our whole-home humidity control systems. Proper humidity (between 30-50%) discourages mold growth, reduces dust mite populations, and improves overall comfort and air quality.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Whole-home dehumidification</li>
+                            <li>Steam humidifiers for dry winter months</li>
+                            <li>Digital humidity monitoring</li>
+                            <li>Automatic operation based on conditions</li>
+                            <li>Prevents moisture-related issues</li>
+                        </ul>
+                        <div class="solution-cta">
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-img">
+                        <img src="/api/placeholder/400/200" alt="Ventilation Systems">
+                    </div>
+                    <div class="solution-content">
+                        <h3>Ventilation Solutions</h3>
+                        <p>Ensure your Pasadena home has proper air exchange with our energy-efficient ventilation systems. These solutions bring in fresh outdoor air while exhausting stale indoor air without sacrificing energy efficiency or comfort.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Energy Recovery Ventilators (ERVs)</li>
+                            <li>Heat Recovery Ventilators (HRVs)</li>
+                            <li>Balanced ventilation systems</li>
+                            <li>Smart controls with air quality monitoring</li>
+                            <li>Meets building code requirements</li>
+                        </ul>
+                        <div class="solution-cta">
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-img">
+                        <img src="/api/placeholder/400/200" alt="Duct Cleaning and Sealing">
+                    </div>
+                    <div class="solution-content">
+                        <h3>Duct Cleaning & Sealing</h3>
+                        <p>Your ductwork can harbor years of accumulated dust, allergens, and even mold. Our professional duct cleaning services remove these contaminants, while our duct sealing prevents leaks that can draw in pollutants from attics and crawl spaces.</p>
+                        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+                            <li>Complete HVAC system cleaning</li>
+                            <li>Video inspection before and after</li>
+                            <li>Aeroseal duct sealing technology</li>
+                            <li>Improves HVAC efficiency</li>
+                            <li>Eliminates accumulated contaminants</li>
+                        </ul>
+                        <div class="solution-cta">
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Benefits of Improved Indoor Air Quality</h2>
+                <p>Experience the life-changing difference clean air can make in your Pasadena home</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌿</div>
+                    <h3>Reduced Allergy & Asthma Symptoms</h3>
+                    <p>Experience significant relief from respiratory symptoms by removing the airborne triggers that cause allergy and asthma flare-ups.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">😴</div>
+                    <h3>Better Sleep Quality</h3>
+                    <p>Cleaner air leads to improved breathing during sleep, reducing nighttime congestion, snoring, and sleep disruptions.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🧠</div>
+                    <h3>Enhanced Cognitive Function</h3>
+                    <p>Studies show that improved air quality leads to better concentration, productivity, and cognitive performance.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏠</div>
+                    <h3>Cleaner Home Environment</h3>
+                    <p>Significantly reduce dust accumulation on surfaces, resulting in less frequent cleaning and a visibly cleaner home.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Protected HVAC Investment</h3>
+                    <p>Cleaner air means less dust and debris flowing through your HVAC system, extending its lifespan and reducing repairs.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">👪</div>
+                    <h3>Family Health Protection</h3>
+                    <p>Reduce the spread of airborne viruses and bacteria, helping to keep your entire family healthier year-round.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Our Process Section -->
+    <section>
+        <div class="container">
+            <div class="two-column">
+                <div>
+                    <h2>Our Air Quality Improvement Process</h2>
+                    <p>At HVAC Pasadena, we take a comprehensive, scientific approach to improving your home's air quality. We don't just sell products—we create customized solutions based on your specific air quality concerns and home characteristics.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">1</div>
+                            <div class="feature-text">
+                                <h4>Thorough Assessment</h4>
+                                <p>We begin with a comprehensive evaluation of your home's air quality, identifying specific pollutants and their sources using professional testing equipment.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">2</div>
+                            <div class="feature-text">
+                                <h4>Customized Recommendations</h4>
+                                <p>Based on your assessment results and specific concerns, we develop a tailored air quality improvement plan that addresses your unique needs and budget.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">3</div>
+                            <div class="feature-text">
+                                <h4>Professional Installation</h4>
+                                <p>Our trained technicians install your selected air quality solutions with minimal disruption to your home, ensuring proper integration with your existing HVAC system.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">4</div>
+                            <div class="feature-text">
+                                <h4>Verification Testing</h4>
+                                <p>After installation, we conduct follow-up testing to verify the effectiveness of your new air quality system, confirming measurable improvements in your home's air.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">5</div>
+                            <div class="feature-text">
+                                <h4>Ongoing Support</h4>
+                                <p>We provide guidance on maintenance, filter replacements, and system optimization to ensure long-term air quality improvements for years to come.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 2rem;">
+                        <a href="#estimate-form" class="btn btn-primary">Schedule Your Assessment</a>
+                    </div>
+                </div>
+                
+                <div class="content-image">
+                    <img src="/api/placeholder/500/600" alt="Air Quality Assessment Process">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Packages Section -->
+    <section class="packages-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our Air Quality Packages</h2>
+                <p>Choose the perfect air quality solution for your Pasadena home and budget</p>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Essential Protection</h3>
+                        <p>Basic air quality improvement</p>
+                        <div class="package-price">$899<span class="period">installed</span></div>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-features">
+                            <li>High-efficiency MERV 11 filtration system</li>
+                            <li>Professional installation</li>
+                            <li>Basic air quality monitor</li>
+                            <li>1-year filter supply (4 filters)</li>
+                            <li>Compatible with all HVAC systems</li>
+                            <li>1-year parts warranty</li>
+                        </ul>
+                        <a href="#estimate-form" class="btn btn-primary btn-block">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="package-card" style="position: relative;">
+                    <div class="popular-tag">Most Popular</div>
+                    <div class="package-header" style="background-color: var(--secondary);">
+                        <h3>Advanced Protection</h3>
+                        <p>Comprehensive air purification</p>
+                        <div class="package-price">$1,499<span class="period">installed</span></div>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-features">
+                            <li>MERV 13 filtration with activated carbon</li>
+                            <li>UV germicidal light system</li>
+                            <li>Professional installation</li>
+                            <li>Digital air quality monitor</li>
+                            <li>1-year filter supply (4 filters)</li>
+                            <li>Smart phone integration</li>
+                            <li>5-year parts warranty</li>
+                        </ul>
+                        <a href="#estimate-form" class="btn btn-primary btn-block">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Ultimate Protection</h3>
+                        <p>Complete air quality solution</p>
+                        <div class="package-price">$2,299<span class="period">installed</span></div>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-features">
+                            <li>Hospital-grade HEPA filtration</li>
+                            <li>Dual UV germicidal light system</li>
+                            <li>Activated carbon VOC removal</li>
+                            <li>Energy Recovery Ventilator (ERV)</li>
+                            <li>Professional installation</li>
+                            <li>Advanced air quality monitoring</li>
+                            <li>2-year filter supply (8 filters)</li>
+                            <li>10-year parts warranty</li>
+                        </ul>
+                        <a href="#estimate-form" class="btn btn-primary btn-block">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <p>All packages include a free initial air quality assessment ($99 value). Financing options available.</p>
+                <a href="contact.html" class="btn btn-outline" style="color: var(--primary); border-color: var(--primary); margin-top: 1rem;">Custom Solutions Available</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>What Our Customers Say</h2>
+                <p>Read testimonials from Pasadena residents who've experienced the benefits of our air quality solutions</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"As someone with severe allergies, I was struggling constantly in my Pasadena home, especially during spring and wildfire season. HVAC Pasadena installed a whole-home air purification system, and the difference has been incredible. My allergy symptoms have decreased by at least 70%, and I'm sleeping better than I have in years. The technicians were professional, knowledgeable, and clean. Best investment I've made for my health!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Jennifer Martinez</h4>
+                            <div class="author-location">Bungalow Heaven, Pasadena</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"During the last wildfire season, smoke was getting into our home despite keeping windows closed. The air was visibly hazy inside, and we were concerned about our children's health. HVAC Pasadena recommended their Advanced Protection package with MERV 13 filters and UV purification. When the next fire hit, the difference was remarkable - no smoke smell or haze inside our home. Worth every penny for the peace of mind it provides."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <div class="author-location">San Rafael, Pasadena</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Our historic Craftsman home in Pasadena always felt stuffy and had a persistent musty smell. After HVAC Pasadena's comprehensive air quality assessment, they discovered inadequate ventilation and installed an ERV system along with duct cleaning and sealing. Now our home feels fresh and clean, and the musty odor is completely gone. The team was respectful of our historic home and worked clean. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>David & Sarah Johnson</h4>
+                            <div class="author-location">Madison Heights, Pasadena</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Frequently Asked Questions</h2>
+                <p>Answers to common questions about indoor air quality in Pasadena</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">How do I know if I have indoor air quality problems?</div>
+                    <div class="faq-answer">Common signs of poor indoor air quality include: excessive dust accumulation, persistent allergic symptoms that improve when away from home, musty or stale odors, visible mold growth, condensation on windows, and respiratory issues that worsen at home. Pasadena homes are particularly susceptible to outdoor pollutants like pollen and wildfire smoke, as well as indoor contaminants from building materials and household products. Our free air quality assessment can identify specific issues in your home.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Will air purification systems increase my energy bills?</div>
+                    <div class="faq-answer">Modern air purification systems are designed to be energy-efficient, typically adding only $3-$7 per month to your electricity costs. Some systems, like those with variable-speed motors, may actually improve overall HVAC efficiency by providing better airflow. The health benefits and reduced cleaning requirements generally far outweigh the minimal energy costs. For energy-conscious Pasadena homeowners, we offer energy-efficient options with ENERGY STAR certification.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How often do air purification filters need to be replaced?</div>
+                    <div class="faq-answer">Filter replacement schedules vary based on the type of system, your home's conditions, and Pasadena's seasonal air quality challenges. Typically, standard 1-inch filters should be replaced every 1-3 months, while media filters (4-5 inches thick) generally last 6-12 months. HEPA filters usually require replacement every 1-2 years. Homes near construction areas or during wildfire season may require more frequent changes. Our maintenance plans include regular filter replacements on an optimized schedule for your specific situation.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can air purification systems remove wildfire smoke from my home?</div>
+                    <div class="faq-answer">Yes, our advanced air purification systems are highly effective at removing wildfire smoke particles from your Pasadena home's air. Wildfire smoke contains fine particulate matter (PM2.5) that can penetrate deep into the lungs. Our systems with MERV 13 or higher filtration, especially those with true HEPA filters, can capture over 99% of these harmful particles. During wildfire season, we recommend combining high-efficiency filtration with proper home sealing to minimize smoke infiltration.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Are there any rebates or incentives available for air quality improvements?</div>
+                    <div class="faq-answer">Yes, Pasadena residents may qualify for several rebates and incentives for air quality improvements. Pasadena Water and Power (PWP) offers rebates for energy-efficient HVAC upgrades that include air quality components. There are also occasional rebates through the South Coast Air Quality Management District (SCAQMD). Additionally, some health insurance plans offer reimbursement for air quality improvements that address documented health conditions. Our team can help you identify and apply for all available incentives to maximize your savings.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How long does installation take, and will it disrupt my home?</div>
+                    <div class="faq-answer">Most residential air quality system installations in Pasadena homes are completed in 4-8 hours, depending on the complexity and components selected. Our professional installers minimize disruption to your home, working neatly and efficiently. For whole-home systems that integrate with your HVAC, we typically need to power down your heating and cooling system during installation, but we schedule around extreme weather days for your comfort. Our technicians wear shoe covers, use drop cloths, and thoroughly clean up after the installation is complete.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Breathe Cleaner, Healthier Air Today</h2>
+                <p>Take the first step toward improving your Pasadena home's air quality. Schedule your free air quality assessment and consultation with our indoor air quality experts.</p>
+                <div class="btn-group">
+                    <a href="#estimate-form" class="btn btn-primary btn-lg">Schedule Free Assessment</a>
+                    <a href="tel:+16265551234" class="btn btn-outline btn-lg">Call (626) 555-1234</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>HVAC Pasadena has been providing top-quality heating, cooling, and air quality services to Pasadena residents and businesses since 2010. We're committed to exceptional service, fair pricing, and customer satisfaction.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">F</a>
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">I</a>
+                        <a href="#" class="social-link">Y</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="ac-repair.html">AC Repair & Installation</a></li>
+                        <li><a href="furnace-installation.html">Heating Services</a></li>
+                        <li><a href="hvac-maintenance.html">HVAC Maintenance</a></li>
+                        <li><a href="air-quality.html">Indoor Air Quality</a></li>
+                        <li><a href="commercial-hvac.html">Commercial HVAC</a></li>
+                        <li><a href="emergency-service.html">Emergency Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Service Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="pasadena-hvac.html">Pasadena</a></li>
+                        <li><a href="south-pasadena-hvac.html">South Pasadena</a></li>
+                        <li><a href="north-pasadena-hvac.html">North Pasadena</a></li>
+                        <li><a href="altadena-hvac.html">Altadena</a></li>
+                        <li><a href="san-marino-hvac.html">San Marino</a></li>
+                        <li><a href="sierra-madre-hvac.html">Sierra Madre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">📞</div>
+                        <div>
+                            <p>(626) 555-1234</p>
+                            <p>24/7 Emergency Service</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">✉️</div>
+                        <div>
+                            <p>info@hvacpasadena.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">🏢</div>
+                        <div>
+                            <p>123 E Colorado Blvd</p>
+                            <p>Pasadena, CA 91105</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">⏰</div>
+                        <div>
+                            <p>Mon-Fri: 7am-8pm</p>
+                            <p>Sat-Sun: 8am-5pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 HVAC Pasadena. All Rights Reserved.</p>
+                <div class="licenses">
+                    <div class="license-item">CA License #ABC12345</div>
+                    <div class="license-item">EPA Certified</div>
+                    <div class="license-item">NATE Certified Technicians</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
