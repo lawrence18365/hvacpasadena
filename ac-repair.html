@@ -1,1561 +1,1763 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional AC repair in Pasadena. 24/7 emergency service, same-day repairs, and 100% satisfaction guarantee. Licensed experts. Call (626) 555-1234.">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Professional AC repair in Pasadena. 24/7 emergency service, same-day repairs, and 100% satisfaction guarantee. Licensed experts. Call (626) 555-1234." name="description" />
     <title>AC Repair Pasadena | Same-Day Emergency Service | (626) 555-1234</title>
     <style>
-        /* Modern Variables */
-        :root {
-            --primary: #0066cc;
-            --secondary: #ff6600;
-            --accent: #ff9900;
-            --dark: #222831;
-            --medium: #393e46;
-            --light: #f8f9fa;
-            --white: #ffffff;
-            --success: #28a745;
-            --warning: #ffc107;
-            --error: #dc3545;
-            --radius: 8px;
-            --shadow: 0 4px 12px rgba(0,0,0,0.15);
-            --transition: all 0.3s ease;
-        }
-
-        /* Reset & Basics */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Montserrat', 'Arial', sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: var(--dark);
-            background-color: var(--light);
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Typography */
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-            color: var(--dark);
-        }
-
-        h1 {
-            font-size: 2.5rem;
-        }
-
-        h2 {
-            font-size: 2rem;
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-
-        h2:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            height: 3px;
-            width: 70px;
-            background-color: var(--secondary);
-        }
-
-        .text-center h2:after {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        p {
-            margin-bottom: 1rem;
-        }
-
-        /* Layout */
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0 -1rem;
-        }
-
-        .col {
-            padding: 0 1rem;
-            flex: 1;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        section {
-            padding: 4rem 0;
-        }
-
-        .section-heading {
-            margin-bottom: 3rem;
-        }
-
-        /* Emergency Header */
-        .emergency-header {
-            background-color: var(--secondary);
-            color: var(--white);
-            padding: 0.5rem 0;
-            text-align: center;
-            font-weight: 700;
-        }
-
-        .emergency-header a {
-            color: var(--white);
-            text-decoration: underline;
-        }
-
-        /* Header */
-        header {
-            background-color: var(--white);
-            box-shadow: var(--shadow);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            height: 60px;
-            margin-right: 1rem;
-        }
-
-        .logo-text {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: -1px;
-        }
-
-        .logo-text span {
-            color: var(--secondary);
-        }
-
-        .header-contact {
-            text-align: right;
-        }
-
-        .phone-number {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-
-        .phone-number:before {
-            content: '📞';
-            margin-right: 0.5rem;
-        }
-
-        .phone-text {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--secondary);
-            text-transform: uppercase;
-        }
-
-        /* Navigation */
-        nav {
-            background-color: var(--primary);
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-links li {
-            position: relative;
-        }
-
-        .nav-links a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 600;
-            padding: 1rem 1.5rem;
-            display: block;
-            transition: var(--transition);
-        }
-
-        .nav-links a:hover {
-            background-color: rgba(255,255,255,0.1);
-        }
-
-        .nav-cta {
-            background-color: var(--secondary);
-            display: flex;
-            align-items: center;
-        }
-
-        .nav-cta a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 700;
-            padding: 1rem 1.5rem;
-        }
-
-        /* Hero Section */
-        .hero {
-            position: relative;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1600/800') center/cover no-repeat;
-            padding: 5rem 0;
-            color: var(--white);
-            text-align: left;
-        }
-
-        .hero-content {
-            max-width: 600px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            color: var(--white);
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-            margin-bottom: 1.5rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-
-        .trust-badges {
-            display: flex;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .badge {
-            display: flex;
-            align-items: center;
-            margin-right: 1.5rem;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-
-        .badge:before {
-            content: '✓';
-            background-color: var(--secondary);
-            color: var(--white);
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 0.5rem;
-            font-size: 0.9rem;
-        }
-
-        /* CTA Buttons */
-        .btn {
-            display: inline-block;
-            font-weight: 700;
-            text-decoration: none;
-            padding: 0.8rem 1.8rem;
-            border-radius: var(--radius);
-            transition: var(--transition);
-            cursor: pointer;
-            text-align: center;
-            border: none;
-            font-size: 1rem;
-        }
-
-        .btn-primary {
-            background-color: var(--secondary);
-            color: var(--white);
-        }
-
-        .btn-primary:hover {
-            background-color: #ff8833;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(255, 102, 0, 0.3);
-        }
-
-        .btn-outline {
-            background-color: transparent;
-            color: var(--white);
-            border: 2px solid var(--white);
-        }
-
-        .btn-outline:hover {
-            background-color: var(--white);
-            color: var(--primary);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
-        }
-
-        .btn-lg {
-            padding: 1rem 2.5rem;
-            font-size: 1.1rem;
-        }
-
-        .btn-block {
-            display: block;
-            width: 100%;
-        }
-
-        .btn-group {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        /* Hero Form */
-        .hero-form-container {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 400px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 1rem;
-        }
-
-        .hero-form {
-            background-color: var(--white);
-            padding: 2rem;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            width: 100%;
-        }
-
-        .hero-form h3 {
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            text-align: center;
-            font-size: 1.4rem;
-        }
-
-        .hero-form input,
-        .hero-form select,
-        .hero-form textarea {
-            width: 100%;
-            padding: 0.8rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ddd;
-            border-radius: var(--radius);
-            font-size: 1rem;
-        }
-
-        .hero-form .btn {
-            margin-top: 1rem;
-        }
-
-        /* Features List */
-        .features-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-        }
-
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            background-color: #e6f0ff;
-            color: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5rem;
-            flex-shrink: 0;
-        }
-
-        .feature-content h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Problem Signs Section */
-        .problem-signs {
-            background-color: #fff9f5;
-            padding: 4rem 0;
-        }
-
-        .signs-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .sign-card {
-            background-color: var(--white);
-            border-radius: var(--radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-        }
-
-        .sign-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        }
-
-        .sign-img {
-            height: 180px;
-            background-color: #eee;
-        }
-
-        .sign-content {
-            padding: 1.5rem;
-        }
-
-        .sign-content h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.8rem;
-            color: var(--primary);
-        }
-
-        /* Process Section */
+      /* Modern Variables */
+      :root {
+        --primary: #0066cc;
+        --secondary: #ff6600;
+        --accent: #ff9900;
+        --dark: #222831;
+        --medium: #393e46;
+        --light: #f8f9fa;
+        --white: #ffffff;
+        --success: #28a745;
+        --warning: #ffc107;
+        --error: #dc3545;
+        --radius: 8px;
+        --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        --transition: all 0.3s ease;
+      }
+
+      /* Reset & Basics */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', 'Arial', sans-serif;
+      }
+
+      body {
+        line-height: 1.6;
+        color: var(--dark);
+        background-color: var(--light);
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Typography */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        color: var(--dark);
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+      }
+
+      h2:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 70px;
+        background-color: var(--secondary);
+      }
+
+      .text-center h2:after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      /* Layout */
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+      }
+
+      .col {
+        padding: 0 1rem;
+        flex: 1;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      section {
+        padding: 4rem 0;
+      }
+
+      .section-heading {
+        margin-bottom: 3rem;
+      }
+
+      /* Emergency Header */
+      .emergency-header {
+        background-color: var(--secondary);
+        color: var(--white);
+        padding: 0.5rem 0;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .emergency-header a {
+        color: var(--white);
+        text-decoration: underline;
+      }
+
+      /* Header */
+      header {
+        background-color: var(--white);
+        box-shadow: var(--shadow);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 60px;
+        margin-right: 1rem;
+      }
+
+      .logo-text {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--primary);
+        text-transform: uppercase;
+        letter-spacing: -1px;
+      }
+
+      .logo-text span {
+        color: var(--secondary);
+      }
+
+      .header-contact {
+        text-align: right;
+      }
+
+      .phone-number {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--primary);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+      }
+
+      .phone-number:before {
+        content: '📞';
+        margin-right: 0.5rem;
+      }
+
+      .phone-text {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--secondary);
+        text-transform: uppercase;
+      }
+
+      /* Navigation */
+      nav {
+        background-color: var(--primary);
+      }
+
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        position: relative;
+      }
+
+      .nav-links a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 600;
+        padding: 1rem 1.5rem;
+        display: block;
+        transition: var(--transition);
+      }
+
+      .nav-links a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .nav-cta {
+        background-color: var(--secondary);
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-cta a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 700;
+        padding: 1rem 1.5rem;
+      }
+
+      /* Hero Section */
+      .hero {
+        position: relative;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1600/800') center/cover no-repeat;
+        padding: 5rem 0;
+        color: var(--white);
+        text-align: left;
+      }
+
+      .hero-content {
+        max-width: 600px;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        color: var(--white);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        margin-bottom: 1.5rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .trust-badges {
+        display: flex;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .badge {
+        display: flex;
+        align-items: center;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+
+      .badge:before {
+        content: '✓';
+        background-color: var(--secondary);
+        color: var(--white);
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      /* CTA Buttons */
+      .btn {
+        display: inline-block;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 0.8rem 1.8rem;
+        border-radius: var(--radius);
+        transition: var(--transition);
+        cursor: pointer;
+        text-align: center;
+        border: none;
+        font-size: 1rem;
+      }
+
+      .btn-primary {
+        background-color: var(--secondary);
+        color: var(--white);
+      }
+
+      .btn-primary:hover {
+        background-color: #ff8833;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(255, 102, 0, 0.3);
+      }
+
+      .btn-outline {
+        background-color: transparent;
+        color: var(--white);
+        border: 2px solid var(--white);
+      }
+
+      .btn-outline:hover {
+        background-color: var(--white);
+        color: var(--primary);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+      }
+
+      .btn-lg {
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+      }
+
+      .btn-block {
+        display: block;
+        width: 100%;
+      }
+
+      .btn-group {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      /* Hero Form */
+      .hero-form-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 400px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+      }
+
+      .hero-form {
+        background-color: var(--white);
+        padding: 2rem;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        width: 100%;
+      }
+
+      .hero-form h3 {
+        color: var(--primary);
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-size: 1.4rem;
+      }
+
+      .hero-form input,
+      .hero-form select,
+      .hero-form textarea {
+        width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: var(--radius);
+        font-size: 1rem;
+      }
+
+      .hero-form .btn {
+        margin-top: 1rem;
+      }
+
+      /* Features List */
+      .features-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .feature-icon {
+        width: 60px;
+        height: 60px;
+        background-color: #e6f0ff;
+        color: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        flex-shrink: 0;
+      }
+
+      .feature-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      /* Problem Signs Section */
+      .problem-signs {
+        background-color: #fff9f5;
+        padding: 4rem 0;
+      }
+
+      .signs-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .sign-card {
+        background-color: var(--white);
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+      }
+
+      .sign-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .sign-img {
+        height: 180px;
+        background-color: #eee;
+      }
+
+      .sign-content {
+        padding: 1.5rem;
+      }
+
+      .sign-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+        color: var(--primary);
+      }
+
+      /* Process Section */
+      .process-steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+      }
+
+      .process-step {
+        text-align: center;
+        position: relative;
+      }
+
+      .step-number {
+        width: 60px;
+        height: 60px;
+        background-color: var(--primary);
+        color: var(--white);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0 auto 1.5rem;
+      }
+
+      .process-step h3 {
+        margin-bottom: 1rem;
+      }
+
+      .process-steps .process-step:not(:last-child):after {
+        content: '→';
+        position: absolute;
+        top: 30px;
+        right: -20px;
+        font-size: 2rem;
+        color: var(--primary);
+        display: none;
+      }
+
+      @media (min-width: 768px) {
         .process-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .process-step {
-            text-align: center;
-            position: relative;
-        }
-
-        .step-number {
-            width: 60px;
-            height: 60px;
-            background-color: var(--primary);
-            color: var(--white);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin: 0 auto 1.5rem;
-        }
-
-        .process-step h3 {
-            margin-bottom: 1rem;
+          grid-template-columns: repeat(4, 1fr);
         }
 
         .process-steps .process-step:not(:last-child):after {
-            content: '→';
-            position: absolute;
-            top: 30px;
-            right: -20px;
-            font-size: 2rem;
-            color: var(--primary);
-            display: none;
+          display: block;
         }
+      }
 
-        @media (min-width: 768px) {
-            .process-steps {
-                grid-template-columns: repeat(4, 1fr);
-            }
-            .process-steps .process-step:not(:last-child):after {
-                display: block;
-            }
-        }
+      /* Pricing Section */
+      .pricing-section {
+        background-color: #f0f5ff;
+        padding: 4rem 0;
+      }
 
-        /* Pricing Section */
-        .pricing-section {
-            background-color: #f0f5ff;
-            padding: 4rem 0;
-        }
+      .pricing-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 2rem 0;
+        box-shadow: var(--shadow);
+        background-color: var(--white);
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
 
-        .pricing-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-            box-shadow: var(--shadow);
-            background-color: var(--white);
-            border-radius: var(--radius);
-            overflow: hidden;
-        }
+      .pricing-table th,
+      .pricing-table td {
+        padding: 1.2rem;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+      }
 
-        .pricing-table th, .pricing-table td {
-            padding: 1.2rem;
-            text-align: left;
-            border-bottom: 1px solid #eee;
-        }
+      .pricing-table th {
+        background-color: var(--primary);
+        color: var(--white);
+        font-size: 1.1rem;
+      }
 
-        .pricing-table th {
-            background-color: var(--primary);
-            color: var(--white);
-            font-size: 1.1rem;
-        }
+      .pricing-table tr:last-child td {
+        border-bottom: none;
+      }
 
-        .pricing-table tr:last-child td {
-            border-bottom: none;
-        }
+      .price-highlight {
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 1.1rem;
+      }
 
-        .price-highlight {
-            color: var(--primary);
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
+      /* Testimonials */
+      .testimonials {
+        background-color: #fff9f5;
+        position: relative;
+        overflow: hidden;
+        padding: 4rem 0;
+      }
 
-        /* Testimonials */
-        .testimonials {
-            background-color: #fff9f5;
-            position: relative;
-            overflow: hidden;
-            padding: 4rem 0;
-        }
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 2rem;
+      }
 
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2rem;
-        }
+      .testimonial-card {
+        background-color: var(--white);
+        padding: 2rem;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        position: relative;
+      }
 
-        .testimonial-card {
-            background-color: var(--white);
-            padding: 2rem;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            position: relative;
-        }
+      .testimonial-text {
+        font-style: italic;
+        margin-bottom: 1.5rem;
+        position: relative;
+        z-index: 1;
+      }
 
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 1.5rem;
-            position: relative;
-            z-index: 1;
-        }
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+      }
 
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-        }
+      .author-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #eee;
+        margin-right: 1rem;
+      }
 
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #eee;
-            margin-right: 1rem;
-        }
+      .author-info h4 {
+        margin-bottom: 0.2rem;
+        font-size: 1.1rem;
+      }
 
-        .author-info h4 {
-            margin-bottom: 0.2rem;
-            font-size: 1.1rem;
-        }
+      .author-location {
+        font-size: 0.9rem;
+        color: var(--medium);
+      }
 
-        .author-location {
-            font-size: 0.9rem;
-            color: var(--medium);
-        }
+      .testimonial-rating {
+        color: #ffc107;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
 
-        .testimonial-rating {
-            color: #ffc107;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
+      /* FAQ Section */
+      .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
 
-        /* FAQ Section */
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+      .faq-item {
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 1.5rem;
+      }
 
-        .faq-item {
-            margin-bottom: 1.5rem;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 1.5rem;
-        }
+      .faq-item:last-child {
+        border-bottom: none;
+      }
 
-        .faq-item:last-child {
-            border-bottom: none;
-        }
+      .faq-question {
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+        color: var(--primary);
+        position: relative;
+        padding-left: 1.5rem;
+      }
 
-        .faq-question {
-            font-weight: 700;
-            font-size: 1.1rem;
-            margin-bottom: 0.8rem;
-            color: var(--primary);
-            position: relative;
-            padding-left: 1.5rem;
-        }
+      .faq-question:before {
+        content: 'Q:';
+        position: absolute;
+        left: 0;
+        color: var(--secondary);
+      }
 
-        .faq-question:before {
-            content: 'Q:';
-            position: absolute;
-            left: 0;
-            color: var(--secondary);
-        }
+      .faq-answer {
+        padding-left: 1.5rem;
+        position: relative;
+      }
 
-        .faq-answer {
-            padding-left: 1.5rem;
-            position: relative;
-        }
+      .faq-answer:before {
+        content: 'A:';
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        color: var(--primary);
+      }
 
-        .faq-answer:before {
-            content: 'A:';
-            position: absolute;
-            left: 0;
-            font-weight: 700;
-            color: var(--primary);
-        }
+      /* Call to Action */
+      .cta-section {
+        background: linear-gradient(135deg, var(--primary), #004999);
+        color: var(--white);
+        text-align: center;
+        padding: 4rem 0;
+      }
 
-        /* Call to Action */
-        .cta-section {
-            background: linear-gradient(135deg, var(--primary), #004999);
-            color: var(--white);
-            text-align: center;
-            padding: 4rem 0;
-        }
+      .cta-section h2 {
+        color: var(--white);
+      }
 
-        .cta-section h2 {
-            color: var(--white);
-        }
+      .cta-section h2:after {
+        background-color: var(--secondary);
+      }
 
-        .cta-section h2:after {
-            background-color: var(--secondary);
-        }
+      .cta-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
 
-        .cta-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+      .cta-section p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
 
-        .cta-section p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
+      /* Footer */
+      footer {
+        background-color: var(--dark);
+        color: var(--light);
+        padding: 4rem 0 0;
+      }
 
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: var(--light);
-            padding: 4rem 0 0;
-        }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+      }
 
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
+      .footer-column h3 {
+        color: var(--white);
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+      }
 
-        .footer-column h3 {
-            color: var(--white);
-            margin-bottom: 1.5rem;
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
+      .footer-column h3:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 50px;
+        background-color: var(--secondary);
+      }
 
-        .footer-column h3:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            height: 2px;
-            width: 50px;
-            background-color: var(--secondary);
-        }
+      .footer-links {
+        list-style: none;
+      }
 
-        .footer-links {
-            list-style: none;
-        }
+      .footer-links li {
+        margin-bottom: 0.8rem;
+      }
 
-        .footer-links li {
-            margin-bottom: 0.8rem;
-        }
+      .footer-links a {
+        color: var(--light);
+        text-decoration: none;
+        transition: var(--transition);
+      }
 
-        .footer-links a {
-            color: var(--light);
-            text-decoration: none;
-            transition: var(--transition);
-        }
+      .footer-links a:hover {
+        color: var(--secondary);
+        padding-left: 5px;
+      }
 
-        .footer-links a:hover {
-            color: var(--secondary);
-            padding-left: 5px;
-        }
+      .footer-contact-item {
+        display: flex;
+        margin-bottom: 1rem;
+      }
 
-        .footer-contact-item {
-            display: flex;
-            margin-bottom: 1rem;
-        }
+      .footer-contact-icon {
+        margin-right: 1rem;
+        color: var(--secondary);
+        font-size: 1.2rem;
+      }
 
-        .footer-contact-icon {
-            margin-right: 1rem;
-            color: var(--secondary);
-            font-size: 1.2rem;
-        }
+      .social-links {
+        display: flex;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+      }
 
-        .social-links {
-            display: flex;
-            margin-top: 1.5rem;
-            flex-wrap: wrap;
-        }
+      .social-link {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.8rem;
+        margin-bottom: 0.8rem;
+        color: var(--white);
+        text-decoration: none;
+        transition: var(--transition);
+      }
 
-        .social-link {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: rgba(255,255,255,0.1);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 0.8rem;
-            margin-bottom: 0.8rem;
-            color: var(--white);
-            text-decoration: none;
-            transition: var(--transition);
-        }
+      .social-link:hover {
+        background-color: var(--secondary);
+        transform: translateY(-3px);
+      }
 
-        .social-link:hover {
-            background-color: var(--secondary);
-            transform: translateY(-3px);
-        }
+      .footer-bottom {
+        background-color: #1a1f27;
+        padding: 1.5rem 0;
+        text-align: center;
+        font-size: 0.9rem;
+      }
 
-        .footer-bottom {
-            background-color: #1a1f27;
-            padding: 1.5rem 0;
-            text-align: center;
-            font-size: 0.9rem;
-        }
+      .licenses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+        font-size: 0.8rem;
+      }
 
-        .licenses {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 1rem;
-            font-size: 0.8rem;
-        }
+      .license-item {
+        margin: 0 1rem;
+        color: #aaa;
+      }
 
-        .license-item {
-            margin: 0 1rem;
-            color: #aaa;
-        }
+      /* Mobile Navigation */
+      .mobile-menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--white);
+        cursor: pointer;
+      }
 
-        /* Mobile Navigation */
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--white);
-            cursor: pointer;
-        }
+      /* Content Blocks */
+      .content-block {
+        margin-bottom: 3rem;
+      }
 
-        /* Content Blocks */
-        .content-block {
-            margin-bottom: 3rem;
-        }
+      .content-block h2 {
+        margin-bottom: 1.5rem;
+      }
 
-        .content-block h2 {
-            margin-bottom: 1.5rem;
-        }
+      .content-block p:last-child {
+        margin-bottom: 0;
+      }
 
-        .content-block p:last-child {
-            margin-bottom: 0;
-        }
+      .content-image {
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
 
-        .content-image {
-            border-radius: var(--radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-        }
+      .two-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+      }
 
+      @media (max-width: 768px) {
         .two-column {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            align-items: center;
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Emergency Banner */
+      .emergency-banner {
+        background-color: var(--error);
+        color: var(--white);
+        padding: 1.5rem;
+        border-radius: var(--radius);
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .emergency-icon {
+        font-size: 2rem;
+        flex-shrink: 0;
+      }
+
+      .emergency-content h3 {
+        color: var(--white);
+        margin-bottom: 0.5rem;
+      }
+
+      .emergency-content a {
+        color: var(--white);
+        font-weight: 700;
+        text-decoration: underline;
+      }
+
+      /* Media Queries */
+      @media (max-width: 1200px) {
+        .hero-form-container {
+          position: relative;
+          width: 100%;
+          height: auto;
+          margin-top: 3rem;
         }
 
-        @media (max-width: 768px) {
-            .two-column {
-                grid-template-columns: 1fr;
-            }
+        .hero-form {
+          max-width: 500px;
+          margin: 0 auto;
+        }
+      }
+
+      @media (max-width: 992px) {
+        h1 {
+          font-size: 2.2rem;
         }
 
-        /* Emergency Banner */
-        .emergency-banner {
-            background-color: var(--error);
-            color: var(--white);
-            padding: 1.5rem;
-            border-radius: var(--radius);
-            margin: 2rem 0;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
+        h2 {
+          font-size: 1.8rem;
         }
 
-        .emergency-icon {
-            font-size: 2rem;
-            flex-shrink: 0;
+        .header-container {
+          flex-direction: column;
+          text-align: center;
         }
 
-        .emergency-content h3 {
-            color: var(--white);
-            margin-bottom: 0.5rem;
+        .header-contact {
+          text-align: center;
+          margin-top: 1rem;
         }
 
-        .emergency-content a {
-            color: var(--white);
-            font-weight: 700;
-            text-decoration: underline;
+        .nav-links {
+          display: none;
         }
 
-        /* Media Queries */
-        @media (max-width: 1200px) {
-            .hero-form-container {
-                position: relative;
-                width: 100%;
-                height: auto;
-                margin-top: 3rem;
-            }
-            
-            .hero-form {
-                max-width: 500px;
-                margin: 0 auto;
-            }
+        .mobile-menu-btn {
+          display: block;
         }
 
-        @media (max-width: 992px) {
-            h1 {
-                font-size: 2.2rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-            }
-            
-            .header-container {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .header-contact {
-                text-align: center;
-                margin-top: 1rem;
-            }
-            
-            .nav-links {
-                display: none;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .nav-container {
-                justify-content: center;
-            }
-            
-            .hero-content {
-                max-width: 100%;
-                text-align: center;
-            }
-            
-            .trust-badges {
-                justify-content: center;
-            }
-            
-            .btn-group {
-                justify-content: center;
-            }
+        .nav-container {
+          justify-content: center;
         }
 
-        @media (max-width: 576px) {
-            section {
-                padding: 3rem 0;
-            }
-            
-            .btn-group {
-                flex-direction: column;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
+        .hero-content {
+          max-width: 100%;
+          text-align: center;
         }
 
-        /* Breadcrumbs */
-        .breadcrumbs {
-            background-color: #f0f5ff;
-            padding: 1rem 0;
-            font-size: 0.9rem;
+        .trust-badges {
+          justify-content: center;
         }
 
-        .breadcrumbs-list {
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
+        .btn-group {
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 576px) {
+        section {
+          padding: 3rem 0;
         }
 
-        .breadcrumbs-item {
-            display: flex;
-            align-items: center;
+        .btn-group {
+          flex-direction: column;
         }
 
-        .breadcrumbs-item:not(:last-child):after {
-            content: '>';
-            margin: 0 0.5rem;
-            color: var(--medium);
+        .hero h1 {
+          font-size: 2rem;
         }
+      }
 
-        .breadcrumbs-link {
-            color: var(--medium);
-            text-decoration: none;
-        }
+      /* Breadcrumbs */
+      .breadcrumbs {
+        background-color: #f0f5ff;
+        padding: 1rem 0;
+        font-size: 0.9rem;
+      }
 
-        .breadcrumbs-link:hover {
-            color: var(--primary);
-            text-decoration: underline;
-        }
+      .breadcrumbs-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+      }
 
-        .breadcrumbs-current {
-            color: var(--primary);
-            font-weight: 600;
-        }
+      .breadcrumbs-item {
+        display: flex;
+        align-items: center;
+      }
+
+      .breadcrumbs-item:not(:last-child):after {
+        content: '>';
+        margin: 0 0.5rem;
+        color: var(--medium);
+      }
+
+      .breadcrumbs-link {
+        color: var(--medium);
+        text-decoration: none;
+      }
+
+      .breadcrumbs-link:hover {
+        color: var(--primary);
+        text-decoration: underline;
+      }
+
+      .breadcrumbs-current {
+        color: var(--primary);
+        font-weight: 600;
+      }
     </style>
-</head>
-
-<body>
-    <!-- Emergency Header -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
     <div class="emergency-header">
-        <div class="container">
-            AC Not Working? 24/7 Emergency AC Repair in Pasadena | <a href="tel:+16265551234">(626) 555-1234</a> | 60-Minute Response Time
-        </div>
+      <div class="container"> 24/7 Emergency HVAC Service Available | <a href="tel:+16265551234"> (626) 555-1234 </a> | 60-Minute Response Time </div>
     </div>
-    
-    <!-- Header -->
     <header>
-        <div class="container">
-            <div class="header-container">
-                <div class="logo">
-                    <div class="logo-text">HVAC<span>Pasadena</span></div>
-                </div>
-                <div class="header-contact">
-                    <a href="tel:+16265551234" class="phone-number">(626) 555-1234</a>
-                    <div class="phone-text">Free Estimates • Same-Day AC Repair</div>
-                </div>
+      <div class="container">
+        <div class="header-container">
+          <div class="logo">
+            <div class="logo-text"> HVAC <span> Pasadena </span>
             </div>
+          </div>
+          <div class="header-contact">
+            <a class="phone-number" href="tel:+16265551234"> (626) 555-1234 </a>
+            <div class="phone-text"> Free Estimates • Same-Day Service </div>
+          </div>
         </div>
-        <nav>
-            <div class="container">
-                <div class="nav-container">
-                    <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="ac-repair.html">AC Repair</a></li>
-                        <li><a href="furnace-installation.html">Heating</a></li>
-                        <li><a href="hvac-maintenance.html">Maintenance</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="testimonials.html">Reviews</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                    <div class="nav-cta">
-                        <a href="#estimate-form">Free AC Repair Quote</a>
-                    </div>
-                    <button class="mobile-menu-btn">☰</button>
-                </div>
-            </div>
-        </nav>
+      </div>
+      <nav>
+        <div class="container nav-container">
+          <ul class="nav-links">
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="#"> Services </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="ac-repair.html"> AC Repair </a>
+                </li>
+                <li>
+                  <a href="heating.html"> Heating </a>
+                </li>
+                <li>
+                  <a href="hvac-maintenance.html"> Maintenance </a>
+                </li>
+                <li>
+                  <a href="commercial-hvac.html"> Commercial HVAC </a>
+                </li>
+                <li>
+                  <a href="air-quality.html"> Air Quality </a>
+                </li>
+                <li>
+                  <a href="emergency-service.html"> Emergency Service </a>
+                </li>
+                <li>
+                  <a href="furnace-installation.html"> Furnace Installation </a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="#"> Locations </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="pasadena-hvac.html"> Pasadena </a>
+                </li>
+                <li>
+                  <a href="north-pasadena-hvac.html"> North Pasadena </a>
+                </li>
+                <li>
+                  <a href="south-pasadena-hvac.html"> South Pasadena </a>
+                </li>
+                <li>
+                  <a href="altadena-hvac.html"> Altadena </a>
+                </li>
+                <li>
+                  <a href="san-marino-hvac.html"> San Marino </a>
+                </li>
+                <li>
+                  <a href="sierra-madre-hvac.html"> Sierra Madre </a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="#"> Blog </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="blog/index.html"> All Posts </a>
+                </li>
+                <li>
+                  <a href="blog/common-ac-problems-pasadena.html"> Common AC Problems </a>
+                </li>
+                <li>
+                  <a href="blog/energy-efficient-hvac-options.html"> Energy Efficient Options </a>
+                </li>
+                <li>
+                  <a href="blog/preparing-hvac-for-summer.html"> Preparing for Summer </a>
+                </li>
+                <li>
+                  <a href="blog/when-to-replace-vs-repair.html"> Replace vs Repair </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="about.html"> About Us </a>
+            </li>
+            <li>
+              <a href="testimonials.html"> Reviews </a>
+            </li>
+            <li>
+              <a href="financing.html"> Financing </a>
+            </li>
+            <li>
+              <a href="contact.html"> Contact </a>
+            </li>
+          </ul>
+          <div class="nav-cta">
+            <a href="contact.html"> Free Estimate </a>
+          </div>
+          <button aria-label="Toggle mobile menu" class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
     </header>
-    
-    <!-- Breadcrumbs -->
+    <div class="mobile-overlay"></div>
     <div class="breadcrumbs">
-        <div class="container">
-            <ul class="breadcrumbs-list">
-                <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">Home</a></li>
-                <li class="breadcrumbs-item"><span class="breadcrumbs-current">AC Repair</span></li>
-            </ul>
-        </div>
+      <div class="container">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <span class="breadcrumbs-current">AC Repair</span>
+          </li>
+        </ul>
+      </div>
     </div>
-    
+    <!-- Emergency Header -->
+    <!-- Header -->
+    <!-- Breadcrumbs -->
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Fast, Expert AC Repair in Pasadena</h1>
-                <p>When your AC breaks down in Pasadena's heat, you need reliable repair service — fast. Our licensed technicians provide 24/7 emergency AC repair with 60-minute response times and upfront pricing.</p>
-                
-                <div class="trust-badges">
-                    <div class="badge">Same-Day Service</div>
-                    <div class="badge">60-Minute Response</div>
-                    <div class="badge">Licensed Technicians</div>
-                    <div class="badge">100% Satisfaction</div>
-                </div>
-                
-                <div class="btn-group">
-                    <a href="tel:+16265551234" class="btn btn-primary btn-lg">Call for Emergency Repair</a>
-                    <a href="#estimate-form" class="btn btn-outline btn-lg">Get a Free Quote</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Fast, Expert AC Repair in Pasadena</h1>
+          <p>When your AC breaks down in Pasadena's heat, you need reliable repair service — fast. Our licensed technicians provide 24/7 emergency AC repair with 60-minute response times and upfront pricing.</p>
+          <div class="trust-badges">
+            <div class="badge">Same-Day Service</div>
+            <div class="badge">60-Minute Response</div>
+            <div class="badge">Licensed Technicians</div>
+            <div class="badge">100% Satisfaction</div>
+          </div>
+          <div class="btn-group">
+            <a class="btn btn-primary btn-lg" href="tel:+16265551234">Call for Emergency Repair</a>
+            <a class="btn btn-outline btn-lg" href="#estimate-form">Get a Free Quote</a>
+          </div>
         </div>
-        
-        <div class="hero-form-container">
-            <form class="hero-form" id="estimate-form">
-                <h3>Need AC Repair? Get a Free Quote</h3>
-                <input type="text" placeholder="Full Name*" required>
-                <input type="tel" placeholder="Phone Number*" required>
-                <input type="email" placeholder="Email Address*" required>
-                <select required>
-                    <option value="">Select AC Issue*</option>
-                    <option value="not-cooling">AC Not Cooling</option>
-                    <option value="not-turning-on">AC Won't Turn On</option>
-                    <option value="strange-noises">Strange Noises</option>
-                    <option value="leaking">AC Leaking Water</option>
-                    <option value="freezing-up">AC Freezing Up</option>
-                    <option value="other">Other AC Issue</option>
-                </select>
-                <textarea placeholder="Tell us more about your AC problem" rows="3"></textarea>
-                <button type="submit" class="btn btn-primary btn-block">Request Free Quote</button>
-                <p style="font-size: 0.8rem; margin-top: 0.5rem; text-align: center;">We'll call you back within 1 hour!</p>
-            </form>
-        </div>
+      </div>
+      <div class="hero-form-container">
+        <form class="hero-form" id="estimate-form">
+          <h3>Need AC Repair? Get a Free Quote</h3>
+          <input placeholder="Full Name*" required="" type="text" />
+          <input placeholder="Phone Number*" required="" type="tel" />
+          <input placeholder="Email Address*" required="" type="email" />
+          <select required="">
+            <option value="">Select AC Issue*</option>
+            <option value="not-cooling">AC Not Cooling</option>
+            <option value="not-turning-on">AC Won't Turn On</option>
+            <option value="strange-noises">Strange Noises</option>
+            <option value="leaking">AC Leaking Water</option>
+            <option value="freezing-up">AC Freezing Up</option>
+            <option value="other">Other AC Issue</option>
+          </select>
+          <textarea placeholder="Tell us more about your AC problem" rows="3"></textarea>
+          <button class="btn btn-primary btn-block" type="submit">Request Free Quote</button>
+          <p style="font-size: 0.8rem; margin-top: 0.5rem; text-align: center;">We'll call you back within 1 hour!</p>
+        </form>
+      </div>
     </section>
-    
     <!-- Emergency Banner -->
     <div class="container">
-        <div class="emergency-banner">
-            <div class="emergency-icon">⚠️</div>
-            <div class="emergency-content">
-                <h3>AC Emergency? Don't Wait!</h3>
-                <p>Our emergency AC repair technicians are available 24/7. Call now for immediate assistance: <a href="tel:+16265551234">(626) 555-1234</a></p>
-            </div>
+      <div class="emergency-banner">
+        <div class="emergency-icon">⚠️</div>
+        <div class="emergency-content">
+          <h3>AC Emergency? Don't Wait!</h3>
+          <p>Our emergency AC repair technicians are available 24/7. Call now for immediate assistance: <a href="tel:+16265551234">(626) 555-1234</a>
+          </p>
         </div>
+      </div>
     </div>
-    
     <!-- Features Section -->
     <section>
-        <div class="container">
-            <div class="section-heading text-center">
-                <h2>Pasadena's Premier AC Repair Service</h2>
-                <p>When your air conditioner breaks down in Pasadena's heat, you need reliable, fast service from experts who know how to fix any AC problem</p>
-            </div>
-            
-            <div class="features-list">
-                <div class="feature-item">
-                    <div class="feature-icon">⏰</div>
-                    <div class="feature-content">
-                        <h3>24/7 Emergency Repairs</h3>
-                        <p>AC emergencies don't wait for business hours. Our technicians are available 24/7 with a 60-minute response time throughout Pasadena.</p>
-                    </div>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">💰</div>
-                    <div class="feature-content">
-                        <h3>Upfront, No-Surprise Pricing</h3>
-                        <p>We provide clear, written estimates before any work begins. No hidden fees, no unexpected charges — ever.</p>
-                    </div>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">👨‍🔧</div>
-                    <div class="feature-content">
-                        <h3>Licensed & Experienced Technicians</h3>
-                        <p>Our AC repair experts are fully licensed, insured, and have an average of 15+ years of experience fixing AC systems in Pasadena.</p>
-                    </div>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">🔧</div>
-                    <div class="feature-content">
-                        <h3>All Brands & Models Serviced</h3>
-                        <p>We repair all AC brands and models, including Carrier, Trane, Lennox, Rheem, Goodman, and more, with genuine parts in stock.</p>
-                    </div>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">✓</div>
-                    <div class="feature-content">
-                        <h3>Satisfaction Guaranteed</h3>
-                        <p>Our work is backed by a 100% satisfaction guarantee. If you're not completely satisfied with our service, we'll make it right.</p>
-                    </div>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">📅</div>
-                    <div class="feature-content">
-                        <h3>Same-Day Service</h3>
-                        <p>Most AC repairs are completed the same day. We arrive on time with fully-stocked trucks to fix your AC in one visit.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Pasadena's Premier AC Repair Service</h2>
+          <p>When your air conditioner breaks down in Pasadena's heat, you need reliable, fast service from experts who know how to fix any AC problem</p>
         </div>
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-icon">⏰</div>
+            <div class="feature-content">
+              <h3>24/7 Emergency Repairs</h3>
+              <p>AC emergencies don't wait for business hours. Our technicians are available 24/7 with a 60-minute response time throughout Pasadena.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">💰</div>
+            <div class="feature-content">
+              <h3>Upfront, No-Surprise Pricing</h3>
+              <p>We provide clear, written estimates before any work begins. No hidden fees, no unexpected charges — ever.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">👨‍🔧</div>
+            <div class="feature-content">
+              <h3>Licensed &amp; Experienced Technicians</h3>
+              <p>Our AC repair experts are fully licensed, insured, and have an average of 15+ years of experience fixing AC systems in Pasadena.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🔧</div>
+            <div class="feature-content">
+              <h3>All Brands &amp; Models Serviced</h3>
+              <p>We repair all AC brands and models, including Carrier, Trane, Lennox, Rheem, Goodman, and more, with genuine parts in stock.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div class="feature-content">
+              <h3>Satisfaction Guaranteed</h3>
+              <p>Our work is backed by a 100% satisfaction guarantee. If you're not completely satisfied with our service, we'll make it right.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📅</div>
+            <div class="feature-content">
+              <h3>Same-Day Service</h3>
+              <p>Most AC repairs are completed the same day. We arrive on time with fully-stocked trucks to fix your AC in one visit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
     <!-- Signs You Need AC Repair Section -->
     <section class="problem-signs">
-        <div class="container">
-            <div class="section-heading text-center">
-                <h2>Signs Your AC Needs Repair</h2>
-                <p>Don't ignore these warning signs that indicate your air conditioner needs professional attention</p>
-            </div>
-            
-            <div class="signs-grid">
-                <div class="sign-card">
-                    <div class="sign-img">
-                        <img src="/api/placeholder/400/180" alt="AC Not Cooling">
-                    </div>
-                    <div class="sign-content">
-                        <h3>AC Not Cooling Properly</h3>
-                        <p>If your AC is running but not cooling your home, it could indicate refrigerant leaks, compressor issues, or airflow problems.</p>
-                    </div>
-                </div>
-                
-                <div class="sign-card">
-                    <div class="sign-img">
-                        <img src="/api/placeholder/400/180" alt="Strange Noises">
-                    </div>
-                    <div class="sign-content">
-                        <h3>Unusual Noises</h3>
-                        <p>Grinding, squealing, or banging sounds from your AC unit often indicate mechanical problems that require immediate repair.</p>
-                    </div>
-                </div>
-                
-                <div class="sign-card">
-                    <div class="sign-img">
-                        <img src="/api/placeholder/400/180" alt="Water Leaks">
-                    </div>
-                    <div class="sign-content">
-                        <h3>Water Leaking or Pooling</h3>
-                        <p>Water around your indoor unit may indicate a clogged condensate drain line or a refrigerant leak that needs professional attention.</p>
-                    </div>
-                </div>
-                
-                <div class="sign-card">
-                    <div class="sign-img">
-                        <img src="/api/placeholder/400/180" alt="High Energy Bills">
-                    </div>
-                    <div class="sign-content">
-                        <h3>Skyrocketing Energy Bills</h3>
-                        <p>A sudden increase in your energy bills often means your AC is working harder than it should due to an underlying problem.</p>
-                    </div>
-                </div>
-                
-                <div class="sign-card">
-                    <div class="sign-img">
-                        <img src="/api/placeholder/400/180" alt="Weak Airflow">
-                    </div>
-                    <div class="sign-content">
-                        <h3>Weak or Limited Airflow</h3>
-                        <p>Poor airflow from your vents could indicate duct issues, a failing blower motor, or a clogged air filter.</p>
-                    </div>
-                </div>
-                
-                <div class="sign-card">
-                    <div class="sign-img">
-                        <img src="/api/placeholder/400/180" alt="Frequent Cycling">
-                    </div>
-                    <div class="sign-content">
-                        <h3>Frequent Cycling</h3>
-                        <p>If your AC turns on and off repeatedly, it could be improperly sized, have electrical issues, or a malfunctioning thermostat.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Signs Your AC Needs Repair</h2>
+          <p>Don't ignore these warning signs that indicate your air conditioner needs professional attention</p>
         </div>
+        <div class="signs-grid">
+          <div class="sign-card">
+            <div class="sign-img">
+              <img alt="AC Not Cooling" src="/api/placeholder/400/180" />
+            </div>
+            <div class="sign-content">
+              <h3>AC Not Cooling Properly</h3>
+              <p>If your AC is running but not cooling your home, it could indicate refrigerant leaks, compressor issues, or airflow problems.</p>
+            </div>
+          </div>
+          <div class="sign-card">
+            <div class="sign-img">
+              <img alt="Strange Noises" src="/api/placeholder/400/180" />
+            </div>
+            <div class="sign-content">
+              <h3>Unusual Noises</h3>
+              <p>Grinding, squealing, or banging sounds from your AC unit often indicate mechanical problems that require immediate repair.</p>
+            </div>
+          </div>
+          <div class="sign-card">
+            <div class="sign-img">
+              <img alt="Water Leaks" src="/api/placeholder/400/180" />
+            </div>
+            <div class="sign-content">
+              <h3>Water Leaking or Pooling</h3>
+              <p>Water around your indoor unit may indicate a clogged condensate drain line or a refrigerant leak that needs professional attention.</p>
+            </div>
+          </div>
+          <div class="sign-card">
+            <div class="sign-img">
+              <img alt="High Energy Bills" src="/api/placeholder/400/180" />
+            </div>
+            <div class="sign-content">
+              <h3>Skyrocketing Energy Bills</h3>
+              <p>A sudden increase in your energy bills often means your AC is working harder than it should due to an underlying problem.</p>
+            </div>
+          </div>
+          <div class="sign-card">
+            <div class="sign-img">
+              <img alt="Weak Airflow" src="/api/placeholder/400/180" />
+            </div>
+            <div class="sign-content">
+              <h3>Weak or Limited Airflow</h3>
+              <p>Poor airflow from your vents could indicate duct issues, a failing blower motor, or a clogged air filter.</p>
+            </div>
+          </div>
+          <div class="sign-card">
+            <div class="sign-img">
+              <img alt="Frequent Cycling" src="/api/placeholder/400/180" />
+            </div>
+            <div class="sign-content">
+              <h3>Frequent Cycling</h3>
+              <p>If your AC turns on and off repeatedly, it could be improperly sized, have electrical issues, or a malfunctioning thermostat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
     <!-- Our Process Section -->
     <section>
-        <div class="container">
-            <div class="section-heading text-center">
-                <h2>Our AC Repair Process</h2>
-                <p>We follow a proven process to diagnose and repair your AC quickly and efficiently</p>
-            </div>
-            
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h3>Initial Diagnosis</h3>
-                    <p>We perform a comprehensive inspection to accurately identify the root cause of your AC problem.</p>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h3>Upfront Quote</h3>
-                    <p>Before any work begins, we provide a clear, detailed estimate with all costs explained.</p>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h3>Expert Repair</h3>
-                    <p>Our licensed technicians repair your AC using quality parts and industry-best practices.</p>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <h3>Final Testing</h3>
-                    <p>We test your system thoroughly to ensure the repair was successful and your AC is performing optimally.</p>
-                </div>
-            </div>
-            
-            <div class="text-center" style="margin-top: 3rem;">
-                <a href="tel:+16265551234" class="btn btn-primary btn-lg">Call for AC Repair: (626) 555-1234</a>
-            </div>
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Our AC Repair Process</h2>
+          <p>We follow a proven process to diagnose and repair your AC quickly and efficiently</p>
         </div>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h3>Initial Diagnosis</h3>
+            <p>We perform a comprehensive inspection to accurately identify the root cause of your AC problem.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h3>Upfront Quote</h3>
+            <p>Before any work begins, we provide a clear, detailed estimate with all costs explained.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h3>Expert Repair</h3>
+            <p>Our licensed technicians repair your AC using quality parts and industry-best practices.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h3>Final Testing</h3>
+            <p>We test your system thoroughly to ensure the repair was successful and your AC is performing optimally.</p>
+          </div>
+        </div>
+        <div class="text-center" style="margin-top: 3rem;">
+          <a class="btn btn-primary btn-lg" href="tel:+16265551234">Call for AC Repair: (626) 555-1234</a>
+        </div>
+      </div>
     </section>
-    
     <!-- Common AC Repairs Section -->
     <section class="pricing-section">
-        <div class="container">
-            <div class="section-heading text-center">
-                <h2>Common AC Repairs in Pasadena</h2>
-                <p>We fix all air conditioning problems with transparent pricing and guaranteed workmanship</p>
-            </div>
-            
-            <table class="pricing-table">
-                <thead>
-                    <tr>
-                        <th>Common AC Issues</th>
-                        <th>Potential Causes</th>
-                        <th>Our Solution</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>AC Not Cooling</td>
-                        <td>Refrigerant leaks, dirty coils, compressor issues</td>
-                        <td>Leak detection, refrigerant recharge, coil cleaning, compressor repair</td>
-                    </tr>
-                    <tr>
-                        <td>AC Not Turning On</td>
-                        <td>Electrical issues, thermostat problems, capacitor failure</td>
-                        <td>Electrical troubleshooting, thermostat replacement, capacitor replacement</td>
-                    </tr>
-                    <tr>
-                        <td>Strange Noises</td>
-                        <td>Loose parts, motor issues, belt problems</td>
-                        <td>Component tightening, motor repair/replacement, belt adjustment</td>
-                    </tr>
-                    <tr>
-                        <td>Water Leaking</td>
-                        <td>Clogged drain line, frozen evaporator coil</td>
-                        <td>Drain line clearing, coil defrosting and repair</td>
-                    </tr>
-                    <tr>
-                        <td>Warm Air Blowing</td>
-                        <td>Low refrigerant, compressor issues, frozen coils</td>
-                        <td>Refrigerant recharge, compressor repair, coil defrosting</td>
-                    </tr>
-                    <tr>
-                        <td>Frequent Cycling</td>
-                        <td>Thermostat issues, electrical problems, oversized unit</td>
-                        <td>Thermostat calibration, electrical repairs, system assessment</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div style="text-align: center; margin-top: 2rem;">
-                <p style="margin-bottom: 1.5rem;"><strong>Not sure what's wrong with your AC?</strong> Our expert technicians can diagnose any air conditioning problem.</p>
-                <a href="#estimate-form" class="btn btn-primary">Get a Free Diagnosis</a>
-            </div>
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Common AC Repairs in Pasadena</h2>
+          <p>We fix all air conditioning problems with transparent pricing and guaranteed workmanship</p>
         </div>
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>Common AC Issues</th>
+              <th>Potential Causes</th>
+              <th>Our Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AC Not Cooling</td>
+              <td>Refrigerant leaks, dirty coils, compressor issues</td>
+              <td>Leak detection, refrigerant recharge, coil cleaning, compressor repair</td>
+            </tr>
+            <tr>
+              <td>AC Not Turning On</td>
+              <td>Electrical issues, thermostat problems, capacitor failure</td>
+              <td>Electrical troubleshooting, thermostat replacement, capacitor replacement</td>
+            </tr>
+            <tr>
+              <td>Strange Noises</td>
+              <td>Loose parts, motor issues, belt problems</td>
+              <td>Component tightening, motor repair/replacement, belt adjustment</td>
+            </tr>
+            <tr>
+              <td>Water Leaking</td>
+              <td>Clogged drain line, frozen evaporator coil</td>
+              <td>Drain line clearing, coil defrosting and repair</td>
+            </tr>
+            <tr>
+              <td>Warm Air Blowing</td>
+              <td>Low refrigerant, compressor issues, frozen coils</td>
+              <td>Refrigerant recharge, compressor repair, coil defrosting</td>
+            </tr>
+            <tr>
+              <td>Frequent Cycling</td>
+              <td>Thermostat issues, electrical problems, oversized unit</td>
+              <td>Thermostat calibration, electrical repairs, system assessment</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="text-align: center; margin-top: 2rem;">
+          <p style="margin-bottom: 1.5rem;">
+            <strong>Not sure what's wrong with your AC?</strong> Our expert technicians can diagnose any air conditioning problem.
+          </p>
+          <a class="btn btn-primary" href="#estimate-form">Get a Free Diagnosis</a>
+        </div>
+      </div>
     </section>
-    
     <!-- About Our Company Section -->
     <section>
-        <div class="container">
-            <div class="two-column">
-                <div>
-                    <h2>Why Choose Us for AC Repair in Pasadena?</h2>
-                    <p>Since 2010, HVAC Pasadena has been the trusted choice for AC repair services throughout Pasadena and surrounding areas. Our commitment to quality service, fair pricing, and customer satisfaction has earned us a reputation as Pasadena's premier HVAC service provider.</p>
-                    
-                    <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-                        <li><strong>Experienced Technicians:</strong> Our team has over 15 years of experience repairing all AC brands and models.</li>
-                        <li><strong>Fast Response Time:</strong> We offer 60-minute response times for emergency AC repairs in Pasadena.</li>
-                        <li><strong>Fair, Upfront Pricing:</strong> No hidden fees or surprise costs — ever.</li>
-                        <li><strong>Satisfaction Guaranteed:</strong> We stand behind our work with a 100% satisfaction guarantee.</li>
-                        <li><strong>Locally Owned:</strong> We're your neighbors, not a national chain. We understand Pasadena's specific climate challenges.</li>
-                    </ul>
-                    
-                    <p>We're licensed, bonded, and insured for your protection and peace of mind (CA License #ABC12345).</p>
-                </div>
-                <div class="content-image">
-                    <img src="/api/placeholder/500/400" alt="HVAC Pasadena Technician">
-                </div>
-            </div>
+      <div class="container">
+        <div class="two-column">
+          <div>
+            <h2>Why Choose Us for AC Repair in Pasadena?</h2>
+            <p>Since 2010, HVAC Pasadena has been the trusted choice for AC repair services throughout Pasadena and surrounding areas. Our commitment to quality service, fair pricing, and customer satisfaction has earned us a reputation as Pasadena's premier HVAC service provider.</p>
+            <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+              <li>
+                <strong>Experienced Technicians:</strong> Our team has over 15 years of experience repairing all AC brands and models.
+              </li>
+              <li>
+                <strong>Fast Response Time:</strong> We offer 60-minute response times for emergency AC repairs in Pasadena.
+              </li>
+              <li>
+                <strong>Fair, Upfront Pricing:</strong> No hidden fees or surprise costs — ever.
+              </li>
+              <li>
+                <strong>Satisfaction Guaranteed:</strong> We stand behind our work with a 100% satisfaction guarantee.
+              </li>
+              <li>
+                <strong>Locally Owned:</strong> We're your neighbors, not a national chain. We understand Pasadena's specific climate challenges.
+              </li>
+            </ul>
+            <p>We're licensed, bonded, and insured for your protection and peace of mind (CA License #ABC12345).</p>
+          </div>
+          <div class="content-image">
+            <img alt="HVAC Pasadena Technician" src="/api/placeholder/500/400" />
+          </div>
         </div>
+      </div>
     </section>
-    
     <!-- Testimonials -->
     <section class="testimonials">
-        <div class="container">
-            <div class="section-heading text-center">
-                <h2>What Our AC Repair Customers Say</h2>
-                <p>Read reviews from real Pasadena customers who've experienced our AC repair services</p>
-            </div>
-            
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"My AC stopped working during the hottest day of summer. I called HVAC Pasadena and they had a technician at my house within 45 minutes! The repair was done quickly and professionally, and they even cleaned up afterward. My AC has been running perfectly ever since."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar"></div>
-                        <div class="author-info">
-                            <h4>David R.</h4>
-                            <div class="author-location">South Pasadena</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"I've had terrible experiences with other HVAC companies charging hidden fees and not fixing the problem. HVAC Pasadena was refreshingly honest and transparent. The technician explained the issue with my AC, gave me an upfront price, and fixed it right the first time. Highly recommend!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar"></div>
-                        <div class="author-info">
-                            <h4>Amanda T.</h4>
-                            <div class="author-location">North Pasadena</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"As a business owner in Pasadena, when our commercial AC unit broke down, we needed immediate help. HVAC Pasadena responded within 30 minutes, quickly diagnosed a complex electrical issue that two other companies missed, and had us up and running before the end of the day. Impressive service!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar"></div>
-                        <div class="author-info">
-                            <h4>Michael L.</h4>
-                            <div class="author-location">Pasadena Business Owner</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>What Our AC Repair Customers Say</h2>
+          <p>Read reviews from real Pasadena customers who've experienced our AC repair services</p>
         </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"My AC stopped working during the hottest day of summer. I called HVAC Pasadena and they had a technician at my house within 45 minutes! The repair was done quickly and professionally, and they even cleaned up afterward. My AC has been running perfectly ever since."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div class="author-info">
+                <h4>David R.</h4>
+                <div class="author-location">South Pasadena</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"I've had terrible experiences with other HVAC companies charging hidden fees and not fixing the problem. HVAC Pasadena was refreshingly honest and transparent. The technician explained the issue with my AC, gave me an upfront price, and fixed it right the first time. Highly recommend!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div class="author-info">
+                <h4>Amanda T.</h4>
+                <div class="author-location">North Pasadena</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"As a business owner in Pasadena, when our commercial AC unit broke down, we needed immediate help. HVAC Pasadena responded within 30 minutes, quickly diagnosed a complex electrical issue that two other companies missed, and had us up and running before the end of the day. Impressive service!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div class="author-info">
+                <h4>Michael L.</h4>
+                <div class="author-location">Pasadena Business Owner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
     <!-- FAQ Section -->
     <section>
-        <div class="container">
-            <div class="section-heading text-center">
-                <h2>Frequently Asked Questions</h2>
-                <p>Answers to common questions about AC repair in Pasadena</p>
-            </div>
-            
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">How quickly can you repair my AC in Pasadena?</div>
-                    <div class="faq-answer">For emergency AC repairs in Pasadena, we offer a 60-minute response time. Most repairs are completed the same day, as our service vehicles are fully stocked with common parts. Our goal is to restore your comfort as quickly as possible.</div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">How much does AC repair cost in Pasadena?</div>
-                    <div class="faq-answer">AC repair costs vary depending on the specific issue, parts required, and the age and model of your system. Simple repairs like capacitor or contactor replacements typically range from $150-$400, while more complex repairs like compressor issues may cost $500-$1,800. We always provide a clear, written estimate before beginning any work.</div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">Do you repair all AC brands and models?</div>
-                    <div class="faq-answer">Yes, our technicians are trained to repair all air conditioning brands and models, including Carrier, Trane, Lennox, Rheem, Goodman, York, and more. We service central air systems, ductless mini-splits, heat pumps, and packaged units.</div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">Is it better to repair or replace my AC?</div>
-                    <div class="faq-answer">This depends on several factors: the age of your unit, repair costs vs. replacement costs, and energy efficiency. Generally, if your AC is over 10 years old and requires a major repair (costing more than 50% of a new unit), replacement is often more economical. We'll provide honest advice about your options so you can make an informed decision.</div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">Do you offer any warranties on AC repairs?</div>
-                    <div class="faq-answer">Yes, all our AC repairs come with a 1-year warranty on parts and labor. This means if the same issue occurs within a year of our repair, we'll fix it at no additional cost to you. We also offer extended warranty options for additional peace of mind.</div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">Can you help with AC preventative maintenance?</div>
-                    <div class="faq-answer">Absolutely! We offer comprehensive AC maintenance plans to help prevent breakdowns and extend the life of your system. Our maintenance includes thorough cleaning, inspection of all components, refrigerant level checks, and more. Regular maintenance can reduce repair needs by up to 85%.</div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Frequently Asked Questions</h2>
+          <p>Answers to common questions about AC repair in Pasadena</p>
         </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">How quickly can you repair my AC in Pasadena?</div>
+            <div class="faq-answer">For emergency AC repairs in Pasadena, we offer a 60-minute response time. Most repairs are completed the same day, as our service vehicles are fully stocked with common parts. Our goal is to restore your comfort as quickly as possible.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">How much does AC repair cost in Pasadena?</div>
+            <div class="faq-answer">AC repair costs vary depending on the specific issue, parts required, and the age and model of your system. Simple repairs like capacitor or contactor replacements typically range from $150-$400, while more complex repairs like compressor issues may cost $500-$1,800. We always provide a clear, written estimate before beginning any work.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Do you repair all AC brands and models?</div>
+            <div class="faq-answer">Yes, our technicians are trained to repair all air conditioning brands and models, including Carrier, Trane, Lennox, Rheem, Goodman, York, and more. We service central air systems, ductless mini-splits, heat pumps, and packaged units.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Is it better to repair or replace my AC?</div>
+            <div class="faq-answer">This depends on several factors: the age of your unit, repair costs vs. replacement costs, and energy efficiency. Generally, if your AC is over 10 years old and requires a major repair (costing more than 50% of a new unit), replacement is often more economical. We'll provide honest advice about your options so you can make an informed decision.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Do you offer any warranties on AC repairs?</div>
+            <div class="faq-answer">Yes, all our AC repairs come with a 1-year warranty on parts and labor. This means if the same issue occurs within a year of our repair, we'll fix it at no additional cost to you. We also offer extended warranty options for additional peace of mind.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Can you help with AC preventative maintenance?</div>
+            <div class="faq-answer">Absolutely! We offer comprehensive AC maintenance plans to help prevent breakdowns and extend the life of your system. Our maintenance includes thorough cleaning, inspection of all components, refrigerant level checks, and more. Regular maintenance can reduce repair needs by up to 85%.</div>
+          </div>
+        </div>
+      </div>
     </section>
-    
     <!-- Service Areas -->
     <section class="pricing-section">
-        <div class="container">
-            <div class="section-heading text-center">
-                <h2>Areas We Serve for AC Repair</h2>
-                <p>Our AC repair technicians provide fast service throughout Pasadena and surrounding areas</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem;">
-                <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Pasadena</h3>
-                    <p style="font-size: 0.9rem;">60-minute response</p>
-                </div>
-                <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">South Pasadena</h3>
-                    <p style="font-size: 0.9rem;">60-minute response</p>
-                </div>
-                <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">North Pasadena</h3>
-                    <p style="font-size: 0.9rem;">60-minute response</p>
-                </div>
-                <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Altadena</h3>
-                    <p style="font-size: 0.9rem;">60-minute response</p>
-                </div>
-                <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">San Marino</h3>
-                    <p style="font-size: 0.9rem;">60-minute response</p>
-                </div>
-                <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Sierra Madre</h3>
-                    <p style="font-size: 0.9rem;">60-minute response</p>
-                </div>
-                <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">La Cañada Flintridge</h3>
-                    <p style="font-size: 0.9rem;">60-minute response</p>
-                </div>
-                <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Arcadia</h3>
-                    <p style="font-size: 0.9rem;">60-minute response</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Areas We Serve for AC Repair</h2>
+          <p>Our AC repair technicians provide fast service throughout Pasadena and surrounding areas</p>
         </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem;">
+          <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Pasadena</h3>
+            <p style="font-size: 0.9rem;">60-minute response</p>
+          </div>
+          <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">South Pasadena</h3>
+            <p style="font-size: 0.9rem;">60-minute response</p>
+          </div>
+          <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">North Pasadena</h3>
+            <p style="font-size: 0.9rem;">60-minute response</p>
+          </div>
+          <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Altadena</h3>
+            <p style="font-size: 0.9rem;">60-minute response</p>
+          </div>
+          <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">San Marino</h3>
+            <p style="font-size: 0.9rem;">60-minute response</p>
+          </div>
+          <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Sierra Madre</h3>
+            <p style="font-size: 0.9rem;">60-minute response</p>
+          </div>
+          <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">La Cañada Flintridge</h3>
+            <p style="font-size: 0.9rem;">60-minute response</p>
+          </div>
+          <div style="background-color: #fff; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Arcadia</h3>
+            <p style="font-size: 0.9rem;">60-minute response</p>
+          </div>
+        </div>
+      </div>
     </section>
-    
     <!-- Call to Action -->
     <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Need Emergency AC Repair in Pasadena?</h2>
-                <p>Don't suffer in the heat! Our AC repair technicians are available 24/7 with 60-minute response times throughout Pasadena and surrounding areas.</p>
-                <div class="btn-group">
-                    <a href="tel:+16265551234" class="btn btn-primary btn-lg">Call (626) 555-1234 Now</a>
-                    <a href="#estimate-form" class="btn btn-outline btn-lg">Get a Free Quote</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="cta-content">
+          <h2>Need Emergency AC Repair in Pasadena?</h2>
+          <p>Don't suffer in the heat! Our AC repair technicians are available 24/7 with 60-minute response times throughout Pasadena and surrounding areas.</p>
+          <div class="btn-group">
+            <a class="btn btn-primary btn-lg" href="tel:+16265551234">Call (626) 555-1234 Now</a>
+            <a class="btn btn-outline btn-lg" href="#estimate-form">Get a Free Quote</a>
+          </div>
         </div>
+      </div>
     </section>
-    
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3>About Us</h3>
-                    <p>HVAC Pasadena has been providing top-quality heating, cooling, and air quality services to Pasadena residents and businesses since 2010. We're committed to exceptional service, fair pricing, and customer satisfaction.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link">F</a>
-                        <a href="#" class="social-link">T</a>
-                        <a href="#" class="social-link">I</a>
-                        <a href="#" class="social-link">Y</a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Our Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="ac-repair.html">AC Repair & Installation</a></li>
-                        <li><a href="furnace-installation.html">Heating Services</a></li>
-                        <li><a href="hvac-maintenance.html">HVAC Maintenance</a></li>
-                        <li><a href="air-quality.html">Indoor Air Quality</a></li>
-                        <li><a href="commercial-hvac.html">Commercial HVAC</a></li>
-                        <li><a href="emergency-service.html">Emergency Services</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Service Areas</h3>
-                    <ul class="footer-links">
-                        <li><a href="pasadena-hvac.html">Pasadena</a></li>
-                        <li><a href="south-pasadena-hvac.html">South Pasadena</a></li>
-                        <li><a href="north-pasadena-hvac.html">North Pasadena</a></li>
-                        <li><a href="altadena-hvac.html">Altadena</a></li>
-                        <li><a href="san-marino-hvac.html">San Marino</a></li>
-                        <li><a href="sierra-madre-hvac.html">Sierra Madre</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Contact Information</h3>
-                    <div class="footer-contact-item">
-                        <div class="footer-contact-icon">📞</div>
-                        <div>
-                            <p>(626) 555-1234</p>
-                            <p>24/7 Emergency Service</p>
-                        </div>
-                    </div>
-                    <div class="footer-contact-item">
-                        <div class="footer-contact-icon">✉️</div>
-                        <div>
-                            <p>info@hvacpasadena.com</p>
-                        </div>
-                    </div>
-                    <div class="footer-contact-item">
-                        <div class="footer-contact-icon">🏢</div>
-                        <div>
-                            <p>123 E Colorado Blvd</p>
-                            <p>Pasadena, CA 91105</p>
-                        </div>
-                    </div>
-                    <div class="footer-contact-item">
-                        <div class="footer-contact-icon">⏰</div>
-                        <div>
-                            <p>Mon-Fri: 7am-8pm</p>
-                            <p>Sat-Sun: 8am-5pm</p>
-                        </div>
-                    </div>
-                </div>
+    <script src="header-scroll.js"></script>
+    <footer class="premium-footer" id="footer">
+      <div class="footer-bg-pattern"></div>
+      <div class="footer-glow"></div>
+      <div class="footer-glow-2"></div>
+      <div class="footer-main">
+        <div class="wide-container">
+          <div class="footer-branding">
+            <div class="footer-logo">HVAC <span>Pasadena</span>
             </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2025 HVAC Pasadena. All Rights Reserved.</p>
-                <div class="licenses">
-                    <div class="license-item">CA License #ABC12345</div>
-                    <div class="license-item">EPA Certified</div>
-                    <div class="license-item">NATE Certified Technicians</div>
+            <div class="footer-tagline">Keeping Pasadena Comfortable Since 2010</div>
+          </div>
+          <div class="footer-grid">
+            <!-- About Column -->
+            <div class="footer-column">
+              <h3>About Us</h3>
+              <p>HVAC Pasadena has been providing top-quality heating, cooling, and air quality services to Pasadena residents and businesses since 2010. We're committed to exceptional service, fair pricing, and complete customer satisfaction on every job.</p>
+              <div class="social-links">
+                <a aria-label="Facebook" class="social-link" href="#">
+                  <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path>
+                  </svg>
+                </a>
+                <a aria-label="Twitter" class="social-link" href="#">
+                  <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.599-.1-.898a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path>
+                  </svg>
+                </a>
+                <a aria-label="Instagram" class="social-link" href="#">
+                  <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-3.879.056-.998.05-1.68.208-2.277.418a4.59 4.59 0 0 0-1.66 1.08c-.5.5-.856 1.03-1.08 1.66-.21.598-.369 1.28-.418 2.277C2.632 10.49 2.625 10.894 2.625 13.367c0 2.474.007 2.878.056 3.879.05.998.208 1.68.418 2.277.225.63.58 1.16 1.08 1.66.5.5 1.03.856 1.66 1.08.598.21 1.28.369 2.277.418 1.001.05 1.405.056 3.879.056s2.878-.007 3.879-.056c.998-.05 1.68-.208 2.277-.418a4.59 4.59 0 0 0 1.66-1.08c.5-.5.856-1.03 1.08-1.66.21-.598.369-1.28.418-2.277.05-1.001.056-1.405.056-3.879s-.007-2.878-.056-3.879c-.05-.998-.208-1.68-.418-2.277-.225-.63-.58-1.16-1.08-1.66a4.59 4.59 0 0 0-1.66-1.08c-.598-.21-1.28-.369-2.277-.418C14.877 4.007 14.473 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a5.01 5.01 0 0 1-1.153 1.772c-.5.509-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.998 4.998 0 0 1-1.772-1.153 4.986 4.986 0 0 1-1.153-1.772c-.247-.637-.415-1.363-.465-2.428C4.012 15.056 4 14.717 4 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.985 4.985 0 0 1 1.153-1.772 4.996 4.996 0 0 1 1.772-1.153c.637-.247 1.363-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"></path>
+                  </svg>
+                </a>
+                <a aria-label="YouTube" class="social-link" href="#">
+                  <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="newsletter-form">
+                <h4>Stay Connected</h4>
+                <p>Subscribe to our newsletter for HVAC tips, special offers, and more.</p>
+                <div class="newsletter-form-inner">
+                  <input class="newsletter-input" placeholder="Your email address" type="email" />
+                  <button class="newsletter-btn" type="submit">Subscribe</button>
                 </div>
+              </div>
             </div>
+            <!-- Services Column -->
+            <div class="footer-column">
+              <h3>Our Services</h3>
+              <ul class="footer-links">
+                <li>
+                  <a href="ac-repair.html">AC Repair &amp; Installation</a>
+                </li>
+                <li>
+                  <a href="furnace-installation.html">Heating Services</a>
+                </li>
+                <li>
+                  <a href="hvac-maintenance.html">HVAC Maintenance</a>
+                </li>
+                <li>
+                  <a href="air-quality.html">Indoor Air Quality</a>
+                </li>
+                <li>
+                  <a href="commercial-hvac.html">Commercial HVAC</a>
+                </li>
+                <li>
+                  <a href="emergency-service.html">Emergency Services</a>
+                </li>
+                <li>
+                  <a href="duct-cleaning.html">Duct Cleaning</a>
+                </li>
+                <li>
+                  <a href="smart-thermostats.html">Smart Thermostats</a>
+                </li>
+                <li>
+                  <a href="hvac-financing.html">HVAC Financing</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Service Areas Column -->
+            <div class="footer-column">
+              <h3>Service Areas</h3>
+              <ul class="footer-links">
+                <li>
+                  <a href="pasadena-hvac.html">Pasadena</a>
+                </li>
+                <li>
+                  <a href="south-pasadena-hvac.html">South Pasadena</a>
+                </li>
+                <li>
+                  <a href="north-pasadena-hvac.html">North Pasadena</a>
+                </li>
+                <li>
+                  <a href="altadena-hvac.html">Altadena</a>
+                </li>
+                <li>
+                  <a href="san-marino-hvac.html">San Marino</a>
+                </li>
+                <li>
+                  <a href="sierra-madre-hvac.html">Sierra Madre</a>
+                </li>
+                <li>
+                  <a href="la-canada-flintridge-hvac.html">La Cañada Flintridge</a>
+                </li>
+                <li>
+                  <a href="arcadia-hvac.html">Arcadia</a>
+                </li>
+                <li>
+                  <a href="san-gabriel-hvac.html">San Gabriel</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Contact Column -->
+            <div class="footer-column">
+              <h3>Contact Information</h3>
+              <div class="footer-contact-item">
+                <div class="footer-contact-icon">
+                  <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"></path>
+                  </svg>
+                </div>
+                <div class="footer-contact-info">
+                  <p>(626) 555-1234</p>
+                  <p>24/7 Emergency Service Available</p>
+                </div>
+              </div>
+              <div class="footer-contact-item">
+                <div class="footer-contact-icon">
+                  <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"></path>
+                  </svg>
+                </div>
+                <div class="footer-contact-info">
+                  <p>info@hvacpasadena.com</p>
+                  <p>Email us for non-urgent inquiries</p>
+                </div>
+              </div>
+              <div class="footer-contact-item">
+                <div class="footer-contact-icon">
+                  <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                  </svg>
+                </div>
+                <div class="footer-contact-info">
+                  <p>123 E Colorado Blvd</p>
+                  <p>Pasadena, CA 91105</p>
+                </div>
+              </div>
+              <div class="footer-contact-item">
+                <div class="footer-contact-icon">
+                  <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path>
+                    <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path>
+                  </svg>
+                </div>
+                <div class="footer-contact-info">
+                  <p>Mon-Fri: 7am-8pm</p>
+                  <p>Sat-Sun: 8am-5pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Awards & Certifications -->
+          <div class="footer-awards">
+            <div class="award-item">
+              <div class="award-icon">
+                <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"></path>
+                </svg>
+              </div>
+              <div class="award-text">CA License #ABC12345</div>
+            </div>
+            <div class="award-item">
+              <div class="award-icon">
+                <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"></path>
+                </svg>
+              </div>
+              <div class="award-text">EPA Certified</div>
+            </div>
+            <div class="award-item">
+              <div class="award-icon">
+                <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path>
+                </svg>
+              </div>
+              <div class="award-text">NATE Certified Technicians</div>
+            </div>
+            <div class="award-item">
+              <div class="award-icon">
+                <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                </svg>
+              </div>
+              <div class="award-text">A+ BBB Rating</div>
+            </div>
+            <div class="award-item">
+              <div class="award-icon">
+                <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 6h-1.7l-5 9H7c-.83 0-1.5-.67-1.5-1.5S6.17 15 7 15h1.7l5-9H17c.83 0 1.5.67 1.5 1.5S17.83 9 17 9z"></path>
+                </svg>
+              </div>
+              <div class="award-text">Energy Star Partner</div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="wide-container">
+          <div class="footer-bottom-inner">
+            <div class="footer-copyright"> © 2025 HVAC Pasadena. All Rights Reserved. <a href="privacy.html" style="color: rgba(255, 255, 255, 0.6); text-decoration: underline;">Privacy Policy</a> | <a href="terms.html" style="color: rgba(255, 255, 255, 0.6); text-decoration: underline;">Terms of Service</a>
+            </div>
+            <div class="licenses">
+              <div class="license-item">Proudly Serving Pasadena Since 2010</div>
+              <div class="license-item">Family Owned &amp; Operated</div>
+              <div class="license-item">Fully Licensed &amp; Insured</div>
+            </div>
+          </div>
+        </div>
+        <a aria-label="Back to top" class="back-to-top" href="#top">
+          <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+          </svg>
+        </a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
