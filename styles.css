@@ -817,6 +817,10 @@ nav {
     font-size: 0.9rem;
 }
 
+.footer-credit a {
+    color: inherit;
+}
+
 .licenses {
     display: flex;
     flex-wrap: wrap;
